@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">FantaLega</string>
+    <string name="username_placeholder">Username</string>
+    <string name="password_placeholder">Password</string>
+    <string name="login_text">Login</string>
+    <string name="create_text">Crea un account</string>
+
+
+    <!-- Placeholder dei pulsanti -->
+    <string name="button_login">Login</string>
+    <string name="button_register">Registrati</string>
+    <string name="button_campionati">Campionati</string>
 </resources>

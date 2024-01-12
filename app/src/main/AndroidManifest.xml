@@ -29,6 +29,10 @@
             android:name=".ChampionshipActivity"
             android:exported="false">
         </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false">
+        </activity>
     </application>
 
 </manifest>

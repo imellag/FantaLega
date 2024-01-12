@@ -1,10 +1,17 @@
 <resources>
     <string name="app_name">FantaLega</string>
+
+    <!-- Edittext di login e registrazione -->
     <string name="username_placeholder">Username</string>
     <string name="password_placeholder">Password</string>
-    <string name="login_text">Login</string>
-    <string name="create_text">Crea un account</string>
+    <string name="password_confirm_placeholder">Conferma password</string>
+    <string name="email_placeholder">Email</string>
 
+    <!-- Testi vari -->
+    <string name="login_text">Login</string>
+    <string name="register_text">Registrazione</string>
+    <string name="back_login_text">Torna al login</string>
+    <string name="create_text">Crea un account</string>
 
     <!-- Placeholder dei pulsanti -->
     <string name="button_login">Login</string>

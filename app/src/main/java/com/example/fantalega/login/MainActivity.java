@@ -1,10 +1,12 @@
-package com.example.fantalega;
+package com.example.fantalega.login;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.fantalega.HomeActivity;
+import com.example.fantalega.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,12 +17,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onLoginClick(View view) {
-        // Implementa la logica di login qui
+        navigateToHome();
+    }
+
+    public void onRegisterClick(View view) {
+        navigateToRegister();
+    }
+
+    private void navigateToHome() {
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
 
-    public void onRegisterClick(View view) {
-        // Implementa la logica di registrazione qui
+    private void navigateToRegister() {
+        Intent intent = new Intent(this, RegisterActivity.class);
+        startActivity(intent);
     }
 }
+

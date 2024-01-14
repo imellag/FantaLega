@@ -14,7 +14,7 @@
     <string name="create_text">Crea un account</string>
 
     <!-- Placeholder dei pulsanti -->
-    <string name="button_login">Login</string>
+    <string name="button_login">Accedi</string>
     <string name="button_register">Registrati</string>
     <string name="button_campionati">Campionati</string>
 </resources>

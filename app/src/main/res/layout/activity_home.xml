@@ -1,24 +1,32 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <!-- Immagine di copertina -->
-    <!--
+
     <ImageView
-        android:id="@+id/coverImage"
+        android:id="@+id/imageCover"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:src="@drawable/cover_image"
-        android:scaleType="centerCrop"/>
-    -->
+        android:scaleType="centerCrop" />
+        <!-- android:src="@drawable/placeholder_cover_image"/> Da mettere dentro imageView-->
+
     <!-- Anteprime delle news -->
-    <!-- Aggiungi qui il layout per le anteprime delle news -->
+    <TextView
+        android:id="@+id/textNewsPreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageCover"
+        android:padding="16dp"
+        android:text="News della settimana: "/>
 
     <!-- Sezione "Campionati" -->
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/btnCampionati"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_campionati"
-        android:onClick="onChampionshipClick"/>
+        android:layout_below="@id/textNewsPreview"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_campionati"/>
+
 </RelativeLayout>

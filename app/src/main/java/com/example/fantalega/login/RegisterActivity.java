@@ -1,8 +1,10 @@
-package com.example.fantalega;
+package com.example.fantalega.login;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.fantalega.R;
 
 public class RegisterActivity extends AppCompatActivity {
 

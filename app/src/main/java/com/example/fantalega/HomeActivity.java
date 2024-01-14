@@ -1,6 +1,8 @@
 package com.example.fantalega;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class HomeActivity extends AppCompatActivity {
@@ -10,7 +12,12 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        // Configura l'immagine di copertina e le anteprime delle news
-        // Implementa la logica per la sezione "Campionati"
+        // Configura il pulsante per la sezione "Campionati"
+        Button btnChampionships = findViewById(R.id.btnCampionati);
+        btnChampionships.setOnClickListener(v -> {
+            // Apri la schermata dei campionati
+            Intent intent = new Intent(HomeActivity.this, ChampionshipActivity.class);
+            startActivity(intent);
+        });
     }
 }

@@ -8,8 +8,9 @@
         android:id="@+id/imageCover"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:scaleType="centerCrop" />
-        <!-- android:src="@drawable/placeholder_cover_image"/> Da mettere dentro imageView-->
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/home_photo" />
+        <!-- android:src="@drawable/placeholder_cover_image"/> Da mettere dentro imageView -->
 
     <!-- Anteprime delle news -->
     <TextView
@@ -18,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/imageCover"
         android:padding="16dp"
-        android:text="News della settimana: "/>
+        android:text="@string/news_text"/>
 
     <!-- Sezione "Campionati" -->
     <Button

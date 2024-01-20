@@ -12,9 +12,13 @@
     <string name="register_text">Registrazione</string>
     <string name="back_login_text">Torna al login</string>
     <string name="create_text">Crea un account</string>
+    <string name="news_text">News</string>
 
     <!-- Placeholder dei pulsanti -->
     <string name="button_login">Accedi</string>
     <string name="button_register">Registrati</string>
     <string name="button_campionati">Campionati</string>
+    
+    <!-- ContentDescription -->
+    <string name="home_photo">Copertina della home</string>
 </resources>

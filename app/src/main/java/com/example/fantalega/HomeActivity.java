@@ -12,7 +12,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        // Configura il pulsante per la sezione "Campionati"
+        // Pulsante per la sezione "Campionati"
         Button btnChampionships = findViewById(R.id.btnCampionati);
         btnChampionships.setOnClickListener(v -> {
             // Apri la schermata dei campionati

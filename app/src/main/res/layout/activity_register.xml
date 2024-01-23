@@ -6,7 +6,6 @@
     android:orientation="vertical"
     android:gravity="center">
 
-    <!-- Aggiungi i layout per i campi di login e registrazione -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

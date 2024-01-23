@@ -6,13 +6,12 @@
     android:orientation="vertical"
     android:gravity="center">
 
-    <!-- Aggiungi i layout per i campi di login e registrazione -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         app:cardCornerRadius="30dp"
-        app:cardElevation="20dp"
+        app:cardElevation="30dp"
         android:background="@drawable/new_edittext">
 
         <LinearLayout

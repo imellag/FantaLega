@@ -84,6 +84,7 @@
         android:text="@string/create_text"
         android:textAlignment="center"
         android:textColor="@color/black"
+        android:onClick="onRegisterClick"
         android:textSize="14sp" />
 
 </LinearLayout>

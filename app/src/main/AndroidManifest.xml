@@ -26,11 +26,23 @@
             android:exported="false">
         </activity>
         <activity
-            android:name=".ChampionshipActivity"
+            android:name=".campionato.ChampionshipActivity"
             android:exported="false">
         </activity>
         <activity
             android:name=".login.RegisterActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".campionato.RosterActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".campionato.FormationActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".campionato.MatchActivity"
             android:exported="false">
         </activity>
     </application>

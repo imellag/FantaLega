@@ -18,6 +18,10 @@
     <string name="button_login">Accedi</string>
     <string name="button_register">Registrati</string>
     <string name="button_campionati">Campionati</string>
+    <string name="button_partita">Prossima partita</string>
+    <string name="button_formazione">Inserisci formazione</string>
+    <string name="button_rosa">La tua rosa</string>
+    <string name="button_salva_formazione">Salva formazione</string>
     
     <!-- ContentDescription -->
     <string name="home_photo">Copertina della home</string>

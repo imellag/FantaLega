@@ -1,12 +1,11 @@
 package com.example.fantalega.login;
+import com.example.fantalega.HomeActivity;
+import com.example.fantalega.R;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.fantalega.HomeActivity;
-import com.example.fantalega.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void navigateToHome() {
+        // Fare la verifica dei dati, che siano collegati all'account creato
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }

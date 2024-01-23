@@ -2,12 +2,14 @@ package com.example.fantalega.login;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.fantalega.R;
+
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -20,7 +22,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         username = findViewById(R.id.registerUsername);
         email = findViewById(R.id.registerEmail);
-        password = findViewById(R.id.registerEmail);
+        password = findViewById(R.id.registerPassword);
         confirmPassword = findViewById(R.id.confirmPassword);
 
         // Pulsante per confermare la creazione dell'account
@@ -28,7 +30,7 @@ public class RegisterActivity extends AppCompatActivity {
         btnRegister.setOnClickListener(v -> {
             // Aggiungi la logica di registrazione
             if (checkInput()) {
-                // Apri la schermata del login dopo aver creato l'account
+                // Apri la schermata del login dopo aver creato l'account (aggiungere append)
                 Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
                 startActivity(intent);
             }
@@ -47,22 +49,24 @@ public class RegisterActivity extends AppCompatActivity {
     private boolean checkInput() {
         int errors = 0;
 
-        if (username.getText().toString().trim().isEmpty()) {
+        String usernameText = username.getText().toString().trim();
+        if (TextUtils.isEmpty(usernameText)) {
             errors++;
             username.setError("Inserisci un nome!");
         } else {
             username.setError(null);
         }
 
-        if (email.getText().toString().trim().isEmpty()) {
+        String emailText = email.getText().toString().trim();
+        if (TextUtils.isEmpty(emailText)) {
             errors++;
             email.setError("Inserisci un'email!");
         } else {
             email.setError(null);
         }
 
-        String passwordText = password.getText().toString();
-        if (passwordText.isEmpty()) {
+        String passwordText = password.getText().toString().trim();
+        if (TextUtils.isEmpty(passwordText)) {
             errors++;
             password.setError("Inserisci una password!");
         } else if (passwordText.length() < 6) {
@@ -72,10 +76,10 @@ public class RegisterActivity extends AppCompatActivity {
             password.setError(null);
         }
 
-        String confirmPasswordText = confirmPassword.getText().toString();
-        if (confirmPasswordText.length() < 6 || !confirmPasswordText.equals(passwordText)) {
+        String confirmPasswordText = confirmPassword.getText().toString().trim();
+        if (!passwordText.equals(confirmPasswordText)) {
             errors++;
-            confirmPassword.setError("Le password non coincidono o sono troppo corte!");
+            confirmPassword.setError("Le password non coincidono!");
         } else {
             confirmPassword.setError(null);
         }

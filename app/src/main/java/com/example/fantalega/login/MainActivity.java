@@ -4,15 +4,23 @@ import com.example.fantalega.R;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
+import android.widget.EditText;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
+
+    private EditText username, password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        username = findViewById(R.id.loginUsername);
+        password = findViewById(R.id.loginPassword);
     }
 
     public void onLoginClick(View view) {
@@ -24,14 +32,42 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void navigateToHome() {
-        // Fare la verifica dei dati, che siano collegati all'account creato
-        Intent intent = new Intent(this, HomeActivity.class);
-        startActivity(intent);
+        // Per ora controlla soltanto che le stringhe fornite non siano vuote
+        // Aggiungere controllo dei dati = account registrato
+        if (checkInput()) {
+            Intent intent = new Intent(this, HomeActivity.class);
+            startActivity(intent);
+        }
     }
 
     private void navigateToRegister() {
         Intent intent = new Intent(this, RegisterActivity.class);
         startActivity(intent);
+    }
+
+    private boolean checkInput() {
+        int errors = 0;
+
+        String usernameText = username.getText().toString().trim();
+        if (TextUtils.isEmpty(usernameText)) {
+            errors++;
+            username.setError("Inserisci un nome!");
+        } else {
+            username.setError(null);
+        }
+
+        String passwordText = password.getText().toString().trim();
+        if (TextUtils.isEmpty(passwordText)) {
+            errors++;
+            password.setError("Inserisci una password!");
+        } else if (passwordText.length() < 6) {
+            errors++;
+            password.setError("La password deve avere almeno 6 caratteri!");
+        } else {
+            password.setError(null);
+        }
+
+        return errors == 0;
     }
 }
 

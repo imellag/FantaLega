@@ -45,6 +45,14 @@
             android:name=".campionato.MatchActivity"
             android:exported="false">
         </activity>
+        <activity 
+            android:name=".campionato.BenchActivity"
+            android:exported="false">
+        </activity>
+        <activity 
+            android:name=".PlayerStatsActivity"
+            android:exported="false">
+        </activity>
     </application>
 
 </manifest>

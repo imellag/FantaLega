@@ -1,33 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="25dp">
 
-    <!-- Lista dei giocatori dell'utente -->
-    <ListView
-        android:id="@+id/listViewUserFormation"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tvNextMatch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/next_match"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvTeam1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Squadra A"
+        android:textSize="22sp"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvNextMatch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvTeam2"
+        app:layout_constraintHorizontal_weight="1"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvTeam2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Squadra B"
+        android:textSize="22sp"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvNextMatch"
+        app:layout_constraintStart_toEndOf="@id/tvTeam1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        android:gravity="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTeam1Players"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:paddingBottom="8dp"/>
-
-    <!-- Separatore orizzontale -->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#B3B3B3"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"/>
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTeam1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/rvTeam2Players"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"/>
 
-    <!-- Lista dei giocatori dell'avversario -->
-    <ListView
-        android:id="@+id/listViewOpponentFormation"
-        android:layout_width="match_parent"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTeam2Players"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:paddingTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTeam2"
+        app:layout_constraintStart_toEndOf="@id/rvTeam1Players"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"/>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

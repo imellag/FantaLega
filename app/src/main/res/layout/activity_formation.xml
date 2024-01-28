@@ -29,6 +29,6 @@
         android:layout_height="wrap_content"
         android:text="@string/button_salva_formazione"
         android:layout_gravity="center"
-        android:backgroundTint="@color/green"/>
+        android:backgroundTint="@color/blue"/>
 
 </LinearLayout>

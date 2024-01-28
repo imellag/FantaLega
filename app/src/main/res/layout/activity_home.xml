@@ -28,6 +28,11 @@
         android:layout_below="@id/textNewsPreview"
         android:layout_marginTop="16dp"
         android:text="@string/button_campionati"
-        android:backgroundTint="@color/green"/>
+        android:backgroundTint="@color/blue"/>
+
+    <include layout="@layout/navigation_bar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

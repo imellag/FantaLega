@@ -13,6 +13,11 @@
     <string name="back_login_text">Torna al login</string>
     <string name="create_text">Crea un account</string>
     <string name="news_text">News</string>
+    <string name="panchina">Panchina</string>
+    <string name="player_stats">Statistiche giocatore</string>
+    <string name="nome">Nome</string>
+    <string name="cognome">Cognome</string>
+    <string name="next_match">Prossima partita</string>
 
     <!-- Placeholder dei pulsanti -->
     <string name="button_login">Accedi</string>
@@ -25,4 +30,16 @@
     
     <!-- ContentDescription -->
     <string name="home_photo">Copertina della home</string>
+    <string name="player_photo">Foto del giocatore</string>
+
+    <!-- Ruoli per la formazione / rosa / panchina -->
+    <string name="portieri">Portieri</string>
+    <string name="difensori">Difensori</string>
+    <string name="centrocampisti">Centrocampisti</string>
+    <string name="attaccanti">Attaccanti</string>
+    <string name="portiere">Portiere</string>
+    <string name="difensore">Difensore</string>
+    <string name="centrocampista">Centrocampista</string>
+    <string name="attaccante">Attaccante</string>
+
 </resources>

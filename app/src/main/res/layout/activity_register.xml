@@ -28,7 +28,7 @@
                 android:textSize="36sp"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textColor="@color/green"/>
+                android:textColor="@color/blue"/>
 
             <EditText
                 android:background="@drawable/new_edittext"
@@ -95,7 +95,7 @@
                 android:layout_gravity="center"
                 android:text="@string/button_register"
                 android:onClick="onLoginClick"
-                android:backgroundTint="@color/green" />
+                android:backgroundTint="@color/blue"/>
 
         </LinearLayout>
 

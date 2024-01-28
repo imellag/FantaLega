@@ -2,76 +2,63 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
     <TextView
-        android:layout_marginTop="15dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="CALENDARIO"
-        android:textSize="40sp"
-        android:layout_marginBottom="30dp"
+        android:text="Calendario"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:paddingTop="25dp"/>
 
-        />
     <LinearLayout
-
-        android:padding="10dp"
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/rettangolo"
+        android:layout_gravity="center"
         android:layout_marginBottom="50dp"
-        >
-        <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/rettangolo"
+        android:padding="10dp">
 
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:background="@color/white"
-            android:text="<"
-            />
-        <TextView
+            android:text="<" />
 
-            android:layout_marginLeft="40dp"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="18° Giornata"
+            android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
-            android:textSize="20sp"
-            />
+            android:text="18° Giornata"
+            android:textSize="20sp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:background="@color/white"
             android:text=">" />
-
-
-
-
     </LinearLayout>
 
 
     <TableLayout
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
         android:layout_width="match_parent"
         android:layout_height="270dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_marginBottom="150dp"
         android:background="@drawable/rettangolo"
         android:padding="15dp">
 
         <TableRow
-
             android:layout_marginBottom="30dp">
 
             <TextView
-
                 android:layout_weight="1"
-                android:text="Culurgiones Fc"
-
-                />
+                android:text="Culurgiones Fc" />
 
             <TextView
                 android:layout_weight="1"
@@ -80,19 +67,13 @@
             <TextView
                 android:layout_weight="1"
                 android:text="AC cipicchia" />
-
-
         </TableRow>
+
         <TableRow
-
             android:layout_marginBottom="30dp">
-
             <TextView
-
                 android:layout_weight="1"
-                android:text="Culurgiones Fc"
-
-                />
+                android:text="Culurgiones Fc" />
 
             <TextView
                 android:layout_weight="1"
@@ -101,19 +82,13 @@
             <TextView
                 android:layout_weight="1"
                 android:text="AC cipicchia" />
-
-
         </TableRow>
+
         <TableRow
-
             android:layout_marginBottom="30dp">
-
             <TextView
-
                 android:layout_weight="1"
-                android:text="Culurgiones Fc"
-
-                />
+                android:text="Culurgiones Fc" />
 
             <TextView
                 android:layout_weight="1"
@@ -122,14 +97,11 @@
             <TextView
                 android:layout_weight="1"
                 android:text="AC cipicchia" />
-
 
         </TableRow>
 
         <TableRow android:layout_marginBottom="30dp">
-
             <TextView
-
                 android:layout_weight="1"
                 android:text="Culurgiones Fc" />
 
@@ -140,13 +112,10 @@
             <TextView
                 android:layout_weight="1"
                 android:text="AC cipicchia" />
-
         </TableRow>
 
         <TableRow>
-
             <TextView
-
                 android:layout_weight="1"
                 android:text="Culurgiones Fc" />
 
@@ -157,10 +126,7 @@
             <TextView
                 android:layout_weight="1"
                 android:text="AC cipicchia" />
-
         </TableRow>
-
     </TableLayout>
-
-    <include layout="@layout/fragment_bar"/>
+    <include layout="@layout/navigation_bar_fragment" />
 </LinearLayout>

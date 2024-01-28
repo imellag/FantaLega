@@ -13,6 +13,7 @@
         android:background="@drawable/home"
         android:layout_marginRight="70dp" />
 
+    <!-- Bottone classifica -->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnClassifica"
         android:layout_width="45dp"
@@ -28,11 +29,11 @@
         android:layout_marginRight="70dp"
         android:background="@drawable/calendar" />
 
+    <!-- Bottone campionati -->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCampionati"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:background="@drawable/trophy"
         android:layout_marginRight="20dp" />
-
 </LinearLayout>

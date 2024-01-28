@@ -3,8 +3,6 @@
     android:layout_height="match_parent">
 
     <!-- Immagine di copertina -->
-
-    <!-- Anteprime delle news -->
     <ImageView
         android:id="@+id/imageCover"
         android:layout_width="match_parent"
@@ -12,6 +10,7 @@
         android:contentDescription="@string/home_photo"
         android:scaleType="centerCrop" />
 
+    <!-- Anteprime delle news -->
     <TextView
         android:id="@+id/textNewsPreview"
         android:layout_width="match_parent"

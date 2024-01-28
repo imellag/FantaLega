@@ -3,15 +3,17 @@
     android:layout_height="match_parent">
 
     <!-- Immagine di copertina -->
+
+    <!-- Anteprime delle news -->
     <ImageView
         android:id="@+id/imageCover"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="144dp"
+        android:contentDescription="@string/home_photo"
         android:scaleType="centerCrop"
-        android:contentDescription="@string/home_photo" />
-    <!-- android:src="@drawable/placeholder_cover_image"/> Da mettere dentro imageView -->
 
-    <!-- Anteprime delle news -->
+        android:src="@drawable/pallone" />
+
     <TextView
         android:id="@+id/textNewsPreview"
         android:layout_width="match_parent"

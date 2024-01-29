@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/gray"
+    >
 
     <TextView
         android:layout_width="match_parent"
@@ -12,7 +14,9 @@
         android:textStyle="bold"
         android:gravity="center"
         android:paddingBottom="16dp"
-        android:paddingTop="25dp"/>
+        android:paddingTop="25dp"
+        android:textColor="@color/black"
+        />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -20,39 +24,53 @@
         android:layout_gravity="center"
         android:layout_marginBottom="50dp"
         android:background="@drawable/rettangolo"
-        android:padding="10dp">
+        android:padding="15dp">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:background="@color/white"
-            android:text="<" />
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/baseline_arrow_back_24"
+            />
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:text="18° Giornata"
-            android:textSize="20sp" />
+            android:textSize="21sp" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:background="@color/white"
-            android:text=">" />
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/baseline_arrow_forward_24"
+            android:text="" />
     </LinearLayout>
 
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="270dp"
+        android:layout_height="400dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginBottom="150dp"
+        android:layout_marginBottom="60dp"
         android:background="@drawable/rettangolo"
         android:padding="15dp">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:gravity="center"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/calendar" />
+
+        </LinearLayout>
         <TableRow
             android:layout_marginBottom="30dp">
 
@@ -61,10 +79,12 @@
                 android:text="Culurgiones Fc" />
 
             <TextView
+                android:textAlignment="center"
                 android:layout_weight="1"
                 android:text="-" />
 
             <TextView
+                android:textAlignment="viewEnd"
                 android:layout_weight="1"
                 android:text="AC cipicchia" />
         </TableRow>
@@ -76,10 +96,12 @@
                 android:text="Culurgiones Fc" />
 
             <TextView
+                android:textAlignment="center"
                 android:layout_weight="1"
                 android:text="-" />
 
             <TextView
+                android:textAlignment="viewEnd"
                 android:layout_weight="1"
                 android:text="AC cipicchia" />
         </TableRow>
@@ -91,13 +113,14 @@
                 android:text="Culurgiones Fc" />
 
             <TextView
+                android:textAlignment="center"
                 android:layout_weight="1"
                 android:text="-" />
 
             <TextView
+                android:textAlignment="viewEnd"
                 android:layout_weight="1"
                 android:text="AC cipicchia" />
-
         </TableRow>
 
         <TableRow android:layout_marginBottom="30dp">
@@ -106,10 +129,12 @@
                 android:text="Culurgiones Fc" />
 
             <TextView
+                android:textAlignment="center"
                 android:layout_weight="1"
                 android:text="-" />
 
             <TextView
+                android:textAlignment="viewEnd"
                 android:layout_weight="1"
                 android:text="AC cipicchia" />
         </TableRow>
@@ -120,13 +145,16 @@
                 android:text="Culurgiones Fc" />
 
             <TextView
+                android:textAlignment="center"
                 android:layout_weight="1"
                 android:text="-" />
 
             <TextView
+                android:textAlignment="viewEnd"
                 android:layout_weight="1"
                 android:text="AC cipicchia" />
         </TableRow>
     </TableLayout>
+
     <include layout="@layout/navigation_bar_fragment" />
 </LinearLayout>

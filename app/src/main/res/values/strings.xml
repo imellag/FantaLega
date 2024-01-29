@@ -18,6 +18,7 @@
     <string name="nome">Nome</string>
     <string name="cognome">Cognome</string>
     <string name="next_match">Prossima partita</string>
+    <string name="insert_formation">Inserisci formazione</string>
 
     <!-- Placeholder dei pulsanti -->
     <string name="button_login">Accedi</string>

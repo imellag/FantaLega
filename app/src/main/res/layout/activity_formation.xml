@@ -1,34 +1,119 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:paddingVertical="25dp">
 
-    <!-- Lista dei giocatori disponibili -->
-    <ListView
-        android:id="@+id/listViewAvailablePlayers"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:paddingBottom="8dp"/>
-
-    <!-- Separatore orizzontale -->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#B3B3B3"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"/>
-
-    <!-- Pulsante per salvare la formazione -->
-    <Button
-        android:id="@+id/btnSaveFormation"
+    <TextView
+        android:id="@+id/tvInsertFormation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_salva_formazione"
-        android:layout_gravity="center"
+        android:text="@string/insert_formation"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/layoutModuleButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvInsertFormation">
+
+        <Button
+            android:id="@+id/btnModule1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:text="4-4-2"
+            android:backgroundTint="@color/blue"/>
+
+        <Button
+            android:id="@+id/btnModule2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:text="4-3-3"
+            android:backgroundTint="@color/blue"/>
+
+        <Button
+            android:id="@+id/btnModule3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:text="3-4-3"
+            android:backgroundTint="@color/blue"/>
+
+        <Button
+            android:id="@+id/btnModule4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:text="3-5-2"
+            android:backgroundTint="@color/blue"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgFootballField"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/football_field"
+        app:layout_constraintTop_toBottomOf="@id/layoutModuleButtons"
+        app:layout_constraintBottom_toTopOf="@id/btnRecommendedFormation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintDimensionRatio="H,9:16"/>
+
+    <!-- Bottoni per i giocatori -->
+    <!-- Esempio: 11 bottoni per una formazione 4-4-2 -->
+    <!-- Nota: la posizione specifica dipenderà dal modulo selezionato e dall'immagine del campo -->
+    <!-- Esempio di posizionamento di un bottone -->
+    <Button
+        android:id="@+id/btnPlayer1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="@id/imgFootballField"
+        app:layout_constraintStart_toStartOf="@id/imgFootballField"
+        app:layout_constraintEnd_toEndOf="@id/imgFootballField"
+        app:layout_constraintBottom_toBottomOf="@id/imgFootballField"
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:text="P1"
+        android:backgroundTint="@color/blue"/>
+    <!-- Vertical bias: posizionamento verticale,
+         Horizontal: posizionamento orizzontale -->
+
+    <!-- Aggiungi altri bottoni per ogni giocatore seguendo lo stesso schema -->
+
+    <Button
+        android:id="@+id/btnRecommendedFormation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Formazione Consigliata"
+        app:layout_constraintTop_toBottomOf="@id/imgFootballField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="25dp"
         android:backgroundTint="@color/blue"/>
 
-</LinearLayout>
+    <Button
+        android:id="@+id/btnSaveFormation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Salva Formazione"
+        app:layout_constraintTop_toBottomOf="@id/btnRecommendedFormation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="25dp"
+        android:backgroundTint="@color/blue"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

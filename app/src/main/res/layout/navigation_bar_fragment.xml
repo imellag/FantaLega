@@ -1,8 +1,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
     android:background="@color/blue"
+    android:orientation="horizontal"
     android:padding="10dp">
 
     <!-- Bottone Home -->
@@ -10,15 +10,15 @@
         android:id="@+id/btnHome"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:background="@drawable/home"
-        android:layout_marginRight="70dp" />
+        android:layout_marginRight="70dp"
+        android:background="@drawable/home" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnClassifica"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:background="@drawable/leaderboard"
-        android:layout_marginRight="70dp" />
+        android:layout_marginRight="70dp"
+        android:background="@drawable/leaderboard" />
 
     <!-- Bottone Calendario -->
     <androidx.appcompat.widget.AppCompatButton
@@ -32,7 +32,6 @@
         android:id="@+id/btnCampionati"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:background="@drawable/trophy"
-        android:layout_marginRight="20dp" />
+        android:background="@drawable/trophy" />
 
 </LinearLayout>

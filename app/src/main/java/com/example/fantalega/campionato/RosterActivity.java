@@ -3,6 +3,7 @@ package com.example.fantalega.campionato;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.fantalega.R;

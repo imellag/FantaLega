@@ -17,7 +17,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void onLoginClick(View view) {navigateToHome();}
+    public void onLoginClick(View view) {
+        navigateToHome();
+    }
+
     public void onRegisterClick(View view) {
         navigateToRegister();
     }

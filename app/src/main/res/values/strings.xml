@@ -27,8 +27,11 @@
     <string name="button_partita">Prossima partita</string>
     <string name="button_formazione">Inserisci formazione</string>
     <string name="button_rosa">La tua rosa</string>
-    <string name="button_salva_formazione">Salva formazione</string>
-    
+    <string name="button_salva_formazione">Salva Formazione</string>
+    <string name="button_indietro">Indietro</string>
+    <string name="button_avanti">Avanti</string>
+    <string name="button_formazione_consigliata">Imposta formazione consigliata</string>
+
     <!-- ContentDescription -->
     <string name="home_photo">Copertina della home</string>
     <string name="player_photo">Foto del giocatore</string>

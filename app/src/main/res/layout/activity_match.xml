@@ -8,40 +8,40 @@
         android:id="@+id/tvNextMatch"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="16dp"
         android:text="@string/next_match"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:gravity="center"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:paddingBottom="16dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvTeam1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
         android:text="Squadra A"
         android:textSize="22sp"
-        android:padding="8dp"
-        app:layout_constraintTop_toBottomOf="@id/tvNextMatch"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/tvTeam2"
         app:layout_constraintHorizontal_weight="1"
-        android:gravity="center"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNextMatch" />
 
     <TextView
         android:id="@+id/tvTeam2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
         android:text="Squadra B"
         android:textSize="22sp"
-        android:padding="8dp"
-        app:layout_constraintTop_toBottomOf="@id/tvNextMatch"
-        app:layout_constraintStart_toEndOf="@id/tvTeam1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
-        android:gravity="center"/>
+        app:layout_constraintStart_toEndOf="@id/tvTeam1"
+        app:layout_constraintTop_toBottomOf="@id/tvNextMatch" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvTeam1Players"
@@ -49,11 +49,11 @@
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:padding="8dp"
-        app:layout_constraintTop_toBottomOf="@id/tvTeam1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/rvTeam2Players"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_weight="1"/>
+        app:layout_constraintEnd_toStartOf="@id/rvTeam2Players"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTeam1" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvTeam2Players"
@@ -61,10 +61,10 @@
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:padding="8dp"
-        app:layout_constraintTop_toBottomOf="@id/tvTeam2"
-        app:layout_constraintStart_toEndOf="@id/rvTeam1Players"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_weight="1"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/rvTeam1Players"
+        app:layout_constraintTop_toBottomOf="@id/tvTeam2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

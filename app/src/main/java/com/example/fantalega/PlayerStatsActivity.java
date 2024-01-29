@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class PlayerStatsActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
@@ -25,8 +26,7 @@ public class PlayerStatsActivity extends AppCompatActivity implements AdapterVie
         if (playerId != -1) {
             // Esempio: Caricamento dati asincrono (ad es., da un database o un API)
             loadPlayerData(playerId);
-        }
-        else {
+        } else {
             // Gestisci l'errore: l'ID del giocatore non è stato passato correttamente
             finish();
             return;

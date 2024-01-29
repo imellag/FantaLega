@@ -1,4 +1,5 @@
 package com.example.fantalega.campionato;
+
 import com.example.fantalega.R;
 
 import android.content.Intent;

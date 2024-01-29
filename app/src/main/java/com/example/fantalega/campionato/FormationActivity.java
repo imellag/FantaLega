@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.fantalega.R;
@@ -25,7 +26,7 @@ public class FormationActivity extends AppCompatActivity {
         btnPlayer1 = findViewById(R.id.btnPlayer1);
         // Inizializza gli altri bottoni dei giocatori...
 
-        btnPlayer1.setOnClickListener(v -> onPlayerButtonClicked(v));
+        btnPlayer1.setOnClickListener(this::onPlayerButtonClicked);
         // Imposta OnClickListener per gli altri bottoni dei giocatori...
 
         // Inizializza e imposta listener per il bottone della formazione consigliata

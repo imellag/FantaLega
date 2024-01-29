@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/imageCover"
         android:padding="16dp"
-        android:text="@string/news_text"/>
+        android:text="@string/news_text" />
 
     <!-- Sezione "Campionati" -->
     <Button
@@ -26,12 +26,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textNewsPreview"
         android:layout_marginTop="16dp"
-        android:text="@string/button_campionati"
-        android:backgroundTint="@color/blue"/>
+        android:backgroundTint="@color/blue"
+        android:text="@string/button_campionati" />
 
-    <include layout="@layout/navigation_bar_fragment"
+    <include
+        layout="@layout/navigation_bar_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true" />
 
 </RelativeLayout>

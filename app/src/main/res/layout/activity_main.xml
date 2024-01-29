@@ -1,72 +1,71 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
+        android:background="@drawable/new_edittext"
         app:cardCornerRadius="30dp"
-        app:cardElevation="30dp"
-        android:background="@drawable/new_edittext">
+        app:cardElevation="30dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
             android:padding="24dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/login_text"
-                android:textSize="36sp"
                 android:textAlignment="center"
-                android:textStyle="bold"
-                android:textColor="@color/blue"/>
+                android:textColor="@color/blue"
+                android:textSize="36sp"
+                android:textStyle="bold" />
 
             <EditText
-                android:background="@drawable/new_edittext"
-                android:drawableEnd="@drawable/baseline_person_24"
                 android:id="@+id/loginUsername"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_marginTop="35dp"
+                android:autofillHints="username"
+                android:background="@drawable/new_edittext"
+                android:drawableEnd="@drawable/baseline_person_24"
                 android:hint="@string/username_placeholder"
+                android:inputType="textPersonName"
                 android:padding="8dp"
                 android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:layout_marginTop="35dp"
-                android:inputType="textPersonName"
-                android:autofillHints="username" />
+                android:paddingEnd="20dp" />
 
             <EditText
-                android:background="@drawable/new_edittext"
-                android:drawableEnd="@drawable/baseline_lock_person_24"
                 android:id="@+id/loginPassword"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:autofillHints="password"
+                android:background="@drawable/new_edittext"
+                android:drawableEnd="@drawable/baseline_lock_person_24"
                 android:hint="@string/password_placeholder"
+                android:inputType="textPassword"
                 android:padding="8dp"
                 android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:layout_marginTop="20dp"
-                android:inputType="textPassword"
-                android:autofillHints="password"/>
+                android:paddingEnd="20dp" />
 
             <Button
                 android:layout_width="130dp"
                 android:layout_height="50dp"
-                android:layout_marginTop="35dp"
-                android:textSize="17sp"
                 android:layout_gravity="center"
-                android:text="@string/button_login"
+                android:layout_marginTop="35dp"
+                android:backgroundTint="@color/blue"
                 android:onClick="onLoginClick"
-                android:backgroundTint="@color/blue" />
+                android:text="@string/button_login"
+                android:textSize="17sp" />
 
         </LinearLayout>
 
@@ -80,11 +79,11 @@
         android:height="48dp"
         android:clickable="true"
         android:focusable="true"
+        android:onClick="onRegisterClick"
         android:padding="7dp"
         android:text="@string/create_text"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:onClick="onRegisterClick"
         android:textSize="14sp" />
 
 </LinearLayout>

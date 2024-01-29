@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.fantalega.PlayerStatsActivity;
+import com.example.fantalega.player.PlayerStatsActivity;
 import com.example.fantalega.R;
 import com.example.fantalega.player.Player;
 import com.example.fantalega.player.PlayerAdapter;

@@ -50,7 +50,7 @@
             android:exported="false">
         </activity>
         <activity 
-            android:name=".PlayerStatsActivity"
+            android:name=".player.PlayerStatsActivity"
             android:exported="false">
         </activity>
     </application>

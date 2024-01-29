@@ -1,21 +1,21 @@
 package com.example.fantalega.campionato;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.fantalega.HomeActivity;
 import com.example.fantalega.R;
 
 public class FormationActivity extends AppCompatActivity {
 
     private Button btnPlayer1; // Bottoni per i giocatori
     // Definisci altri bottoni per i giocatori...
-
-    private Button btnRecommendedFormation;
-    private Button btnSaveFormation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,15 +26,22 @@ public class FormationActivity extends AppCompatActivity {
         btnPlayer1 = findViewById(R.id.btnPlayer1);
         // Inizializza gli altri bottoni dei giocatori...
 
+        TextView openBench = findViewById(R.id.tvOpenBench);
+        openBench.setOnClickListener(v -> {
+            // Apri la schermata dei campionati
+            Intent intent = new Intent(this, BenchActivity.class);
+            startActivity(intent);
+        });
+
         btnPlayer1.setOnClickListener(this::onPlayerButtonClicked);
         // Imposta OnClickListener per gli altri bottoni dei giocatori...
 
         // Inizializza e imposta listener per il bottone della formazione consigliata
-        btnRecommendedFormation = findViewById(R.id.btnRecommendedFormation);
+        Button btnRecommendedFormation = findViewById(R.id.btnRecommendedFormation);
         btnRecommendedFormation.setOnClickListener(v -> onRecommendedFormationClicked());
 
         // Inizializza e imposta listener per il bottone di salvataggio formazione
-        btnSaveFormation = findViewById(R.id.btnSaveFormation);
+        Button btnSaveFormation = findViewById(R.id.btnSaveFormation);
         btnSaveFormation.setOnClickListener(v -> onSaveFormationClicked());
     }
 
@@ -50,7 +57,7 @@ public class FormationActivity extends AppCompatActivity {
     }
 
     private void onSaveFormationClicked() {
-        // Logica per salvare la formazione
+        // Logica per salvare la formazione (riportare alla schermata precedente che non so quale sia)
         Toast.makeText(this, "Formazione salvata", Toast.LENGTH_SHORT).show();
     }
 

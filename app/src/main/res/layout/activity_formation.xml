@@ -32,45 +32,36 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="4dp"
             android:backgroundTint="@color/blue"
             android:text="4-4-2"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
+            android:textColor="@color/black" />
 
         <Button
             android:id="@+id/btnModule2"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="4dp"
             android:backgroundTint="@color/blue"
             android:text="4-3-3"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
+            android:textColor="@color/black" />
 
         <Button
             android:id="@+id/btnModule3"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="4dp"
             android:backgroundTint="@color/blue"
             android:text="3-4-3"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
+            android:textColor="@color/black" />
 
         <Button
             android:id="@+id/btnModule4"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="4dp"
             android:backgroundTint="@color/blue"
             android:text="3-5-2"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
-
+            android:textColor="@color/black" />
     </LinearLayout>
 
     <!-- Bottoni per i giocatori -->
@@ -82,12 +73,11 @@
         android:id="@+id/imgFootballField"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:src="@drawable/football_field"
         app:layout_constraintBottom_toTopOf="@id/btnRecommendedFormation"
         app:layout_constraintDimensionRatio="H,16:12"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layoutModuleButtons" />
 
@@ -107,6 +97,26 @@
          Horizontal: posizionamento orizzontale -->
 
     <!-- Aggiungi altri bottoni per ogni giocatore seguendo lo stesso schema -->
+
+    <TextView
+        android:id="@+id/tvOpenBench"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="12dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/open_bench"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:drawableEndCompat="@drawable/baseline_arrow_forward_24"
+        app:layout_constraintBottom_toTopOf="@id/btnRecommendedFormation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgFootballField" />
+
+    <!-- Bottoni "Formazione Consigliata" e "Salva Formazione" in basso sulla stessa riga -->
 
     <Button
         android:id="@+id/btnRecommendedFormation"
@@ -131,9 +141,7 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.32"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnRecommendedFormation"
-        app:layout_constraintVertical_bias="0.815" />
+        app:layout_constraintTop_toBottomOf="@id/btnRecommendedFormation" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

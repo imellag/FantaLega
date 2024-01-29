@@ -1,4 +1,4 @@
-package com.example.fantalega;
+package com.example.fantalega.player;
 
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +9,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.fantalega.R;
 
 public class PlayerStatsActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 

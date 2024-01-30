@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.fantalega.campionato.ChampionshipActivity;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends NavbarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

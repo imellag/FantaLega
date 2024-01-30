@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/blue"
             android:text="4-4-2"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/btnModule2"
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/blue"
             android:text="4-3-3"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/btnModule3"
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/blue"
             android:text="3-4-3"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/btnModule4"
@@ -61,7 +61,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/blue"
             android:text="3-5-2"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <!-- Bottoni per i giocatori -->
@@ -69,44 +69,148 @@
     <!-- Nota: la posizione specifica dipenderà dal modulo selezionato e dall'immagine del campo -->
     <!-- Esempio di posizionamento di un bottone -->
 
-    <ImageView
-        android:id="@+id/imgFootballField"
+    <LinearLayout
+        android:id="@+id/layoutFootballField"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="25dp"
-        android:src="@drawable/football_field"
-        app:layout_constraintBottom_toTopOf="@id/btnRecommendedFormation"
+        android:background="@drawable/football_field"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/tvOpenBench"
         app:layout_constraintDimensionRatio="H,16:12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/layoutModuleButtons" />
+        app:layout_constraintTop_toBottomOf="@id/layoutModuleButtons">
 
-    <Button
-        android:id="@+id/btnPlayer1"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:backgroundTint="@color/blue"
-        app:layout_constraintBottom_toBottomOf="@id/imgFootballField"
-        app:layout_constraintEnd_toEndOf="@id/imgFootballField"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@id/imgFootballField"
-        app:layout_constraintTop_toTopOf="@id/imgFootballField"
-        app:layout_constraintVertical_bias="0.9" />
+        <!-- LinearLayout per il portiere -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
 
-    <!-- Vertical bias: posizionamento verticale,
-         Horizontal: posizionamento orizzontale -->
+            <Button
+                android:id="@+id/btnGoalkeeper"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+        </LinearLayout>
 
-    <!-- Aggiungi altri bottoni per ogni giocatore seguendo lo stesso schema -->
+        <!-- LinearLayout per i difensori -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnDefender1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+
+            <Button
+                android:id="@+id/btnDefender2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+
+            <Button
+                android:id="@+id/btnDefender3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+
+            <Button
+                android:id="@+id/btnDefender4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+        </LinearLayout>
+
+        <!-- LinearLayout per i centrocampisti -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnMidfielder1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+
+            <Button
+                android:id="@+id/btnMidfielder2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+
+            <Button
+                android:id="@+id/btnMidfielder3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+
+            <Button
+                android:id="@+id/btnMidfielder4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+        </LinearLayout>
+
+        <!-- LinearLayout per gli attaccanti -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnStriker1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+
+            <Button
+                android:id="@+id/btnStriker2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+        </LinearLayout>
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tvOpenBench"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
         android:layout_marginBottom="8dp"
         android:clickable="true"
         android:focusable="true"
         android:padding="12dp"
-        android:layout_marginHorizontal="10dp"
         android:text="@string/open_bench"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -114,7 +218,7 @@
         app:layout_constraintBottom_toTopOf="@id/btnRecommendedFormation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imgFootballField" />
+        app:layout_constraintTop_toBottomOf="@id/layoutFootballField" />
 
     <!-- Bottoni "Formazione Consigliata" e "Salva Formazione" in basso sulla stessa riga -->
 
@@ -126,10 +230,10 @@
         android:layout_marginTop="144dp"
         android:backgroundTint="@color/blue"
         android:text="@string/button_formazione_consigliata"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imgFootballField" />
+        app:layout_constraintTop_toBottomOf="@id/layoutFootballField" />
 
     <Button
         android:id="@+id/btnSaveFormation"
@@ -138,7 +242,7 @@
         android:layout_marginHorizontal="25dp"
         android:backgroundTint="@color/blue"
         android:text="@string/button_salva_formazione"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

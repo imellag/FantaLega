@@ -9,13 +9,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.fantalega.HomeActivity;
 import com.example.fantalega.R;
 
 public class FormationActivity extends AppCompatActivity {
-
-    private Button btnPlayer1; // Bottoni per i giocatori
-    // Definisci altri bottoni per i giocatori...
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +19,21 @@ public class FormationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_formation);
 
         // Inizializza i bottoni dei giocatori
-        btnPlayer1 = findViewById(R.id.btnPlayer1);
+        // Bottoni per i giocatori
+        Button btnGoalkeeper = findViewById(R.id.btnGoalkeeper);
+        Button btnDefender1 = findViewById(R.id.btnDefender1);
+        Button btnDefender2 = findViewById(R.id.btnDefender2);
+        Button btnDefender3 = findViewById(R.id.btnDefender3);
+        Button btnDefender4 = findViewById(R.id.btnDefender4);
+        Button btnMidfielder1 = findViewById(R.id.btnMidfielder1);
+        Button btnMidfielder2 = findViewById(R.id.btnMidfielder2);
+        Button btnMidfielder3 = findViewById(R.id.btnMidfielder3);
+        Button btnMidfielder4 = findViewById(R.id.btnMidfielder4);
+        // Aggiungere centrocampista 5 (3-5-2)
+        Button btnStriker1 = findViewById(R.id.btnStriker1);
+        Button btnStriker2 = findViewById(R.id.btnStriker2);
+        // Aggiungere attaccante 3
+
         // Inizializza gli altri bottoni dei giocatori...
 
         TextView openBench = findViewById(R.id.tvOpenBench);
@@ -33,8 +43,19 @@ public class FormationActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        btnPlayer1.setOnClickListener(this::onPlayerButtonClicked);
-        // Imposta OnClickListener per gli altri bottoni dei giocatori...
+        btnGoalkeeper.setOnClickListener(this::onPlayerButtonClicked);
+        btnDefender1.setOnClickListener(this::onPlayerButtonClicked);
+        btnDefender2.setOnClickListener(this::onPlayerButtonClicked);
+        btnDefender3.setOnClickListener(this::onPlayerButtonClicked);
+        btnDefender4.setOnClickListener(this::onPlayerButtonClicked);
+        btnMidfielder1.setOnClickListener(this::onPlayerButtonClicked);
+        btnMidfielder2.setOnClickListener(this::onPlayerButtonClicked);
+        btnMidfielder3.setOnClickListener(this::onPlayerButtonClicked);
+        btnMidfielder4.setOnClickListener(this::onPlayerButtonClicked);
+        // Aggiungere centrocampista 5 (3-5-2)
+        btnStriker1.setOnClickListener(this::onPlayerButtonClicked);
+        btnStriker2.setOnClickListener(this::onPlayerButtonClicked);
+        // Aggiungere attaccante 3
 
         // Inizializza e imposta listener per il bottone della formazione consigliata
         Button btnRecommendedFormation = findViewById(R.id.btnRecommendedFormation);

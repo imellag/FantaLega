@@ -47,4 +47,9 @@
     <string name="centrocampista">Centrocampista</string>
     <string name="attaccante">Attaccante</string>
 
+    <!-- NavBar -->
+    <string name="home">Home</string>
+    <string name="classifica">Classifica</string>
+    <string name="calendario">Calendario</string>
+    <string name="campionato">Campionato</string>
 </resources>

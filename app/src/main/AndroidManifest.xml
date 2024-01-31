@@ -53,6 +53,10 @@
             android:name=".player.PlayerStatsActivity"
             android:exported="false">
         </activity>
+        <activity android:name=".ClassificaActivity" />
+        <activity android:name=".CalendarioActivity"/>
+
+
     </application>
 
 </manifest>

@@ -1,6 +1,6 @@
 package com.example.fantalega;
 
-import android.content.Intent;
+/*import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
@@ -38,7 +38,10 @@ public class NavbarActivity extends AppCompatActivity {
             // Apri la schermata dei campionati
             Intent intent = new Intent(NavbarActivity.this, CampionatoActivity.class);
             startActivity(intent);
-        });*/
-    }
+        });
+
+           }
 
 }
+
+        */

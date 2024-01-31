@@ -38,6 +38,7 @@
         app:cnb_menuResource="@menu/navbar"
         android:background="@drawable/rettangolo"
         android:layout_below="@+id/btnCampionati"
+        android:id="@+id/navigation_bar"
         />
 
 </RelativeLayout>

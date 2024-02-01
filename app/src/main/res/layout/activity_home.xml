@@ -11,23 +11,188 @@
         android:contentDescription="@string/home_photo" />
     <!-- android:src="@drawable/placeholder_cover_image"/> Da mettere dentro imageView -->
 
-    <!-- Anteprime delle news -->
     <TextView
-        android:id="@+id/textNewsPreview"
-        android:layout_width="match_parent"
+        android:id="@+id/textLayer12"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageCover"
-        android:padding="16dp"
-        android:text="@string/news_text"/>
+        android:layout_marginLeft="129dp"
+        android:layout_marginTop="55dp"
+        android:text="Lega Culurgiones"
+        android:textColor="#47515E"
+        android:textSize="22sp"
+        android:fontFamily="sans-serif" />
 
-    <!-- Sezione "Campionati" -->
-    <Button
-        android:id="@+id/btnCampionati"
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
         android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:id="@+id/layer"
+        android:layout_width="344dp"
+        android:layout_height="217dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="121dp"
+        android:background="@android:color/white"
+        android:radius="5dp" />
+
+    <TextView
+        android:id="@+id/textLayer6"
+        android:layout_width="137dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textNewsPreview"
-        android:layout_marginTop="16dp"
-        android:text="@string/button_campionati"
-        android:backgroundTint="@color/green"/>
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="137dp"
+        android:text="PROSSIMO MATCH"
+        android:textColor="@color/black"
+        android:textSize="15.5sp"
+        android:lineSpacingExtra="1.2903225806451613dp"
+        android:fontFamily="sans-serif"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+    <View
+        android:id="@+id/layer1"
+        android:layout_width="345dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="274dp"
+        android:background="#979EA9"
+        android:radius="6dp" />
+
+    <TextView
+        android:id="@+id/textLayer7"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="290dp"
+        android:text="INSERISCI FORMAZIONE"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"
+        android:fontFamily="sans-serif" />
+
+
+    <View
+        android:id="@+id/layer2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="177dp"
+        android:background="@drawable/rounded_border" />
+
+    <View
+        android:id="@+id/layer3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="295dp"
+        android:layout_marginTop="177dp"
+        android:background="@drawable/rounded_border" />
+
+    <View
+        android:id="@+id/layer4"
+        android:layout_width="32dp"
+        android:layout_height="9dp"
+        android:layout_marginLeft="189dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/border" />
+
+
+    <View
+        android:id="@+id/layer5"
+        android:layout_width="333dp"
+        android:layout_height="81dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="375dp"
+        android:background="@drawable/border" />
+
+    <TextView
+        android:id="@+id/textLayer"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="390dp"
+        android:text="La tua Rosa"
+        android:textColor="#47515E"
+        android:textSize="19sp"
+        android:lineSpacingExtra="1.2727272727272727dp"
+        android:fontFamily="sans-serif"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+    <View
+        android:id="@+id/layer11"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/rosa" />
+
+
+    <View
+        android:id="@+id/layer8"
+        android:layout_width="344dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="512dp"
+        android:background="@drawable/border" />
+
+    <TextView
+        android:id="@+id/textLayer10"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="482dp"
+        android:text="Ultime news"
+        android:textColor="#47515E"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif" />
+
+    <View
+        android:id="@+id/layer14"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="520dp"
+        android:background="@drawable/breaking_news_fill0_wght400_grad0_opsz24" />
+
+    <TextView
+        android:id="@+id/textLayer9"
+        android:layout_width="249dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="525dp"
+        android:text="Milan, tegola Florenzi: ecco l'entitÃ  dell'infortunio e i tempi di re..."
+        android:textColor="#47515E"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif" />
+
+    <View
+        android:id="@+id/layer16"
+        android:layout_width="344dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="600dp"
+        android:background="@drawable/border" />
+
+    <View
+        android:id="@+id/layer17"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="610dp"
+        android:background="@drawable/breaking_news_fill0_wght400_grad0_opsz24" />
+
+    <TextView
+        android:id="@+id/textLayer18"
+        android:layout_width="249dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="615dp"
+        android:text="Inter, morto Dumfries"
+        android:textColor="#47515E"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif" />
+
+
 
 </RelativeLayout>

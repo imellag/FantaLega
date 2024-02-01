@@ -14,12 +14,13 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        //
         // Pulsante per la sezione "Campionati"
-        Button btnChampionships = findViewById(R.id.btnCampionati);
-        btnChampionships.setOnClickListener(v -> {
+        //  Button btnChampionships = findViewById(R.id.btnCampionati);
+        //btnChampionships.setOnClickListener(v -> {
             // Apri la schermata dei campionati
-            Intent intent = new Intent(HomeActivity.this, ChampionshipActivity.class);
-            startActivity(intent);
-        });
+          //  Intent intent = new Intent(HomeActivity.this, ChampionshipActivity.class);
+            //startActivity(intent);
+        // });
     }
 }

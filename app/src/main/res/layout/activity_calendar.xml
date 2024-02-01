@@ -4,7 +4,10 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/gray"
-    android:orientation="vertical">
+    android:orientation="vertical"
+
+
+    >
 
     <TextView
         android:layout_width="match_parent"
@@ -26,10 +29,10 @@
         android:padding="15dp">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:background="@drawable/baseline_arrow_back_24"
-            android:contentDescription="@string/button_indietro"/>
+            android:contentDescription="@string/button_indietro" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -39,10 +42,10 @@
             android:textSize="21sp" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:background="@drawable/baseline_arrow_forward_24"
-            android:contentDescription="@string/button_avanti"/>
+            android:contentDescription="@string/button_avanti" />
     </LinearLayout>
 
 
@@ -155,10 +158,6 @@
         </TableRow>
     </TableLayout>
 
-<com.ismaeldivita.chipnavigation.ChipNavigationBar
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:cnb_menuResource="@menu/navbar"
-    android:background="@drawable/rettangolo"
-    />
+
+
 </LinearLayout>

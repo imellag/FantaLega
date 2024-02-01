@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.ismaeldivita.chipnavigation.*;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import com.example.fantalega.campionato.ChampionshipActivity;
 
@@ -35,35 +36,42 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         // Pulsante per la sezione "Campionati"
     ChipNavigationBar navigationBar = findViewById(R.id.navigation_bar);
-        navigationBar.setItemSelected(R.id.navigation_home, true);
+    navigationBar.setItemSelected(R.id.navigation_home, true);
     navigationBar.setOnItemSelectedListener(new ChipNavigationBar.OnItemSelectedListener() {
         @Override
         public void onItemSelected(int id) {
 
-
+            Fragment fragment=null;
             if (id == R.id.navigation_calendar) {
-                Intent intent = new Intent(HomeActivity.this, CalendarioActivity.class);
-                startActivity(intent);
+                fragment = new CalendarFragment();
+
 
             }
-            if (id == R.id.navigation_campionato) {
+          else  if (id == R.id.navigation_campionato) {
                 Intent intent2 = new Intent(HomeActivity.this, ChampionshipActivity.class);
                 startActivity(intent2);
             }
-            if (id == R.id.navigation_classifica) {
+           else if (id == R.id.navigation_classifica) {
                 Intent intent3 = new Intent(HomeActivity.this, ClassificaActivity.class);
                 startActivity(intent3);
 
             }
+
+
+           else if (fragment != null) {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_main, fragment)
+                        .commit();
+            }
         }
 
     });
-        Button btnChampionships = findViewById(R.id.btnCampionati);
+        /*Button btnChampionships = findViewById(R.id.btnCampionati);
         btnChampionships.setOnClickListener(v -> {
             // Apri la schermata dei campionati
             Intent intent = new Intent(HomeActivity.this, ChampionshipActivity.class);
             startActivity(intent);
-        });
+        });*/
 
 
 

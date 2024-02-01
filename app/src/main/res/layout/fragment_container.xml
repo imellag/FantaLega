@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+<FrameLayout
+    android:id="@+id/fragment_main"
+    android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  />
+<com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cnb_menuResource="@menu/navbar"
+        android:background="@drawable/rettangolo"
+        android:layout_below="@+id/btnCampionati"
+        android:id="@+id/navigation_bar"
+        />
+
+</LinearLayout>

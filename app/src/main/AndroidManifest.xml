@@ -55,6 +55,9 @@
         </activity>
         <activity android:name=".ClassificaActivity" />
         <activity android:name=".CalendarioActivity"/>
+<activity android:name=".FragmentActivity"/>
+        <activity android:name=".CalendarFragment"/>
+        <activity android:name=".HomeFragment"/>
 
 
     </application>

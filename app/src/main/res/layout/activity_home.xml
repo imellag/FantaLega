@@ -1,6 +1,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeFragment"
+    >
 
     <!-- Immagine di copertina -->
     <ImageView
@@ -23,10 +27,7 @@
         android:textSize="22sp" />
 
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+
 
     <View
         android:id="@+id/layer"
@@ -51,25 +52,22 @@
         android:textColor="@color/black"
         android:textSize="15.5sp" />
 
-    <View
-        android:id="@+id/layer1"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/inserisci_formazione"
         android:layout_width="345dp"
         android:layout_height="64dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="274dp"
         android:background="#979EA9"
-        android:radius="6dp" />
-
-    <TextView
-        android:id="@+id/textLayer7"
-        android:layout_width="230dp"
-        android:layout_height="30dp"
-        android:layout_marginLeft="105dp"
-        android:layout_marginTop="290dp"
-        android:fontFamily="sans-serif"
+        android:radius="6dp"
         android:text="INSERISCI FORMAZIONE"
         android:textColor="#FFFFFF"
-        android:textSize="19sp" />
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:textSize="19sp"
+        />
+
+
 
 
     <View
@@ -103,12 +101,12 @@
         android:layout_height="81dp"
         android:layout_marginLeft="19dp"
         android:layout_marginTop="375dp"
-        android:background="@drawable/border" />
+        android:background="@drawable/border"/>
 
     <TextView
         android:id="@+id/textLayer"
-        android:layout_width="82dp"
-        android:layout_height="wrap_content"
+        android:layout_width="140dp"
+        android:layout_height="47dp"
         android:layout_marginLeft="145dp"
         android:layout_marginTop="390dp"
         android:ellipsize="end"
@@ -181,7 +179,6 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="610dp"
         android:background="@drawable/breaking_news_fill0_wght400_grad0_opsz24" />
-
     <TextView
         android:id="@+id/textLayer18"
         android:layout_width="249dp"
@@ -192,6 +189,8 @@
         android:text="Inter, morto Dumfries"
         android:textColor="#47515E"
         android:textSize="16sp" />
+
+
 
 
 </RelativeLayout>

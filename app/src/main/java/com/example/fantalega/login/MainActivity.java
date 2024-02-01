@@ -8,8 +8,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.fantalega.HomeActivity;
 import com.example.fantalega.R;
+import com.example.fantalega.FragmentActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,13 +19,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void onLoginClick(View view) {navigateToHome();}
+    public void onLoginClick(View view) {
+        navigateToHome();
+    }
+
     public void onRegisterClick(View view) {
         navigateToRegister();
     }
 
     private void navigateToHome() {
-        Intent intent = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(this, FragmentActivity.class);
         startActivity(intent);
         finish();
     }

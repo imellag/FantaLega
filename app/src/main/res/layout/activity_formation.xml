@@ -1,34 +1,251 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:paddingVertical="25dp">
 
-    <!-- Lista dei giocatori disponibili -->
-    <ListView
-        android:id="@+id/listViewAvailablePlayers"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:paddingBottom="8dp"/>
-
-    <!-- Separatore orizzontale -->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#B3B3B3"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"/>
-
-    <!-- Pulsante per salvare la formazione -->
-    <Button
-        android:id="@+id/btnSaveFormation"
+    <TextView
+        android:id="@+id/tvInsertFormation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_salva_formazione"
-        android:layout_gravity="center"
-        android:backgroundTint="@color/green"/>
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:text="@string/insert_formation"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutModuleButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvInsertFormation">
+
+        <Button
+            android:id="@+id/btnModule1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:text="4-4-2"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnModule2"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:text="4-3-3"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnModule3"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:text="3-4-3"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnModule4"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:text="3-5-2"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- Bottoni per i giocatori -->
+    <!-- Esempio: 11 bottoni per una formazione 4-4-2 -->
+    <!-- Nota: la posizione specifica dipenderà dal modulo selezionato e dall'immagine del campo -->
+    <!-- Esempio di posizionamento di un bottone -->
+
+    <LinearLayout
+        android:id="@+id/layoutFootballField"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/football_field"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/tvOpenBench"
+        app:layout_constraintDimensionRatio="H,16:12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutModuleButtons">
+
+        <!-- LinearLayout per il portiere -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnGoalkeeper"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+        </LinearLayout>
+
+        <!-- LinearLayout per i difensori -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnDefender1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+
+            <Button
+                android:id="@+id/btnDefender2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+
+            <Button
+                android:id="@+id/btnDefender3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+
+            <Button
+                android:id="@+id/btnDefender4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+        </LinearLayout>
+
+        <!-- LinearLayout per i centrocampisti -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnMidfielder1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+
+            <Button
+                android:id="@+id/btnMidfielder2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+
+            <Button
+                android:id="@+id/btnMidfielder3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+
+            <Button
+                android:id="@+id/btnMidfielder4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+        </LinearLayout>
+
+        <!-- LinearLayout per gli attaccanti -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnStriker1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+
+            <Button
+                android:id="@+id/btnStriker2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/circle_shape" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvOpenBench"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="12dp"
+        android:text="@string/open_bench"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:drawableEndCompat="@drawable/baseline_arrow_forward_24"
+        app:layout_constraintBottom_toTopOf="@id/btnRecommendedFormation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutFootballField" />
+
+    <!-- Bottoni "Formazione Consigliata" e "Salva Formazione" in basso sulla stessa riga -->
+
+    <Button
+        android:id="@+id/btnRecommendedFormation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="144dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/button_formazione_consigliata"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutFootballField" />
+
+    <Button
+        android:id="@+id/btnSaveFormation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/button_salva_formazione"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnRecommendedFormation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

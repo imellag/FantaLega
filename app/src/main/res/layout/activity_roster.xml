@@ -3,39 +3,84 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:padding="16dp">
 
-    <!-- Lista dei portieri -->
-    <ListView
-        android:id="@+id/listViewGoalkeepers"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:paddingBottom="8dp"/>
 
-    <!-- Lista dei difensori -->
-    <ListView
-        android:id="@+id/listViewDefenders"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:paddingBottom="8dp"/>
+    <TextView
+        android:id="@+id/textLayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="La tua Rosa"
+        android:layout_marginTop="-300dp"
+        android:textSize="17sp"
+        android:textColor="#47515E"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif" />
 
-    <!-- Lista dei centrocampisti -->
-    <ListView
-        android:id="@+id/listViewMidfielders"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:paddingBottom="8dp"/>
 
-    <!-- Lista degli attaccanti -->
-    <ListView
-        android:id="@+id/listViewForwards"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:paddingBottom="8dp"/>
+    <!-- Riquadro colorato con la scritta "Portieri" al centro -->
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="150dp"
+        android:background="#5A697A">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Portieri"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+
+
+        <!-- Aggiunta di tre righe disposte in colonna a fianco al riquadro colorato -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Portiere 1"
+                android:padding="8dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Portiere 2"
+                android:padding="8dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Portiere 3"
+                android:padding="8dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
 
 </LinearLayout>

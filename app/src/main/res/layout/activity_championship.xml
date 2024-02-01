@@ -6,28 +6,106 @@
     android:orientation="vertical"
     android:gravity="center">
 
-    <!-- Aggiungi il pulsante per la sezione "Match" -->
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_partita"
-        android:id="@+id/btnMatch"
-        android:backgroundTint="@color/green"/>
 
-    <!-- Aggiungi il pulsante per la sezione "Inserisci Formazione" -->
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_formazione"
-        android:id="@+id/btnFormazione"
-        android:backgroundTint="@color/green"/>
 
-    <!-- Aggiungi il pulsante per la sezione "La Tua Rosa" -->
-    <Button
+    <TextView
+        android:id="@+id/textLayer15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_rosa"
-        android:id="@+id/btnRosa"
-        android:backgroundTint="@color/green"/>
+        android:layout_marginStart="-70dp"
+        android:layout_marginTop="39dp"
+        android:text="Campionato attuale"
+        android:textColor="#47515E"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/layer16"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:background="@drawable/trophy_fill0_wght400_grad0_opsz24" />
+
+    <TextView
+        android:id="@+id/textLayer12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Lega Culurgiones"
+        android:textColor="#47515E"
+        android:textSize="26sp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="255dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="-45dp"
+        android:layout_marginTop="40dp"
+        android:text="Vuoi creare un nuovo campionato?"
+        android:textColor="#47515E"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="344dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border" />
+
+    <View
+        android:id="@+id/layer2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="-95dp"
+        android:background="@drawable/rounded_border" />
+
+    <View
+        android:id="@+id/layer17"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="-90dp"
+        android:text="+"
+        android:textColor="@color/black"
+        android:textSize="0sp" />
+
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="15dp"
+        android:text="Aggiungi Campionato"
+        android:gravity="center"
+        android:textColor="#47515E"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="255dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="-45dp"
+        android:layout_marginTop="40dp"
+        android:text="Vuoi accedere ad un campionato esistente?"
+        android:textColor="#47515E"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="344dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border" />
+    <View
+        android:id="@+id/layer20"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="-95dp"
+        android:background="@drawable/rounded_border" />
+
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="-5dp"
+        android:text="Accedi"
+        android:gravity="center"
+        android:textColor="#47515E"
+        android:textSize="18sp" />
 
 </LinearLayout>

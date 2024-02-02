@@ -6,8 +6,6 @@
     android:orientation="vertical"
     android:gravity="center">
 
-
-
     <TextView
         android:id="@+id/textLayer15"
         android:layout_width="wrap_content"

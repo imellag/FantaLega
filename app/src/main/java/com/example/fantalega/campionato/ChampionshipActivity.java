@@ -13,15 +13,6 @@ public class ChampionshipActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_championship);
-
-        // Pulsante per la sezione "Match"
-        findViewById(R.id.btnMatch).setOnClickListener(view -> openSection(MatchActivity.class));
-
-        // Pulsante per la sezione "Inserisci Formazione"
-        findViewById(R.id.btnFormazione).setOnClickListener(view -> openSection(FormationActivity.class));
-
-        // Pulsante per la sezione "La Tua Rosa"
-        findViewById(R.id.btnRosa).setOnClickListener(view -> openSection(RosterActivity.class));
     }
 
     private void openSection(Class<?> activityClass) {

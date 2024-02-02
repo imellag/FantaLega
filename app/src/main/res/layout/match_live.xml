@@ -60,119 +60,134 @@
             android:text="AC Cipicchia"
             android:textSize="20sp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
         android:orientation="horizontal"
-        >
+        android:padding="5dp">
 
-<LinearLayout
-    android:layout_weight="1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Portieri"
-        android:textSize="17sp"
-        android:textColor="@color/black"
-        android:layout_marginBottom="10dp"
-        />
-    <include layout="@layout/match_live_fragment"/>
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Difensori"
-        android:textSize="17sp"
-        android:textColor="@color/black"
-        android:layout_marginBottom="10dp"
-        />
-    <include layout="@layout/match_live_fragment"/>
-    <include layout="@layout/match_live_fragment"/>
-    <include layout="@layout/match_live_fragment"/>
-    <include layout="@layout/match_live_fragment"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Centrocampisti"
-        android:textSize="17sp"
-        android:textColor="@color/black"
-        android:layout_marginBottom="10dp"
-        />
-    <include layout="@layout/match_live_fragment"/>
-    <include layout="@layout/match_live_fragment"/>
-    <include layout="@layout/match_live_fragment"/>
-    <include layout="@layout/match_live_fragment"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Attaccanti"
-        android:textSize="17sp"
-        android:textColor="@color/black"
-        android:layout_marginBottom="10dp"
-        />
-    <include layout="@layout/match_live_fragment"/>
-    <include layout="@layout/match_live_fragment"/>
-</LinearLayout>
-    <LinearLayout
-        android:layout_weight="1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
-        <TextView
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="17sp"
-            android:layout_marginBottom="10dp"
-            />
-        <include layout="@layout/match_live_fragment"/>
-        <TextView
-            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Portieri"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <include layout="@layout/match_live_fragment" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Difensori"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <include layout="@layout/match_live_fragment" />
+
+            <include layout="@layout/match_live_fragment" />
+
+            <include layout="@layout/match_live_fragment" />
+
+            <include layout="@layout/match_live_fragment" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Centrocampisti"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <include layout="@layout/match_live_fragment" />
+
+            <include layout="@layout/match_live_fragment" />
+
+            <include layout="@layout/match_live_fragment" />
+
+            <include layout="@layout/match_live_fragment" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Attaccanti"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <include layout="@layout/match_live_fragment" />
+
+            <include layout="@layout/match_live_fragment" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="17sp"
-            android:layout_marginBottom="10dp"
-            />
-        <include layout="@layout/match_live_fragment"/>
-        <include layout="@layout/match_live_fragment"/>
-        <include layout="@layout/match_live_fragment"/>
-        <include layout="@layout/match_live_fragment"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="17sp"
-            android:layout_marginBottom="10dp"
-            />
-        <include layout="@layout/match_live_fragment"/>
-        <include layout="@layout/match_live_fragment"/>
-        <include layout="@layout/match_live_fragment"/>
-        <include layout="@layout/match_live_fragment"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="17sp"
-            android:layout_marginBottom="10dp"
-            />
-        <include layout="@layout/match_live_fragment"/>
-        <include layout="@layout/match_live_fragment"/>
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="17sp" />
+
+            <include layout="@layout/match_live_fragment" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="17sp" />
+
+            <include layout="@layout/match_live_fragment" />
+
+            <include layout="@layout/match_live_fragment" />
+
+            <include layout="@layout/match_live_fragment" />
+
+            <include layout="@layout/match_live_fragment" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="17sp" />
+
+            <include layout="@layout/match_live_fragment" />
+
+            <include layout="@layout/match_live_fragment" />
+
+            <include layout="@layout/match_live_fragment" />
+
+            <include layout="@layout/match_live_fragment" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="17sp" />
+
+            <include layout="@layout/match_live_fragment" />
+
+            <include layout="@layout/match_live_fragment" />
 
 
-
-
-
+        </LinearLayout>
     </LinearLayout>
-    </LinearLayout>
+
     <com.ismaeldivita.chipnavigation.ChipNavigationBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cnb_menuResource="@menu/navbar"
-        android:background="@drawable/rettangolo"
         android:layout_below="@+id/btnCampionati"
-        />
+        android:background="@drawable/rettangolo"
+        app:cnb_menuResource="@menu/navbar" />
 </LinearLayout>

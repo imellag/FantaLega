@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
@@ -9,15 +9,16 @@
 <FrameLayout
     android:id="@+id/fragment_main"
     android:layout_width="match_parent"
-  android:layout_height="wrap_content"
+  android:layout_height="match_parent"
+
   />
 <com.ismaeldivita.chipnavigation.ChipNavigationBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cnb_menuResource="@menu/navbar"
         android:background="@drawable/rettangolo"
-        android:layout_below="@+id/btnCampionati"
+   android:layout_alignParentBottom="true"
         android:id="@+id/navigation_bar"
         />
 
-</LinearLayout>
+</RelativeLayout>

@@ -18,7 +18,7 @@ public class FragmentActivity extends AppCompatActivity {
         // Pulsante per la sezione "Campionati"
 
         ChipNavigationBar navigationBar = findViewById(R.id.navigation_bar);
-        Fragment fragment= new HomeFragment();
+        Fragment fragment = new HomeFragment();
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragment_main, fragment)
                 .setReorderingAllowed(true)

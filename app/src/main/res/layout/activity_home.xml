@@ -94,7 +94,9 @@
             android:id="@+id/btnRosa"
             android:layout_width="match_parent"
             android:layout_height="65dp"
-            android:layout_marginTop="320dp"
+           android:layout_below="@id/layer"
+
+            android:layout_marginTop="20dp"
             android:background="@drawable/rounded_border"
             android:clickable="true"
             android:drawablePadding="10dp"
@@ -106,26 +108,45 @@
             android:textSize="19sp"
             app:drawableLeftCompat="@drawable/rosa"
             app:drawableRightCompat="@drawable/baseline_arrow_forward_24" />
+        <TextView
+            android:id="@+id/btnMatchLive"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+           android:layout_below="@id/btnRosa"
+            android:background="@drawable/rounded_border"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:gravity="center_vertical|start"
+            android:paddingHorizontal="20dp"
+            android:text="Match Live"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:drawableLeftCompat="@drawable/rosa"
+            app:drawableRightCompat="@drawable/baseline_arrow_forward_24" />
 
         <TextView
-            android:id="@+id/textLayer10"
+            android:id="@+id/Notizie"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="19dp"
-            android:layout_marginTop="430dp"
+            android:layout_below="@id/btnMatchLive"
             android:text="Ultime news"
             android:textColor="@color/black"
+            android:layout_marginTop="20dp"
             android:textSize="20sp" />
 
         <TextView
+            android:layout_marginTop="10dp"
             android:id="@+id/News1"
             android:layout_width="match_parent"
             android:layout_height="90dp"
-            android:layout_marginTop="470dp"
             android:background="@drawable/rounded_border"
             android:clickable="true"
             android:drawablePadding="10dp"
             android:focusable="true"
+            android:layout_below="@id/Notizie"
             android:gravity="center_vertical"
             android:paddingHorizontal="20dp"
             android:text="Milan, tegola Florenzi: ecco l'entita' dell'infortunio e i tempi di recupero"
@@ -135,9 +156,10 @@
 
         <TextView
             android:id="@+id/News2"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="90dp"
-            android:layout_marginTop="575dp"
+           android:layout_below="@id/News1"
             android:background="@drawable/rounded_border"
             android:clickable="true"
             android:drawablePadding="10dp"

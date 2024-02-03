@@ -17,7 +17,6 @@ public class CampionatoFragment extends Fragment {
                              Bundle savedInstanceState) {
 
 
-
         return inflater.inflate(R.layout.activity_championship, container, false);
     }
 }

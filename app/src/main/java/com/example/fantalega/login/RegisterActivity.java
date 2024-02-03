@@ -19,8 +19,8 @@ public class RegisterActivity extends AppCompatActivity {
 
         Button btnRegister = findViewById(R.id.btnRegister);
         btnRegister.setOnClickListener(v -> {
-                Toast.makeText(this, "Hai creato un nuovo account, ora puoi accedere!", Toast.LENGTH_SHORT).show();
-                navigateToLogin();
+            Toast.makeText(this, "Hai creato un nuovo account, ora puoi accedere!", Toast.LENGTH_SHORT).show();
+            navigateToLogin();
         });
     }
 

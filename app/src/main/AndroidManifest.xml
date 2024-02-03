@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Spostare il logo in un'altra cartella -->
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -45,22 +44,22 @@
             android:name=".campionato.MatchActivity"
             android:exported="false">
         </activity>
-        <activity 
+        <activity
             android:name=".campionato.BenchActivity"
             android:exported="false">
         </activity>
-        <activity 
+        <activity
             android:name=".player.PlayerStatsActivity"
             android:exported="false">
         </activity>
         <activity android:name=".ClassificaActivity" />
-        <activity android:name=".CalendarioActivity"/>
-        <activity android:name=".FragmentActivity"/>
-        <activity android:name=".CalendarFragment"/>
-        <activity android:name=".HomeFragment"/>
-        <activity android:name=".FormazioneActivity"/>
-        <activity android:name=".ClassificaFragment"/>
-        <activity android:name=".CampionatoFragment"/>
+        <activity android:name=".CalendarioActivity" />
+        <activity android:name=".FragmentActivity" />
+        <activity android:name=".CalendarFragment" />
+        <activity android:name=".HomeFragment" />
+        <activity android:name=".FormazioneActivity" />
+        <activity android:name=".ClassificaFragment" />
+        <activity android:name=".CampionatoFragment" />
 
 
     </application>

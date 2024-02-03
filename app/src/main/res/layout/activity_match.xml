@@ -11,6 +11,7 @@
         android:gravity="center"
         android:paddingBottom="16dp"
         android:text="@string/next_match"
+        android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

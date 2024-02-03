@@ -59,25 +59,25 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingVertical="10dp"
-            android:orientation="vertical"
             android:layout_marginTop="15dp"
-            android:background="@drawable/rounded_border">
+            android:background="@drawable/rounded_border"
+            android:orientation="vertical"
+            android:paddingVertical="10dp">
 
-        <View
-            android:id="@+id/layer2"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_gravity="center"
-            android:background="@drawable/add_circle_fill0_wght400_grad0_opsz24" />
+            <View
+                android:id="@+id/layer2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/add_circle_fill0_wght400_grad0_opsz24" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Aggiungi Campionato"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Aggiungi Campionato"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <TextView
@@ -92,42 +92,40 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="104dp"
-            android:orientation="vertical"
+            android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:background="@drawable/rounded_border"
+            android:orientation="vertical"
             android:padding="10dp">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
 
-        <View
-            android:id="@+id/layer20"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:gravity="center"
-            android:background="@drawable/trophy_fill0_wght400_grad0_opsz24"
-             />
+                <View
+                    android:id="@+id/layer20"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/trophy_fill0_wght400_grad0_opsz24"
+                    android:gravity="center" />
 
-        <View
-            android:id="@+id/layer21"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:gravity="center"
-            android:background="@drawable/arrow_forward_fill0_wght400_grad0_opsz24"
-            />
-        </LinearLayout>
+                <View
+                    android:id="@+id/layer21"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/arrow_forward_fill0_wght400_grad0_opsz24"
+                    android:gravity="center" />
+            </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Accedi"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Accedi"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

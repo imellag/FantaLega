@@ -3,37 +3,29 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:layout_marginBottom="40dp"
-    android:background="@drawable/rettangolo"
+    android:background="@drawable/bordo_curvo"
     android:padding="5dp">
 
     <TableRow android:layout_marginBottom="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:text="Culurgiones FC" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:layout_weight="1"
-            android:text="Culurgiones FC"/>
-
-        <TextView
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="1° Classificato"
-
-            />
-
+            android:text="1° Classificato" />
     </TableRow>
 
-    <LinearLayout
-
-        >
-
+    <LinearLayout>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
             android:layout_weight="1"
             android:text="V" />
 
@@ -47,9 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="S"
-
-            />
+            android:text="S" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -71,7 +61,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
             android:layout_weight="1"
             android:text="3" />
 

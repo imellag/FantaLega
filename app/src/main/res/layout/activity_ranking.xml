@@ -30,7 +30,7 @@
         android:id="@+id/navigation_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/rettangolo"
+        android:background="@drawable/bordo_curvo"
         android:padding="5dp"
         app:cnb_menuResource="@menu/navbar" />
 

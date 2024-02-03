@@ -188,6 +188,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnCampionati"
-        android:background="@drawable/rettangolo"
+        android:background="@drawable/bordo_curvo"
         app:cnb_menuResource="@menu/navbar" />
 </LinearLayout>

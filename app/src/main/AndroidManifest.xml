@@ -52,13 +52,11 @@
             android:name=".player.PlayerStatsActivity"
             android:exported="false">
         </activity>
-        <activity android:name=".ClassificaActivity" />
         <activity android:name=".CalendarioActivity" />
         <activity android:name=".FragmentActivity" />
         <activity android:name=".CalendarFragment" />
         <activity android:name=".HomeFragment" />
-        <activity android:name=".FormazioneActivity" />
-        <activity android:name=".ClassificaFragment" />
+        <activity android:name=".campionato.ClassificaFragment" />
         <activity android:name=".CampionatoFragment" />
 
 

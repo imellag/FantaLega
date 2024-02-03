@@ -1,4 +1,4 @@
-package com.example.fantalega;
+package com.example.fantalega.campionato;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+
+import com.example.fantalega.R;
 
 public class ClassificaFragment extends Fragment {
 

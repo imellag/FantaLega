@@ -19,10 +19,6 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        TextView rosa = findViewById(R.id.btnRosa);
-        rosa.setOnClickListener(v -> {
-            Intent intent = new Intent(this, RosterActivity.class);
-            startActivity(intent);
-        });
+
     }
 }

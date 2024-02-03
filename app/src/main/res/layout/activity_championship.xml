@@ -56,67 +56,78 @@
             android:textColor="@color/black"
             android:textSize="18sp" />
 
-        <View
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="104dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/rounded_border" />
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_border">
 
         <View
             android:id="@+id/layer2"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginTop="-95dp"
-            android:background="@drawable/rounded_border" />
-
-        <View
-            android:id="@+id/layer17"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="-90dp"
-            android:text="+"
-            android:textColor="@color/black"
-            android:textSize="0sp" />
-
-        <TextView
-            android:layout_width="190dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:gravity="center"
-            android:text="Aggiungi Campionato"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
+            android:layout_gravity="center"
+            android:background="@drawable/add_circle_fill0_wght400_grad0_opsz24" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="40dp"
+            android:text="Aggiungi Campionato"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
             android:gravity="center"
             android:text="Vuoi accedere ad un campionato esistente?"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
-        <View
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="104dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/rounded_border" />
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_border"
+            android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
 
         <View
             android:id="@+id/layer20"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginTop="-95dp"
-            android:background="@drawable/rounded_border" />
+            android:gravity="center"
+            android:background="@drawable/trophy_fill0_wght400_grad0_opsz24"
+             />
+
+        <View
+            android:id="@+id/layer21"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:background="@drawable/arrow_forward_fill0_wght400_grad0_opsz24"
+            />
+        </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
+            android:layout_gravity="center"
             android:text="Accedi"
             android:textColor="@color/black"
             android:textSize="18sp" />
-
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

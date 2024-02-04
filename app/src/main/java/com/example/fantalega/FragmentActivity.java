@@ -16,8 +16,10 @@ public class FragmentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_container);
 
+
         ChipNavigationBar navigationBar = findViewById(R.id.navigation_bar);
         Fragment fragment = new HomeFragment();
+
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragment_main, fragment)
                 .setReorderingAllowed(true)

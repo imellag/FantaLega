@@ -49,11 +49,6 @@
                 android:layout_marginTop="10dp"
                 android:text="70% Titolarità" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Titolare" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -84,11 +79,13 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="1"
+                    android:gravity="center"
 
                     android:layout_height="wrap_content"
                     android:text="VS" />
 
                 <TextView
+                    android:gravity="end"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"

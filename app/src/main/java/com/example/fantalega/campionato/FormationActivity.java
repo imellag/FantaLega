@@ -13,6 +13,7 @@ import com.example.fantalega.FragmentActivity;
 import com.example.fantalega.HomeActivity;
 import com.example.fantalega.HomeFragment;
 import com.example.fantalega.R;
+import com.example.fantalega.ScegliGiocatoreActivity;
 
 public class FormationActivity extends AppCompatActivity {
 
@@ -73,6 +74,12 @@ public class FormationActivity extends AppCompatActivity {
         // Logica per selezionare il giocatore per la posizione
         // Potresti voler avviare un'altra Activity per selezionare il giocatore
         Toast.makeText(this, "Seleziona giocatore per la posizione", Toast.LENGTH_SHORT).show();
+
+
+            Intent intent = new Intent(this, ScegliGiocatoreActivity.class);
+            startActivity(intent);
+
+
     }
 
     private void onRecommendedFormationClicked() {

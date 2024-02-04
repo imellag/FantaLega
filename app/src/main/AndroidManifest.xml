@@ -58,7 +58,8 @@
         <activity android:name=".HomeFragment" />
         <activity android:name=".campionato.ClassificaFragment" />
         <activity android:name=".CampionatoFragment" />
-
+        <activity android:name=".campionato.MatchLiveActivity"/>
+<activity android:name=".ScegliGiocatoreActivity"/>
 
     </application>
 

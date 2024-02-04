@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="217dp"
             android:layout_marginTop="81dp"
-            android:background="@drawable/rounded_border"></View>
+            android:background="@drawable/rounded_border"/>
 
         <TextView
             android:id="@+id/textLayer6"

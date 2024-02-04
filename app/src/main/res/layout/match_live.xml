@@ -180,7 +180,6 @@
 
             <include layout="@layout/match_live_fragment" />
 
-
         </LinearLayout>
     </LinearLayout>
 

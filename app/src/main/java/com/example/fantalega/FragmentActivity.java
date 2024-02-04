@@ -15,7 +15,6 @@ public class FragmentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_container);
-        // Pulsante per la sezione "Campionati"
 
         ChipNavigationBar navigationBar = findViewById(R.id.navigation_bar);
         Fragment fragment = new HomeFragment();
@@ -37,11 +36,10 @@ public class FragmentActivity extends AppCompatActivity {
                     fragment1 = new CampionatoFragment();
                 } else if (id == R.id.navigation_classifica) {
                     fragment1 = new ClassificaFragment();
-
                 } else if (id == R.id.navigation_home) {
                     fragment1 = new HomeFragment();
-
                 }
+
                 if (fragment1 != null) {
                     fragmentManager = getSupportFragmentManager();
                     fragmentManager.beginTransaction()

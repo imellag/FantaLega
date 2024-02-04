@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:layout_marginBottom="30dp">
+    android:layout_marginBottom="30dp"
+    android:fillViewport="true">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -29,8 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="217dp"
             android:layout_marginTop="81dp"
-            android:background="@drawable/rounded_border">
-        </View>
+            android:background="@drawable/rounded_border"></View>
 
         <TextView
             android:id="@+id/textLayer6"
@@ -59,10 +58,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
             android:layout_marginTop="137dp"
             android:gravity="center_horizontal"
-            android:orientation="horizontal"
-            android:layout_marginHorizontal="20dp">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/team1"
@@ -76,8 +75,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:gravity="center"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="VS"
                 android:textSize="20sp" />
 
@@ -85,17 +84,16 @@
                 android:id="@+id/team2"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/team2"
-                android:contentDescription="Team 2" />
+                android:contentDescription="Team 2"
+                android:src="@drawable/team2" />
         </LinearLayout>
 
 
         <TextView
-            android:id="@+id/btnRosa"
+            android:id="@+id/tvRosa"
             android:layout_width="match_parent"
             android:layout_height="65dp"
-           android:layout_below="@id/layer"
-
+            android:layout_below="@id/layer"
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_border"
             android:clickable="true"
@@ -108,15 +106,16 @@
             android:textSize="19sp"
             app:drawableLeftCompat="@drawable/rosa"
             app:drawableRightCompat="@drawable/baseline_arrow_forward_24" />
+
         <TextView
-            android:id="@+id/btnMatchLive"
+            android:id="@+id/tvMatchLive"
             android:layout_width="match_parent"
             android:layout_height="65dp"
-           android:layout_below="@id/btnRosa"
+            android:layout_below="@id/tvRosa"
+            android:layout_marginTop="10dp"
             android:background="@drawable/rounded_border"
             android:clickable="true"
             android:drawablePadding="10dp"
-            android:layout_marginTop="10dp"
             android:focusable="true"
             android:gravity="center_vertical|start"
             android:paddingHorizontal="20dp"
@@ -130,23 +129,23 @@
             android:id="@+id/Notizie"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/tvMatchLive"
             android:layout_marginStart="19dp"
-            android:layout_below="@id/btnMatchLive"
+            android:layout_marginTop="20dp"
             android:text="Ultime news"
             android:textColor="@color/black"
-            android:layout_marginTop="20dp"
             android:textSize="20sp" />
 
         <TextView
-            android:layout_marginTop="10dp"
             android:id="@+id/News1"
             android:layout_width="match_parent"
             android:layout_height="90dp"
+            android:layout_below="@id/Notizie"
+            android:layout_marginTop="10dp"
             android:background="@drawable/rounded_border"
             android:clickable="true"
             android:drawablePadding="10dp"
             android:focusable="true"
-            android:layout_below="@id/Notizie"
             android:gravity="center_vertical"
             android:paddingHorizontal="20dp"
             android:text="Milan, tegola Florenzi: ecco l'entita' dell'infortunio e i tempi di recupero"
@@ -156,10 +155,10 @@
 
         <TextView
             android:id="@+id/News2"
-            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="90dp"
-           android:layout_below="@id/News1"
+            android:layout_below="@id/News1"
+            android:layout_marginTop="10dp"
             android:background="@drawable/rounded_border"
             android:clickable="true"
             android:drawablePadding="10dp"

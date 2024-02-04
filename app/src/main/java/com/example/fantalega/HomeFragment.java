@@ -15,11 +15,11 @@ import android.widget.TextView;
 
 import com.example.fantalega.campionato.FormationActivity;
 import com.example.fantalega.campionato.RosterActivity;
+import com.example.fantalega.campionato.MatchLiveActivity;
 
 public class HomeFragment extends Fragment {
 
     public HomeFragment() {
-
     }
 
     @Override
@@ -40,11 +40,17 @@ public class HomeFragment extends Fragment {
             startActivity(intent);
         });
 
-        TextView rosa = view.findViewById(R.id.btnRosa);
+        TextView rosa = view.findViewById(R.id.tvRosa);
         rosa.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), RosterActivity.class);
             startActivity(intent);
         });
 
+        // crasha
+        TextView matchLive = view.findViewById(R.id.tvMatchLive);
+        matchLive.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), MatchLiveActivity.class);
+            startActivity(intent);
+        });
     }
 }

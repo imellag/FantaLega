@@ -64,8 +64,8 @@
             android:orientation="vertical"
             android:paddingVertical="10dp">
 
-            <View
-                android:id="@+id/layer2"
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/crea_campionato"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
@@ -104,8 +104,8 @@
                 android:layout_gravity="center"
                 android:orientation="horizontal">
 
-                <View
-                    android:id="@+id/layer20"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/accedi_campionato"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:background="@drawable/trophy_fill0_wght400_grad0_opsz24"

@@ -5,7 +5,11 @@
             <corners android:radius="25dp" />
         </shape>
     </item>
-    <item android:right="1.5dp" android:left="1.5dp" android:top="1.5dp" android:bottom="1.5dp">
+    <item
+        android:bottom="1.5dp"
+        android:left="1.5dp"
+        android:right="1.5dp"
+        android:top="1.5dp">
         <shape android:shape="rectangle">
             <corners android:radius="25dp" />
             <stroke

@@ -30,7 +30,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/nome_lega"
+                android:id="@+id/nomeLega"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="35dp"
@@ -45,13 +45,13 @@
 
 
             <EditText
-                android:id="@+id/registerPassword"
+                android:id="@+id/numeroPartecipanti"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
                 android:autofillHints="Numero Partecipanti"
                 android:background="@drawable/new_edittext"
-                android:drawableEnd="@drawable/baseline_lock_person_24"
+                android:drawableEnd="@drawable/format_list_numbered_fill0_wght400_grad0_opsz24"
                 android:hint="Numero Partecipanti"
                 android:inputType="textPassword"
                 android:padding="8dp"
@@ -59,13 +59,13 @@
                 android:paddingEnd="20dp" />
 
             <EditText
-                android:id="@+id/confirmPassword"
+                android:id="@+id/codiceAccesso"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
                 android:autofillHints="Codice d'accesso"
                 android:background="@drawable/new_edittext"
-                android:drawableEnd="@drawable/baseline_lock_person_24"
+                android:drawableEnd="@drawable/vpn_key_fill0_wght400_grad0_opsz24"
                 android:hint="Codice d'accesso"
                 android:inputType="textPassword"
                 android:padding="8dp"
@@ -73,20 +73,19 @@
                 android:paddingEnd="20dp" />
 
             <Button
-                android:id="@+id/btnRegister"
+                android:id="@+id/btnConfirm"
                 android:layout_width="130dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="35dp"
                 android:backgroundTint="@color/blue"
                 android:onClick="onLoginClick"
-                android:text="@string/button_register"
+                android:text="Conferma"
                 android:textSize="17sp" />
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
 
 
 </LinearLayout>

@@ -59,7 +59,7 @@
         <activity android:name=".campionato.ClassificaFragment" />
         <activity android:name=".CampionatoFragment" />
         <activity android:name=".campionato.MatchLiveActivity"/>
-<activity android:name=".ScegliGiocatoreActivity"/>
+        <activity android:name=".ScegliGiocatoreActivity"/>
         <activity android:name=".CreaCampionatoActivity"/>
         <activity android:name=".AccediCampionatoActivity"/>
 

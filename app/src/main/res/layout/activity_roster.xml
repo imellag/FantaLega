@@ -1,41 +1,376 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:layout_marginBottom="30dp">
 
-    <!-- Lista dei portieri -->
-    <ListView
-        android:id="@+id/listViewGoalkeepers"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:paddingBottom="8dp"/>
+        android:layout_height="wrap_content">
 
-    <!-- Lista dei difensori -->
-    <ListView
-        android:id="@+id/listViewDefenders"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:paddingBottom="8dp"/>
 
-    <!-- Lista dei centrocampisti -->
-    <ListView
-        android:id="@+id/listViewMidfielders"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:paddingBottom="8dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="25dp">
 
-    <!-- Lista degli attaccanti -->
-    <ListView
-        android:id="@+id/listViewForwards"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:paddingBottom="8dp"/>
+            <TextView
+                android:id="@+id/btnRosa"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rounded_border"
+                android:clickable="true"
+                android:drawablePadding="10dp"
+                android:focusable="true"
+                android:gravity="center_vertical|start"
+                android:paddingHorizontal="20dp"
+                android:text="La tua Rosa"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                app:drawableLeftCompat="@drawable/rosa">
+            </TextView>
 
+            <!-- Lista dei portieri -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Portieri"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/purple"
+                >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="MAIGNAN"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp"
+                    android:backgroundTint="@color/purple"
+                    android:textColor="@color/white">
+                </TextView>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="CARNESECCHI"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="MUSSO"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+            </LinearLayout>
+
+            <!-- Lista dei difensori -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Difensori"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/blue">
+            </TextView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="SCALVINI"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="BANI"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="DUMFRIES"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="MARI"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="DIMARCO"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="T. HERNANDEZ"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="ZORTEA"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="CASALE"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+            </LinearLayout>
+
+            <!-- Lista dei centrocampisti -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Centrocampisti"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/orange">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="PULISIC"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="DE KETELAERE"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="EDERSON"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="COLPANI"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="GUENDOUZI"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="MAZZITELLI"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="PEREYRA"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="TRAORE"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+            </LinearLayout>
+
+            <!-- Lista degli attaccanti -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Attaccanti"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/red">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="LUKAKU"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="KRSTOVIC"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="CAMBIAGHI"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="NIANG"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="N. GONZALEZ"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="NGONGE"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:padding="10dp">
+                </TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

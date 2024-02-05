@@ -5,17 +5,13 @@
             <corners android:radius="0dp" />
         </shape>
     </item>
-    <item
-        android:bottom="1.5dp"
-        android:left="1.5dp"
-        android:right="1.5dp"
-        android:top="1.5dp">
+    <item android:right="1.5dp" android:left="1.5dp" android:top="1.5dp" android:bottom="1.5dp">
         <shape android:shape="rectangle">
             <corners android:radius="0dp" />
-            <solid android:color="@color/gray" />
+            <solid android:color="@android:color/transparent" />
             <stroke
                 android:width="1.5dp"
-                android:color="@color/black" />
+                android:color="@color/purple" />
         </shape>
     </item>
 </layer-list>

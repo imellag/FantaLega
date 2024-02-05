@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="25dp">
 
     <TextView
         android:layout_width="match_parent"
@@ -15,12 +16,11 @@
         android:textStyle="bold" />
 
     <LinearLayout
-        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:orientation="horizontal"
-        android:padding="10dp"
-        >
+        android:padding="10dp">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -29,19 +29,19 @@
             android:orientation="vertical">
 
             <ImageView
-                android:background="@drawable/trophy"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:background="@drawable/trophy" />
 
             <TextView
-                android:textSize="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
+                android:text="Cambiaghi"
                 android:textColor="@color/black"
-                android:text="Cambiaghi" />
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -72,23 +72,22 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Empoli"
                     android:layout_weight="1"
-                    />
+                    android:text="Empoli" />
 
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
                     android:text="VS" />
 
                 <TextView
-                    android:gravity="end"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
                     android:text="Milan" />
             </LinearLayout>
 
@@ -97,37 +96,36 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Ultimi Voti"
-                />
+                android:text="Ultimi Voti" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_marginTop="10dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="6" />
 
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="6" />
 
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="6" />
 
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="6" />
 
             </LinearLayout>
@@ -135,217 +133,209 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="15dp">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:paddingVertical="10dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:gravity="center"
-                        android:layout_gravity="center"
-                        android:background="@drawable/attaccante"
-                        android:textColor="@color/white"
-
-                        android:text="A"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
-                        android:gravity="center"
-                        android:textSize="12sp"
-                        android:text="ARNAUTOVIC" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:paddingVertical="10dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:gravity="center"
-                        android:layout_gravity="center"
-                        android:background="@drawable/attaccante"
-                        android:textColor="@color/white"
-
-                        android:text="A"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
-
-                        android:gravity="center"
-                        android:textSize="12sp"
-                        android:text="ARNAUTOVIC" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginBottom="15dp"
-                >
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:paddingVertical="10dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
 
                     <TextView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
                         android:layout_gravity="center"
                         android:background="@drawable/attaccante"
-                        android:textColor="@color/white"
-
+                        android:gravity="center"
                         android:text="A"
-                        />
+
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:textSize="12sp"
-                        android:text="ARNAUTOVIC" />
+                        android:text="ARNAUTOVIC"
+                        android:textSize="12sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:paddingVertical="10dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
 
                     <TextView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
                         android:layout_gravity="center"
                         android:background="@drawable/attaccante"
-                        android:textColor="@color/white"
-
+                        android:gravity="center"
                         android:text="A"
-                        />
+
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:textSize="12sp"
+
                         android:gravity="center"
-                        android:text="ARNAUTOVIC" />
+                        android:text="ARNAUTOVIC"
+                        android:textSize="12sp" />
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                >
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
 
                 <LinearLayout
-                    android:paddingVertical="10dp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
 
                     <TextView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
                         android:layout_gravity="center"
                         android:background="@drawable/attaccante"
-                        android:textColor="@color/white"
-
+                        android:gravity="center"
                         android:text="A"
-                        />
+
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:textSize="12sp"
-                        android:text="ARNAUTOVIC" />
+                        android:text="ARNAUTOVIC"
+                        android:textSize="12sp" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:paddingVertical="10dp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
 
                     <TextView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:gravity="center"
                         android:layout_gravity="center"
                         android:background="@drawable/attaccante"
-                        android:textColor="@color/white"
-
+                        android:gravity="center"
                         android:text="A"
-                        />
+
+                        android:textColor="@color/white" />
 
                     <TextView
-                        android:textSize="12sp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="ARNAUTOVIC" />
+                        android:text="ARNAUTOVIC"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/attaccante"
+                        android:gravity="center"
+                        android:text="A"
+
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="ARNAUTOVIC"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/attaccante"
+                        android:gravity="center"
+                        android:text="A"
+
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="ARNAUTOVIC"
+                        android:textSize="12sp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/conferma_attaccante"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="25dp"
-       android:layout_marginTop="20dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/rounded_border"
         android:backgroundTint="@color/blue"
-        android:textColor="@color/white"
         android:text="Conferma"
-        />
+        android:textColor="@color/white" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/indietro_attaccante"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/rounded_border"
         android:layout_marginHorizontal="25dp"
         android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_border"
         android:backgroundTint="@color/blue"
-        android:textColor="@color/white"
         android:text="Torna Indietro"
-        />
+        android:textColor="@color/white" />
 </LinearLayout>

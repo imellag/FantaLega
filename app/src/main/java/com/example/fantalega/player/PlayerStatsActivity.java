@@ -4,20 +4,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import com.github.mikephil.charting.charts.PieChart;
+import com.github.mikephil.charting.components.Legend;
+import com.github.mikephil.charting.data.PieData;
+import com.github.mikephil.charting.data.PieDataSet;
+import com.github.mikephil.charting.data.PieEntry;
+import com.github.mikephil.charting.utils.ColorTemplate;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.fantalega.R;
 
-public class PlayerStatsActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+import java.util.ArrayList;
+import java.util.List;
 
-    private ImageView playerImage;
-    private TextView playerName;
-    private TextView playerSurname;
-    private Spinner seasonSpinner;
+public class PlayerStatsActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,10 +39,10 @@ public class PlayerStatsActivity extends AppCompatActivity implements AdapterVie
         }
 
         // Initialize views
-        //playerImage = findViewById(R.id.playerImage);
-        playerName = findViewById(R.id.playerName);
-        playerSurname = findViewById(R.id.playerSurname);
-        seasonSpinner = findViewById(R.id.seasonSpinner);
+        PieChart pieChart = findViewById(R.id.pieChart);
+        TextView playerName = findViewById(R.id.playerName);
+        TextView playerSurname = findViewById(R.id.playerSurname);
+        Spinner seasonSpinner = findViewById(R.id.seasonSpinner);
 
         // Set up the spinner adapter
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -48,6 +52,30 @@ public class PlayerStatsActivity extends AppCompatActivity implements AdapterVie
 
         // Set the spinner's listener
         seasonSpinner.setOnItemSelectedListener(this);
+
+        // Crea i dati per il grafico a torta
+        List<PieEntry> entries = new ArrayList<>();
+        entries.add(new PieEntry(40.0f, "Label 1"));
+        entries.add(new PieEntry(30.0f, "Label 2"));
+        entries.add(new PieEntry(30.0f, "Label 3"));
+
+        PieDataSet set = new PieDataSet(entries, "Etichetta del Dataset");
+        set.setColors(ColorTemplate.MATERIAL_COLORS);
+        set.setSliceSpace(3f);
+        set.setSelectionShift(5f);
+
+        PieData data = new PieData(set);
+        pieChart.setData(data);
+        pieChart.invalidate(); // aggiorna il grafico
+
+        // Configurazioni aggiuntive se necessarie
+        pieChart.setUsePercentValues(true);
+        pieChart.getDescription().setEnabled(false);
+        Legend l = pieChart.getLegend();
+        l.setVerticalAlignment(Legend.LegendVerticalAlignment.TOP);
+        l.setHorizontalAlignment(Legend.LegendHorizontalAlignment.RIGHT);
+        l.setOrientation(Legend.LegendOrientation.VERTICAL);
+        l.setDrawInside(false);
     }
 
     @Override

@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="217dp"
             android:layout_marginTop="81dp"
-            android:background="@drawable/rounded_border"/>
+            android:background="@drawable/rounded_border" />
 
         <TextView
             android:id="@+id/textLayer6"
@@ -87,7 +87,6 @@
                 android:contentDescription="Team 2"
                 android:src="@drawable/team2" />
         </LinearLayout>
-
 
         <TextView
             android:id="@+id/tvRosa"
@@ -166,6 +165,40 @@
             android:gravity="center_vertical"
             android:paddingHorizontal="20dp"
             android:text="Inter, morto Dumfries"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:drawableLeftCompat="@drawable/breaking_news_fill0_wght400_grad0_opsz24" />
+
+        <TextView
+            android:id="@+id/News3"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@id/News2"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_border"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="20dp"
+            android:text="Roma, fissata la data per il rientro in campo di Smalling!"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:drawableLeftCompat="@drawable/breaking_news_fill0_wght400_grad0_opsz24" />
+
+        <TextView
+            android:id="@+id/News4"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@id/News3"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_border"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="20dp"
+            android:text="Roma - Cagliari, la tripletta della Joya non basta: il Cagliari vince grazie al poker di Dossena"
             android:textColor="@color/black"
             android:textSize="16sp"
             app:drawableLeftCompat="@drawable/breaking_news_fill0_wght400_grad0_opsz24" />

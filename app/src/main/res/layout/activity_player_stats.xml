@@ -131,13 +131,10 @@
             android:text="Grafico Voti Giocatore"
             android:textSize="22sp" />
 
-        <!-- You need a custom view or a third-party library to create the bar chart. -->
-        <!-- This is just a placeholder. -->
-        <View
-            android:id="@+id/barChart"
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="@android:color/darker_gray" />
+            android:layout_height="match_parent"/>
 
     </LinearLayout>
 

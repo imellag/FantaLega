@@ -23,11 +23,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
                 android:layout_marginTop="50dp"
-                android:background="@drawable/rounded_border"
                 android:clickable="true"
                 android:drawablePadding="10dp"
                 android:focusable="true"
-                android:gravity="center_vertical|start"
+                android:gravity="center"
                 android:paddingHorizontal="20dp"
                 android:text="La tua Rosa"
                 android:textColor="@color/black"
@@ -41,11 +40,12 @@
                 android:layout_height="wrap_content"
                 android:text="Portieri"
                 android:gravity="center"
-                android:background="@drawable/border"
                 android:padding="10dp"
                 android:layout_marginTop="40dp"
                 android:textColor="@color/white"
                 android:backgroundTint="@color/purple"
+                android:background="@drawable/rounded_border"
+
                 >
             </TextView>
 
@@ -53,7 +53,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:backgroundTint="@color/purple"
+                android:layout_marginTop="10dp"
+                android:outlineAmbientShadowColor="@color/black"
+                >
 
                 <TextView
                     android:layout_width="250dp"
@@ -61,10 +65,10 @@
                     android:text="MAIGNAN"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
+                    android:background="@drawable/purpleborder"
                     android:padding="10dp"
-                    android:backgroundTint="@color/purple"
-                    android:textColor="@color/white">
+                    android:textColor="@color/black"
+                    >
                 </TextView>
 
                 <TextView
@@ -73,8 +77,10 @@
                     android:text="CARNESECCHI"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
-                    android:padding="10dp">
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/purpleborder"
+                    android:layout_marginTop="5dp">
                 </TextView>
 
                 <TextView
@@ -83,8 +89,10 @@
                     android:text="MUSSO"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
-                    android:padding="10dp">
+                    android:background="@drawable/purpleborder"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp">
                 </TextView>
 
             </LinearLayout>
@@ -95,17 +103,18 @@
                 android:layout_height="wrap_content"
                 android:text="Difensori"
                 android:gravity="center"
-                android:background="@drawable/border"
                 android:padding="10dp"
                 android:layout_marginTop="40dp"
                 android:textColor="@color/white"
-                android:backgroundTint="@color/blue">
+                android:backgroundTint="@color/blue"
+                android:background="@drawable/rounded_border">
             </TextView>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
 
                 <TextView
                     android:layout_width="250dp"
@@ -113,7 +122,7 @@
                     android:text="SCALVINI"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
+                    android:background="@drawable/blueborder"
                     android:padding="10dp">
                 </TextView>
 
@@ -123,8 +132,9 @@
                     android:text="BANI"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
-                    android:padding="10dp">
+                    android:background="@drawable/blueborder"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp">
                 </TextView>
 
                 <TextView
@@ -133,8 +143,9 @@
                     android:text="DUMFRIES"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
-                    android:padding="10dp">
+                    android:background="@drawable/blueborder"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp">
                 </TextView>
 
                 <TextView
@@ -143,8 +154,9 @@
                     android:text="MARI"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
-                    android:padding="10dp">
+                    android:background="@drawable/blueborder"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp">
                 </TextView>
 
                 <TextView
@@ -153,8 +165,9 @@
                     android:text="DIMARCO"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
-                    android:padding="10dp">
+                    android:background="@drawable/blueborder"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp">
                 </TextView>
 
                 <TextView
@@ -163,8 +176,9 @@
                     android:text="T. HERNANDEZ"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
-                    android:padding="10dp">
+                    android:background="@drawable/blueborder"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp">
                 </TextView>
 
                 <TextView
@@ -172,8 +186,9 @@
                     android:layout_height="wrap_content"
                     android:text="ZORTEA"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
-                    android:padding="10dp">
+                    android:background="@drawable/blueborder"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp">
                 </TextView>
 
                 <TextView
@@ -182,8 +197,9 @@
                     android:text="CASALE"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
-                    android:padding="10dp">
+                    android:background="@drawable/blueborder"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp">
                 </TextView>
 
             </LinearLayout>
@@ -194,7 +210,7 @@
                 android:layout_height="wrap_content"
                 android:text="Centrocampisti"
                 android:gravity="center"
-                android:background="@drawable/border"
+                android:background="@drawable/rounded_border"
                 android:padding="10dp"
                 android:layout_marginTop="40dp"
                 android:textColor="@color/white"
@@ -205,7 +221,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
 
                 <TextView
                     android:layout_width="250dp"
@@ -213,7 +230,7 @@
                     android:text="PULISIC"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
+                    android:background="@drawable/orangeborder"
                     android:padding="10dp">
                 </TextView>
 
@@ -223,7 +240,8 @@
                     android:text="DE KETELAERE"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
+                    android:background="@drawable/orangeborder"
+                    android:layout_marginTop="5dp"
                     android:padding="10dp">
                 </TextView>
 
@@ -233,7 +251,8 @@
                     android:text="EDERSON"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
+                    android:background="@drawable/orangeborder"
+                    android:layout_marginTop="5dp"
                     android:padding="10dp">
                 </TextView>
 
@@ -243,8 +262,9 @@
                     android:text="COLPANI"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
-                    android:padding="10dp">
+                    android:background="@drawable/orangeborder"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp">
                 </TextView>
 
                 <TextView
@@ -253,8 +273,9 @@
                     android:text="GUENDOUZI"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
-                    android:padding="10dp">
+                    android:background="@drawable/orangeborder"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp">
                 </TextView>
 
                 <TextView
@@ -263,8 +284,9 @@
                     android:text="MAZZITELLI"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
-                    android:padding="10dp">
+                    android:background="@drawable/orangeborder"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp">
                 </TextView>
 
                 <TextView
@@ -273,8 +295,9 @@
                     android:text="PEREYRA"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
-                    android:padding="10dp">
+                    android:background="@drawable/orangeborder"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp">
                 </TextView>
 
                 <TextView
@@ -283,8 +306,9 @@
                     android:text="TRAORE"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
-                    android:padding="10dp">
+                    android:background="@drawable/orangeborder"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp">
                 </TextView>
 
             </LinearLayout>
@@ -295,7 +319,7 @@
                 android:layout_height="wrap_content"
                 android:text="Attaccanti"
                 android:gravity="center"
-                android:background="@drawable/border"
+                android:background="@drawable/rounded_border"
                 android:padding="10dp"
                 android:layout_marginTop="40dp"
                 android:textColor="@color/white"
@@ -306,7 +330,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
 
                 <TextView
                     android:layout_width="250dp"
@@ -314,8 +339,9 @@
                     android:text="LUKAKU"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
-                    android:padding="10dp">
+                    android:background="@drawable/redborder"
+                    android:padding="10dp"
+                    >
                 </TextView>
 
                 <TextView
@@ -324,8 +350,9 @@
                     android:text="KRSTOVIC"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
-                    android:padding="10dp">
+                    android:background="@drawable/redborder"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp">
                 </TextView>
 
                 <TextView
@@ -334,8 +361,9 @@
                     android:text="CAMBIAGHI"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
-                    android:padding="10dp">
+                    android:background="@drawable/redborder"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp">
                 </TextView>
 
                 <TextView
@@ -344,8 +372,9 @@
                     android:text="NIANG"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
-                    android:padding="10dp">
+                    android:background="@drawable/redborder"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp">
                 </TextView>
 
                 <TextView
@@ -354,8 +383,9 @@
                     android:text="N. GONZALEZ"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
-                    android:padding="10dp">
+                    android:background="@drawable/redborder"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp">
                 </TextView>
 
                 <TextView
@@ -364,8 +394,9 @@
                     android:text="NGONGE"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/rounded_border"
-                    android:padding="10dp">
+                    android:background="@drawable/redborder"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp">
                 </TextView>
 
             </LinearLayout>

@@ -73,7 +73,7 @@
                 android:paddingEnd="20dp" />
 
             <Button
-                android:id="@+id/btnRegister"
+                android:id="@+id/crea"
                 android:layout_width="130dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"

@@ -1,6 +1,9 @@
 package com.example.fantalega;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,7 +13,18 @@ public class CreaCampionatoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.crea_campionato);
+        Button crea = findViewById(R.id.crea);
 
+
+        crea.setOnClickListener(v -> {
+            Toast.makeText(this,"Lega Creata con successo!",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(CreaCampionatoActivity.this, FragmentActivity.class);
+            startActivity(intent);
+
+        });
 
     }
+
+
+
 }

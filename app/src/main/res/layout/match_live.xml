@@ -1,193 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/textView"
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="9dp"
-        android:gravity="center"
-        android:text="Match Live"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            tools:srcCompat="@tools:sample/avatars" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_weight="1"
-            tools:srcCompat="@tools:sample/avatars" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp">
+        android:orientation="vertical"
+        android:paddingVertical="25dp">
 
         <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="1"
-            android:text="AC Culurgiones"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="AC Cipicchia"
-            android:textSize="20sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="5dp">
+            android:layout_marginBottom="9dp"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:text="Match Live"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-            <TextView
+            <ImageView
+                android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:text="Portieri"
-                android:textColor="@color/black"
-                android:textSize="17sp" />
+                android:layout_weight="1"
+                tools:srcCompat="@tools:sample/avatars" />
 
-            <include layout="@layout/match_live_fragment" />
-
-            <TextView
+            <ImageView
+                android:id="@+id/imageView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:text="Difensori"
-                android:textColor="@color/black"
-                android:textSize="17sp" />
-
-            <include layout="@layout/match_live_fragment" />
-
-            <include layout="@layout/match_live_fragment" />
-
-            <include layout="@layout/match_live_fragment" />
-
-            <include layout="@layout/match_live_fragment" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:text="Centrocampisti"
-                android:textColor="@color/black"
-                android:textSize="17sp" />
-
-            <include layout="@layout/match_live_fragment" />
-
-            <include layout="@layout/match_live_fragment" />
-
-            <include layout="@layout/match_live_fragment" />
-
-            <include layout="@layout/match_live_fragment" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:text="Attaccanti"
-                android:textColor="@color/black"
-                android:textSize="17sp" />
-
-            <include layout="@layout/match_live_fragment" />
-
-            <include layout="@layout/match_live_fragment" />
+                android:layout_weight="1"
+                tools:srcCompat="@tools:sample/avatars" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_marginTop="10dp">
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:textSize="17sp" />
-
-            <include layout="@layout/match_live_fragment" />
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="AC Culurgiones"
+                android:textSize="20sp" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:textSize="17sp" />
-
-            <include layout="@layout/match_live_fragment" />
-
-            <include layout="@layout/match_live_fragment" />
-
-            <include layout="@layout/match_live_fragment" />
-
-            <include layout="@layout/match_live_fragment" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:textSize="17sp" />
-
-            <include layout="@layout/match_live_fragment" />
-
-            <include layout="@layout/match_live_fragment" />
-
-            <include layout="@layout/match_live_fragment" />
-
-            <include layout="@layout/match_live_fragment" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:textSize="17sp" />
-
-            <include layout="@layout/match_live_fragment" />
-
-            <include layout="@layout/match_live_fragment" />
-
-
+                android:layout_weight="1"
+                android:text="AC Cipicchia"
+                android:textSize="20sp" />
         </LinearLayout>
-    </LinearLayout>
 
-    <com.ismaeldivita.chipnavigation.ChipNavigationBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnCampionati"
-        android:background="@drawable/rettangolo"
-        app:cnb_menuResource="@menu/navbar" />
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:paddingHorizontal="15dp"
+                    android:text="Portiere"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+
+                <include layout="@layout/match_live_fragment" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:paddingHorizontal="15dp"
+                    android:text="Difensori"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+
+                <include layout="@layout/match_live_fragment" />
+
+                <include layout="@layout/match_live_fragment" />
+
+                <include layout="@layout/match_live_fragment" />
+
+                <include layout="@layout/match_live_fragment" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:paddingHorizontal="15dp"
+                    android:text="Centrocampisti"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+
+                <include layout="@layout/match_live_fragment" />
+
+                <include layout="@layout/match_live_fragment" />
+
+                <include layout="@layout/match_live_fragment" />
+
+                <include layout="@layout/match_live_fragment" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:paddingHorizontal="15dp"
+                    android:text="Attaccanti"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+
+                <include layout="@layout/match_live_fragment" />
+
+                <include layout="@layout/match_live_fragment" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:paddingHorizontal="15dp"
+                    android:text="Portiere"
+                    android:textAlignment="center"
+                    android:textSize="19sp" />
+
+                <include layout="@layout/match_live_fragment2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:paddingHorizontal="15dp"
+                    android:text="Difensori"
+                    android:textAlignment="center"
+                    android:textSize="19sp" />
+
+                <include layout="@layout/match_live_fragment2" />
+
+                <include layout="@layout/match_live_fragment2" />
+
+                <include layout="@layout/match_live_fragment2" />
+
+                <include layout="@layout/match_live_fragment2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:paddingHorizontal="15dp"
+                    android:text="Centrocampisti"
+                    android:textAlignment="center"
+                    android:textSize="19sp" />
+
+                <include layout="@layout/match_live_fragment2" />
+
+                <include layout="@layout/match_live_fragment2" />
+
+                <include layout="@layout/match_live_fragment2" />
+
+                <include layout="@layout/match_live_fragment2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:paddingHorizontal="15dp"
+                    android:text="Attaccanti"
+                    android:textAlignment="center"
+                    android:textSize="19sp" />
+
+                <include layout="@layout/match_live_fragment2" />
+
+                <include layout="@layout/match_live_fragment2" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.ismaeldivita.chipnavigation.ChipNavigationBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordo_curvo"
+            app:cnb_menuResource="@menu/navbar" />
+    </LinearLayout>
+</ScrollView>

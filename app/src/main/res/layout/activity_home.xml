@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:layout_marginBottom="30dp">
+    android:layout_marginBottom="30dp"
+    android:fillViewport="true">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -29,8 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="217dp"
             android:layout_marginTop="81dp"
-            android:background="@drawable/rounded_border">
-        </View>
+            android:background="@drawable/rounded_border" />
 
         <TextView
             android:id="@+id/textLayer6"
@@ -59,42 +58,42 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
             android:layout_marginTop="137dp"
             android:gravity="center_horizontal"
-            android:orientation="horizontal"
-            android:layout_marginHorizontal="20dp">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/team1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/rounded_border"
-                android:contentDescription="Team 1" />
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="Team 1"
+                android:src="@drawable/team1" />
 
             <TextView
                 android:id="@+id/versusText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:gravity="center"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="VS"
                 android:textSize="20sp" />
 
             <ImageView
                 android:id="@+id/team2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/rounded_border"
-                android:contentDescription="Team 2" />
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="Team 2"
+                android:src="@drawable/team2" />
         </LinearLayout>
 
-
         <TextView
-            android:id="@+id/btnRosa"
+            android:id="@+id/tvRosa"
             android:layout_width="match_parent"
             android:layout_height="65dp"
-            android:layout_marginTop="320dp"
+            android:layout_below="@id/layer"
+            android:layout_marginTop="20dp"
             android:background="@drawable/rounded_border"
             android:clickable="true"
             android:drawablePadding="10dp"
@@ -108,11 +107,30 @@
             app:drawableRightCompat="@drawable/baseline_arrow_forward_24" />
 
         <TextView
-            android:id="@+id/textLayer10"
+            android:id="@+id/tvMatchLive"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@id/tvRosa"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_border"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:gravity="center_vertical|start"
+            android:paddingHorizontal="20dp"
+            android:text="Match Live"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:drawableLeftCompat="@drawable/rosa"
+            app:drawableRightCompat="@drawable/baseline_arrow_forward_24" />
+
+        <TextView
+            android:id="@+id/Notizie"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/tvMatchLive"
             android:layout_marginStart="19dp"
-            android:layout_marginTop="430dp"
+            android:layout_marginTop="20dp"
             android:text="Ultime news"
             android:textColor="@color/black"
             android:textSize="20sp" />
@@ -121,7 +139,8 @@
             android:id="@+id/News1"
             android:layout_width="match_parent"
             android:layout_height="90dp"
-            android:layout_marginTop="470dp"
+            android:layout_below="@id/Notizie"
+            android:layout_marginTop="10dp"
             android:background="@drawable/rounded_border"
             android:clickable="true"
             android:drawablePadding="10dp"
@@ -137,7 +156,8 @@
             android:id="@+id/News2"
             android:layout_width="match_parent"
             android:layout_height="90dp"
-            android:layout_marginTop="575dp"
+            android:layout_below="@id/News1"
+            android:layout_marginTop="10dp"
             android:background="@drawable/rounded_border"
             android:clickable="true"
             android:drawablePadding="10dp"
@@ -145,6 +165,40 @@
             android:gravity="center_vertical"
             android:paddingHorizontal="20dp"
             android:text="Inter, morto Dumfries"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:drawableLeftCompat="@drawable/breaking_news_fill0_wght400_grad0_opsz24" />
+
+        <TextView
+            android:id="@+id/News3"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@id/News2"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_border"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="20dp"
+            android:text="Roma, fissata la data per il rientro in campo di Smalling!"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:drawableLeftCompat="@drawable/breaking_news_fill0_wght400_grad0_opsz24" />
+
+        <TextView
+            android:id="@+id/News4"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@id/News3"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_border"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="20dp"
+            android:text="Roma - Cagliari, la tripletta della Joya non basta: il Cagliari vince grazie al poker di Dossena"
             android:textColor="@color/black"
             android:textSize="16sp"
             app:drawableLeftCompat="@drawable/breaking_news_fill0_wght400_grad0_opsz24" />

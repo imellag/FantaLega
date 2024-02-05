@@ -1,12 +1,12 @@
 package com.example.fantalega;
 
 import android.os.Bundle;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import com.example.fantalega.campionato.ClassificaFragment;
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 
 
@@ -15,10 +15,11 @@ public class FragmentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_container);
-        // Pulsante per la sezione "Campionati"
+
 
         ChipNavigationBar navigationBar = findViewById(R.id.navigation_bar);
         Fragment fragment = new HomeFragment();
+
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragment_main, fragment)
                 .setReorderingAllowed(true)
@@ -37,11 +38,10 @@ public class FragmentActivity extends AppCompatActivity {
                     fragment1 = new CampionatoFragment();
                 } else if (id == R.id.navigation_classifica) {
                     fragment1 = new ClassificaFragment();
-
                 } else if (id == R.id.navigation_home) {
                     fragment1 = new HomeFragment();
-
                 }
+
                 if (fragment1 != null) {
                     fragmentManager = getSupportFragmentManager();
                     fragmentManager.beginTransaction()
@@ -51,8 +51,6 @@ public class FragmentActivity extends AppCompatActivity {
                             .commit();
                 }
             }
-
         });
-
     }
 }

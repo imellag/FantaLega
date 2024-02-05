@@ -4,12 +4,13 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class FormazioneActivity extends AppCompatActivity {
-
+public class CreaCampionatoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_formation);
+        setContentView(R.layout.crea_campionato);
+
+
     }
 }

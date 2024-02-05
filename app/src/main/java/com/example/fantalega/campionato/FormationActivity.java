@@ -9,7 +9,11 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.fantalega.FragmentActivity;
+import com.example.fantalega.HomeActivity;
+import com.example.fantalega.HomeFragment;
 import com.example.fantalega.R;
+import com.example.fantalega.ScegliGiocatoreActivity;
 
 public class FormationActivity extends AppCompatActivity {
 
@@ -70,6 +74,12 @@ public class FormationActivity extends AppCompatActivity {
         // Logica per selezionare il giocatore per la posizione
         // Potresti voler avviare un'altra Activity per selezionare il giocatore
         Toast.makeText(this, "Seleziona giocatore per la posizione", Toast.LENGTH_SHORT).show();
+
+
+            Intent intent = new Intent(this, ScegliGiocatoreActivity.class);
+            startActivity(intent);
+
+
     }
 
     private void onRecommendedFormationClicked() {
@@ -78,9 +88,12 @@ public class FormationActivity extends AppCompatActivity {
     }
 
     private void onSaveFormationClicked() {
-        // Logica per salvare la formazione (riportare alla schermata precedente che non so quale sia)
-        Toast.makeText(this, "Formazione salvata", Toast.LENGTH_SHORT).show();
+        // Logica per salvare la formazione (bisogna schiacciare due volte)
+        Button saveFormation = findViewById(R.id.btnSaveFormation);
+        saveFormation.setOnClickListener(v -> {
+            Toast.makeText(this, "Formazione salvata", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, FragmentActivity.class);
+            startActivity(intent);
+        });
     }
-
-    // Aggiungi qui ulteriori metodi come necessario...
 }

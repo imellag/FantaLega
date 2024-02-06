@@ -22,8 +22,8 @@
 
         <ImageView
             android:id="@+id/layer"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
             android:layout_marginTop="15dp"
             android:clickable="true"
             android:background="@drawable/baseline_person_24"
@@ -37,7 +37,7 @@
             android:text="NGONGE"
             android:clickable="true"
             android:layout_gravity="center"
-            android:textSize="23sp"
+            android:textSize="26sp"
             android:textStyle="bold"
             />
 
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:text="(Napoli)"
             android:layout_gravity="center"
-            android:textSize="19sp"
+            android:textSize="22sp"
             >
         </TextView>
 
@@ -61,7 +61,7 @@
             android:layout_width="350dp"
             android:layout_height="45dp"
             android:text="Titolarità: 98%"
-            android:textSize="30sp"
+            android:textSize="22sp"
             android:textColor="@color/white"
             android:gravity="center"
             android:background="@drawable/rounded_border"
@@ -87,7 +87,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/blueborder"
                 android:padding="10dp"
-                android:textSize="19sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -98,7 +98,7 @@
             android:layout_marginTop="40dp"
             android:textAlignment="center"
             android:textColor="@color/blue"
-            android:textSize="20sp"
+            android:textSize="23sp"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -215,7 +215,7 @@
                 android:layout_gravity="center"
                 android:backgroundTint="@color/blue"
                 android:onClick="onLoginClick"
-                android:text="Annulla"
+                android:text="Chiudi"
                 android:textSize="17sp" />
 
             <Button

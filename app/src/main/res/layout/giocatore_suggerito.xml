@@ -78,7 +78,6 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp">
 
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -90,23 +89,13 @@
                 android:padding="10dp"
                 android:textSize="19sp" />
 
-
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center"
-            android:layout_marginTop="35dp"
-            android:background="@drawable/blueborder"
-            android:padding="15dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="PERCHÈ SCHIERARLO?"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="40dp"
             android:textAlignment="center"
             android:textColor="@color/blue"
             android:textSize="20sp"
@@ -116,22 +105,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/blueborder"
+            android:padding="15dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="2dp"
             android:layout_gravity="start">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@drawable/circle_background"
                     android:backgroundTint="@color/green"
-                    android:gravity="center"
-                    >
+                    android:gravity="center">
                 </TextView>
 
                 <TextView
@@ -150,8 +147,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="15dp"
-                >
+                android:layout_marginTop="15dp">
 
                 <TextView
                     android:layout_width="30dp"
@@ -203,8 +199,6 @@
             </LinearLayout>
 
             </LinearLayout>
-
-
 
         </LinearLayout>
 

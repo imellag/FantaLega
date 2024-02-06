@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FORMAZIONE SUGGERITA"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHE COS'È?"
+            android:textColor="@color/blue"
+            android:textSize="23sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/blueborder"
+            android:layout_marginTop="10dp"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="È un tool che inserisce automaticamente i tuoi 11 titolari in base a determinati requisiti."
+                android:textSize="20sp">
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QUALI SONO I REQUISITI?"
+            android:textColor="@color/blue"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="23sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/blueborder"
+            android:layout_marginTop="10dp"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+                android:clickable="true">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/arrow_right_fill0_wght400_grad0_opsz24"
+                android:backgroundTint="@color/blue"
+                android:gravity="center">
+
+            </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Titolarità"
+                    android:textSize="20sp"
+                    android:layout_gravity="center">
+                </TextView>
+
+
+            </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Viene considerata la probabilità di scendere in campo dal primo minuto."
+                    android:textSize="20sp"
+                    android:layout_marginStart="45dp"
+                    android:layout_gravity="center"
+                    >
+                </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/arrow_right_fill0_wght400_grad0_opsz24"
+                    android:backgroundTint="@color/blue"
+                    android:gravity="center">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="In Casa o Fuori Casa"
+                    android:textSize="20sp"
+                    android:layout_gravity="center">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:clickable="true">
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/arrow_right_fill0_wght400_grad0_opsz24"
+                    android:backgroundTint="@color/blue"
+                    android:gravity="center">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Classifica"
+                    android:textSize="20sp"
+                    android:layout_gravity="center">
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/blue"
+            android:onClick="onLoginClick"
+            android:layout_marginTop="40dp"
+            android:text="Chiudi"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,240 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GIOCATORE SUGGERITO"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/layer"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:background="@drawable/baseline_person_24"
+            android:layout_gravity="center"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NGONGE"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Napoli)"
+            android:layout_gravity="center"
+            android:textSize="19sp"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_border"
+            />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:text="Titolarità: 98%"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/rounded_border"
+            android:backgroundTint="@color/green"
+            android:layout_gravity="left"
+            android:layout_marginTop="-48dp"
+            android:layout_marginStart="2.5dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MATCH: NAPOLI VS VERONA"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/blueborder"
+                android:padding="10dp"
+                android:textSize="19sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/blueborder"
+            android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PERCHÈ SCHIERARLO?"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="start">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/circle_background"
+                    android:backgroundTint="@color/green"
+                    android:gravity="center"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ALTA TITOLARITÀ"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold"
+                    android:textSize="19sp">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                >
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/circle_background"
+                    android:backgroundTint="@color/green"
+                    android:gravity="center"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IN CASA"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold"
+                    android:textSize="19sp">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                >
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/circle_background"
+                    android:backgroundTint="@color/green"
+                    android:gravity="center"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CLASSIFICA MIGLIORE"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold"
+                    android:textSize="19sp">
+                </TextView>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/blue"
+                android:onClick="onLoginClick"
+                android:text="Annulla"
+                android:textSize="17sp" />
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/blue"
+                android:onClick="onLoginClick"
+                android:layout_marginStart="50dp"
+                android:text="Modifica"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

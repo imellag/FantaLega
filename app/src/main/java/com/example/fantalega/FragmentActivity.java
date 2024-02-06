@@ -19,7 +19,7 @@ public class FragmentActivity extends AppCompatActivity {
 
         ChipNavigationBar navigationBar = findViewById(R.id.navigation_bar);
         Fragment fragment = new HomeFragment();
-
+        navigationBar.setItemSelected(R.id.navigation_home,true);
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragment_main, fragment)
                 .setReorderingAllowed(true)

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -70,28 +69,38 @@
            <TextView
                android:layout_marginEnd="30dp"
                android:text="1°"
-
+               android:textColor="@color/black"
+               android:textSize="16sp"
                />
            <TextView
                android:layout_marginEnd="30dp"
                android:text="Ac Culurgiones"
+               android:textColor="@color/black"
+               android:textSize="16sp"
 
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
                />
 
            <TextView
-
+               android:textColor="@color/black"
+               android:textSize="16sp"
                android:text="1250"
                />
 
@@ -104,29 +113,44 @@
            <TextView
                android:layout_marginEnd="30dp"
                android:text="2°"
-
+               android:textColor="@color/black"
+               android:textSize="16sp"
                />
            <TextView
                android:layout_marginEnd="30dp"
                android:text="Ac Culurgiones"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
 
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
 
            <TextView
 
                android:text="1250"
+
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
 
        </TableRow>
@@ -137,29 +161,45 @@
            <TextView
                android:layout_marginEnd="30dp"
                android:text="3°"
+               android:textColor="@color/black"
+               android:textSize="16sp"
 
                />
            <TextView
                android:layout_marginEnd="30dp"
                android:text="Ac Culurgiones"
+               android:textColor="@color/black"
+               android:textSize="16sp"
 
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
 
            <TextView
 
                android:text="1250"
+
+               android:textColor="@color/black"
+               android:textSize="16sp"
                />
 
        </TableRow>
@@ -170,29 +210,45 @@
            <TextView
                android:layout_marginEnd="30dp"
                android:text="4°"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
 
                />
            <TextView
                android:layout_marginEnd="30dp"
                android:text="Ac Culurgiones"
+               android:textColor="@color/black"
+               android:textSize="16sp"
 
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
 
            <TextView
 
                android:text="1250"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
 
        </TableRow>
@@ -203,28 +259,43 @@
            <TextView
                android:layout_marginEnd="30dp"
                android:text="5°"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
 
                />
            <TextView
                android:layout_marginEnd="30dp"
                android:text="Ac Culurgiones"
+               android:textColor="@color/black"
+               android:textSize="16sp"
 
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
 
            <TextView
-
+               android:textColor="@color/black"
+               android:textSize="16sp"
                android:text="1250"
                />
 
@@ -236,28 +307,41 @@
            <TextView
                android:layout_marginEnd="30dp"
                android:text="6°"
-
+               android:textColor="@color/black"
+               android:textSize="16sp"
                />
            <TextView
                android:layout_marginEnd="30dp"
                android:text="Ac Culurgiones"
+               android:textColor="@color/black"
+               android:textSize="16sp"
 
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
 
            <TextView
-
+               android:textColor="@color/black"
+               android:textSize="16sp"
                android:text="1250"
                />
 
@@ -267,30 +351,42 @@
            >
 
            <TextView
+               android:textColor="@color/black"
+               android:textSize="16sp"
                android:layout_marginEnd="30dp"
                android:text="7°"
 
                />
            <TextView
+               android:textColor="@color/black"
+               android:textSize="16sp"
                android:layout_marginEnd="30dp"
                android:text="Ac Culurgiones"
 
                />
            <TextView
+               android:textColor="@color/black"
+               android:textSize="16sp"
                android:layout_marginEnd="20dp"
                android:text="3"
                />
            <TextView
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                android:layout_marginEnd="20dp"
                android:text="3"
                />
            <TextView
+               android:textColor="@color/black"
+               android:textSize="16sp"
                android:layout_marginEnd="20dp"
                android:text="3"
                />
 
            <TextView
-
+               android:textColor="@color/black"
+               android:textSize="16sp"
                android:text="1250"
                />
 
@@ -300,6 +396,8 @@
            >
 
            <TextView
+               android:textColor="@color/black"
+               android:textSize="16sp"
                android:layout_marginEnd="30dp"
                android:text="8°"
 
@@ -307,23 +405,34 @@
            <TextView
                android:layout_marginEnd="30dp"
                android:text="Ac Culurgiones"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
 
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
 
            <TextView
-
+               android:textColor="@color/black"
+               android:textSize="16sp"
                android:text="1250"
                />
 
@@ -335,29 +444,44 @@
            <TextView
                android:layout_marginEnd="30dp"
                android:text="9°"
+               android:textColor="@color/black"
+               android:textSize="16sp"
 
                />
            <TextView
                android:layout_marginEnd="30dp"
                android:text="Ac Culurgiones"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
 
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
 
            <TextView
 
                android:text="1250"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
 
        </TableRow>
@@ -368,29 +492,45 @@
            <TextView
                android:layout_marginEnd="30dp"
                android:text="10°"
+               android:textColor="@color/black"
+               android:textSize="16sp"
 
                />
            <TextView
                android:layout_marginEnd="30dp"
                android:text="Ac Culurgiones"
+               android:textColor="@color/black"
+               android:textSize="16sp"
 
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
            <TextView
                android:layout_marginEnd="20dp"
                android:text="3"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
 
            <TextView
 
                android:text="1250"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+
                />
 
        </TableRow>

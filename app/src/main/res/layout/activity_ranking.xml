@@ -16,15 +16,386 @@
         android:textStyle="bold"
         android:textColor="@color/black"/>
 
-    <include layout="@layout/tabella_classifica_fragment" />
+   <TableLayout
+       android:padding="15dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
 
-    <include layout="@layout/tabella_classifica_fragment" />
+       <TableRow
+           android:background="@drawable/classifica"
+           >
+           <TextView
+               android:text="Pos"
+               android:layout_width="wrap_content"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+               />
+           <TextView
+               android:text="Squadra"
+               android:textColor="@color/black"
+               android:textSize="16sp"
 
-    <include layout="@layout/tabella_classifica_fragment" />
+               />
+           <TextView
+               android:text="V"
+               android:layout_width="wrap_content"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+               />
 
-    <include layout="@layout/tabella_classifica_fragment" />
+           <TextView
+               android:text="P"
+               android:layout_width="wrap_content"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+               android:text="S"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+               android:text="Punti"/>
 
-    <include layout="@layout/tabella_classifica_fragment" />
+
+       </TableRow>
+
+       <TableRow
+           android:layout_marginTop="20dp"
+           >
+
+           <TextView
+               android:layout_marginEnd="30dp"
+               android:text="1°"
+
+               />
+           <TextView
+               android:layout_marginEnd="30dp"
+               android:text="Ac Culurgiones"
+
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+
+           <TextView
+
+               android:text="1250"
+               />
+
+       </TableRow>
+
+       <TableRow
+           android:layout_marginTop="20dp"
+           >
+
+           <TextView
+               android:layout_marginEnd="30dp"
+               android:text="2°"
+
+               />
+           <TextView
+               android:layout_marginEnd="30dp"
+               android:text="Ac Culurgiones"
+
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+
+           <TextView
+
+               android:text="1250"
+               />
+
+       </TableRow>
+       <TableRow
+           android:layout_marginTop="20dp"
+           >
+
+           <TextView
+               android:layout_marginEnd="30dp"
+               android:text="3°"
+
+               />
+           <TextView
+               android:layout_marginEnd="30dp"
+               android:text="Ac Culurgiones"
+
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+
+           <TextView
+
+               android:text="1250"
+               />
+
+       </TableRow>
+       <TableRow
+           android:layout_marginTop="20dp"
+           >
+
+           <TextView
+               android:layout_marginEnd="30dp"
+               android:text="4°"
+
+               />
+           <TextView
+               android:layout_marginEnd="30dp"
+               android:text="Ac Culurgiones"
+
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+
+           <TextView
+
+               android:text="1250"
+               />
+
+       </TableRow>
+       <TableRow
+           android:layout_marginTop="20dp"
+           >
+
+           <TextView
+               android:layout_marginEnd="30dp"
+               android:text="5°"
+
+               />
+           <TextView
+               android:layout_marginEnd="30dp"
+               android:text="Ac Culurgiones"
+
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+
+           <TextView
+
+               android:text="1250"
+               />
+
+       </TableRow>
+       <TableRow
+           android:layout_marginTop="20dp"
+           >
+
+           <TextView
+               android:layout_marginEnd="30dp"
+               android:text="6°"
+
+               />
+           <TextView
+               android:layout_marginEnd="30dp"
+               android:text="Ac Culurgiones"
+
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+
+           <TextView
+
+               android:text="1250"
+               />
+
+       </TableRow>
+       <TableRow
+           android:layout_marginTop="20dp"
+           >
+
+           <TextView
+               android:layout_marginEnd="30dp"
+               android:text="7°"
+
+               />
+           <TextView
+               android:layout_marginEnd="30dp"
+               android:text="Ac Culurgiones"
+
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+
+           <TextView
+
+               android:text="1250"
+               />
+
+       </TableRow>
+       <TableRow
+           android:layout_marginTop="20dp"
+           >
+
+           <TextView
+               android:layout_marginEnd="30dp"
+               android:text="8°"
+
+               />
+           <TextView
+               android:layout_marginEnd="30dp"
+               android:text="Ac Culurgiones"
+
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+
+           <TextView
+
+               android:text="1250"
+               />
+
+       </TableRow>
+       <TableRow
+           android:layout_marginTop="20dp"
+           >
+
+           <TextView
+               android:layout_marginEnd="30dp"
+               android:text="9°"
+
+               />
+           <TextView
+               android:layout_marginEnd="30dp"
+               android:text="Ac Culurgiones"
+
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+
+           <TextView
+
+               android:text="1250"
+               />
+
+       </TableRow>
+       <TableRow
+           android:layout_marginTop="20dp"
+           >
+
+           <TextView
+               android:layout_marginEnd="30dp"
+               android:text="10°"
+
+               />
+           <TextView
+               android:layout_marginEnd="30dp"
+               android:text="Ac Culurgiones"
+
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+           <TextView
+               android:layout_marginEnd="20dp"
+               android:text="3"
+               />
+
+           <TextView
+
+               android:text="1250"
+               />
+
+       </TableRow>
+
+   </TableLayout>
 
 
 </LinearLayout>

@@ -13,7 +13,7 @@ public class CreaCampionatoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.crea_campionato);
-        Button crea = findViewById(R.id.crea);
+        Button crea = findViewById(R.id.btnConfirm);
 
 
         crea.setOnClickListener(v -> {

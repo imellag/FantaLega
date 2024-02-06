@@ -4,12 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:layout_marginBottom="30dp">
+
+   >
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        >
 
 
         <LinearLayout
@@ -19,20 +22,16 @@
             android:padding="25dp">
 
             <TextView
-                android:id="@+id/btnRosa"
+                android:id="@+id/textView"
                 android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:layout_marginTop="50dp"
-                android:clickable="true"
-                android:drawablePadding="10dp"
-                android:focusable="true"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9dp"
                 android:gravity="center"
-                android:paddingHorizontal="20dp"
-                android:text="La tua Rosa"
+                android:paddingBottom="16dp"
+                android:text="La tua rosa"
                 android:textColor="@color/black"
-                android:textSize="19sp"
-                app:drawableLeftCompat="@drawable/rosa">
-            </TextView>
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <!-- Lista dei portieri -->
             <TextView
@@ -41,7 +40,7 @@
                 android:text="Portieri"
                 android:gravity="center"
                 android:padding="10dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:textColor="@color/white"
                 android:backgroundTint="@color/purple"
                 android:background="@drawable/rounded_border"
@@ -404,4 +403,15 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTornaIndietro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Torna Indietro"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue"
+        android:background="@drawable/rounded_border"
+        android:layout_marginHorizontal="30dp"
+        />
 </LinearLayout>

@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
     android:fillViewport="true">
 
-    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    <LinearLayout
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,17 +36,22 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="match_parent"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+               android:layout_marginStart="40dp"
+                android:src="@drawable/team2" />
+            <View
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                />
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:src="@drawable/team1"
+                 />
         </LinearLayout>
 
         <LinearLayout
@@ -208,10 +220,19 @@
             </LinearLayout>
         </LinearLayout>
 
-        <com.ismaeldivita.chipnavigation.ChipNavigationBar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bordo_curvo"
-            app:cnb_menuResource="@menu/navbar" />
+
     </LinearLayout>
 </ScrollView>
+
+<androidx.appcompat.widget.AppCompatButton
+
+android:id="@+id/btnTornaIndietro"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="torna indietro"
+android:layout_marginHorizontal="30dp"
+android:backgroundTint="@color/blue"
+android:background="@drawable/rounded_border"
+android:textColor="@color/white"
+    />
+</LinearLayout>

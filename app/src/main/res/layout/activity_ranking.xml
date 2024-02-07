@@ -341,7 +341,7 @@
            <TextView
                android:textColor="@color/black"
                android:textSize="16sp"
-               android:text="1250"
+               android:text="508"
                />
 
        </TableRow>
@@ -386,7 +386,7 @@
            <TextView
                android:textColor="@color/black"
                android:textSize="16sp"
-               android:text="1250"
+               android:text="383"
                />
 
        </TableRow>
@@ -432,7 +432,7 @@
            <TextView
                android:textColor="@color/black"
                android:textSize="16sp"
-               android:text="1250"
+               android:text="247"
                />
 
        </TableRow>
@@ -477,7 +477,7 @@
 
            <TextView
 
-               android:text="1250"
+               android:text="180"
                android:textColor="@color/black"
                android:textSize="16sp"
 
@@ -526,7 +526,7 @@
 
            <TextView
 
-               android:text="1250"
+               android:text="111"
                android:textColor="@color/black"
                android:textSize="16sp"
 

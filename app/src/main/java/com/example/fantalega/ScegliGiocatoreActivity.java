@@ -29,7 +29,6 @@ public class ScegliGiocatoreActivity extends AppCompatActivity {
         Button conferma= findViewById(R.id.conferma_attaccante);
         Button indietro = findViewById(R.id.indietro_attaccante);
 
-
         conferma.setOnClickListener(v -> {
             Toast.makeText(this, "Attaccante inserito", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(this, FormationActivity.class);
@@ -37,7 +36,6 @@ public class ScegliGiocatoreActivity extends AppCompatActivity {
             ProgressBar progressBar = findViewById(R.id.progressBar);
             progressBar.setProgress(50); // Imposta il progresso al 50%
         });
-
 
         indietro.setOnClickListener(v -> {
             Intent intent = new Intent(this, FormationActivity.class);

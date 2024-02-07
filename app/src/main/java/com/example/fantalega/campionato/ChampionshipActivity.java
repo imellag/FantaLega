@@ -21,10 +21,7 @@ public class ChampionshipActivity extends AppCompatActivity {
         setContentView(R.layout.activity_championship);
 
 
-
-
     }
-
 
 
 }

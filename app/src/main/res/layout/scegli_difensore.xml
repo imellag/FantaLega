@@ -141,7 +141,7 @@
                     android:layout_weight="2"
                     android:text="6"
                     android:gravity="center"
-                    android:textSize="20sp" />
+                    android:textSize="18sp" />
 
                 <View
                     android:id="@+id/verticalLine"
@@ -156,7 +156,7 @@
                     android:layout_weight="2"
                     android:text="6"
                     android:gravity="center"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:layout_marginStart="10dp"/>
 
                 <View
@@ -172,7 +172,7 @@
                     android:layout_weight="2"
                     android:text="6"
                     android:gravity="center"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:layout_marginStart="10dp"/>
 
                 <View
@@ -189,7 +189,7 @@
                     android:text="6"
                     android:gravity="center"
                     android:layout_marginStart="10dp"
-                    android:textSize="20sp" />
+                    android:textSize="18sp" />
 
             </LinearLayout>
 

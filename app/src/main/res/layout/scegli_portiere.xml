@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:background="@drawable/redborder"
+            android:background="@drawable/purpleborder"
             android:padding="15dp">
 
             <ImageView
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
-                android:text="CAMBIAGHI"
+                android:text="MAIGNAN"
                 android:clickable="true"
                 android:focusableInTouchMode="true"
                 android:textColor="@color/black"
@@ -52,7 +52,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="(Empoli)"
+                android:text="(Milan)"
                 android:layout_gravity="center"/>
 
             <LinearLayout
@@ -70,7 +70,7 @@
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="match_parent"
                     android:layout_height="20dp"
-                    android:progress="50"
+                    android:progress="100"
                     android:indeterminate="false"
                     android:max="100"
                     android:progressTint="@color/green" />
@@ -80,7 +80,7 @@
                     android:id="@+id/percentageTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="50% titolarità"
+                    android:text="100% titolarità"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -240,9 +240,9 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/attaccante"
+                        android:background="@drawable/portiere"
                         android:gravity="center"
-                        android:text="A"
+                        android:text="P"
 
                         android:textColor="@color/white" />
 
@@ -251,7 +251,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="CAMBIAGHI"
+                        android:text="MAIGNAN"
                         android:textSize="12sp" />
                 </LinearLayout>
 
@@ -267,9 +267,9 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/attaccante"
+                        android:background="@drawable/portiere"
                         android:gravity="center"
-                        android:text="A"
+                        android:text="P"
 
                         android:textColor="@color/white" />
 
@@ -279,7 +279,7 @@
                         android:layout_marginTop="15dp"
 
                         android:gravity="center"
-                        android:text="NIANG"
+                        android:text="TURATI"
                         android:textSize="12sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -301,9 +301,9 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/attaccante"
+                        android:background="@drawable/portiere"
                         android:gravity="center"
-                        android:text="A"
+                        android:text="P"
 
                         android:textColor="@color/white" />
 
@@ -312,95 +312,10 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="NGONGE"
+                        android:text="OKOYE"
                         android:textSize="12sp" />
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:layout_marginStart="10dp"
-                    android:paddingVertical="10dp">
-
-                    <TextView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/attaccante"
-                        android:gravity="center"
-                        android:text="A"
-
-                        android:textColor="@color/white" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
-                        android:gravity="center"
-                        android:text="LUKAKU"
-                        android:textSize="12sp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:paddingVertical="10dp">
-
-                    <TextView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/attaccante"
-                        android:gravity="center"
-                        android:text="A"
-
-                        android:textColor="@color/white" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
-                        android:gravity="center"
-                        android:text="KRSTOVIC"
-                        android:textSize="12sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:layout_marginStart="10dp"
-                    android:paddingVertical="10dp">
-
-                    <TextView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/attaccante"
-                        android:gravity="center"
-                        android:text="A"
-
-                        android:textColor="@color/white" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
-                        android:gravity="center"
-                        android:text="GONZALEZ"
-                        android:textSize="12sp" />
-                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

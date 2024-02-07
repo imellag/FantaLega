@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ProgressBar;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -17,9 +19,9 @@ import java.util.zip.Inflater;
 
 public class ScegliGiocatoreActivity extends AppCompatActivity {
 
-
     @SuppressLint("SetTextI18n")
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.scegli_attaccante);
@@ -32,13 +34,17 @@ public class ScegliGiocatoreActivity extends AppCompatActivity {
             Toast.makeText(this, "Attaccante inserito", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(this, FormationActivity.class);
             startActivity(intent);
+            ProgressBar progressBar = findViewById(R.id.progressBar);
+            progressBar.setProgress(50); // Imposta il progresso al 50%
         });
+
 
         indietro.setOnClickListener(v -> {
             Intent intent = new Intent(this, FormationActivity.class);
             startActivity(intent);
         });
     }
+
 
 
 

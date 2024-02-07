@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:padding="25dp">
 
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,23 +27,21 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:background="@drawable/redborder"
+            android:background="@drawable/orangeborder"
             android:padding="15dp">
 
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
-                android:background="@drawable/baseline_person_24"
-                android:clickable="true"
-                android:focusable="true"/>
+                android:background="@drawable/baseline_person_24" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
-                android:text="CAMBIAGHI"
+                android:text="PULISIC"
                 android:clickable="true"
                 android:focusableInTouchMode="true"
                 android:textColor="@color/black"
@@ -52,7 +51,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="(Empoli)"
+                android:text="(MILAN)"
                 android:layout_gravity="center"/>
 
             <LinearLayout
@@ -70,7 +69,7 @@
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="match_parent"
                     android:layout_height="20dp"
-                    android:progress="50"
+                    android:progress="90"
                     android:indeterminate="false"
                     android:max="100"
                     android:progressTint="@color/green" />
@@ -80,7 +79,7 @@
                     android:id="@+id/percentageTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="50% titolarità"
+                    android:text="90% titolarità"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -219,8 +218,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginStart="20dp"
-            android:orientation="vertical"
-            android:layout_gravity="center">
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -240,9 +238,9 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/attaccante"
+                        android:background="@drawable/centrocampista"
                         android:gravity="center"
-                        android:text="A"
+                        android:text="C"
 
                         android:textColor="@color/white" />
 
@@ -251,7 +249,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="CAMBIAGHI"
+                        android:text="PULISIC"
                         android:textSize="12sp" />
                 </LinearLayout>
 
@@ -260,16 +258,15 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical"
-                    android:layout_marginStart="10dp"
                     android:paddingVertical="10dp">
 
                     <TextView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/attaccante"
+                        android:background="@drawable/centrocampista"
                         android:gravity="center"
-                        android:text="A"
+                        android:text="C"
 
                         android:textColor="@color/white" />
 
@@ -277,9 +274,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-
                         android:gravity="center"
-                        android:text="NIANG"
+                        android:text="GUENDOUZI"
                         android:textSize="12sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -301,10 +297,9 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/attaccante"
+                        android:background="@drawable/centrocampista"
                         android:gravity="center"
-                        android:text="A"
-
+                        android:text="C"
                         android:textColor="@color/white" />
 
                     <TextView
@@ -312,7 +307,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="NGONGE"
+                        android:text="EDERSON"
                         android:textSize="12sp" />
                 </LinearLayout>
 
@@ -321,16 +316,15 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical"
-                    android:layout_marginStart="10dp"
                     android:paddingVertical="10dp">
 
                     <TextView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/attaccante"
+                        android:background="@drawable/centrocampista"
                         android:gravity="center"
-                        android:text="A"
+                        android:text="C"
 
                         android:textColor="@color/white" />
 
@@ -339,10 +333,70 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="LUKAKU"
+                        android:text="COLPANI"
                         android:textSize="12sp" />
                 </LinearLayout>
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/centrocampista"
+                        android:gravity="center"
+                        android:text="C"
+
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="MAZZITELLI"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/centrocampista"
+                        android:gravity="center"
+                        android:text="C"
+
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="PEREYRA"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -360,10 +414,9 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/attaccante"
+                        android:background="@drawable/centrocampista"
                         android:gravity="center"
-                        android:text="A"
-
+                        android:text="C"
                         android:textColor="@color/white" />
 
                     <TextView
@@ -371,7 +424,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="KRSTOVIC"
+                        android:text="TRAORE"
                         android:textSize="12sp" />
                 </LinearLayout>
 
@@ -380,17 +433,15 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical"
-                    android:layout_marginStart="10dp"
                     android:paddingVertical="10dp">
 
                     <TextView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/attaccante"
+                        android:background="@drawable/centrocampista"
                         android:gravity="center"
-                        android:text="A"
-
+                        android:text="C"
                         android:textColor="@color/white" />
 
                     <TextView
@@ -398,11 +449,14 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="GONZALEZ"
+                        android:text="IKONE"
                         android:textSize="12sp" />
                 </LinearLayout>
+
             </LinearLayout>
+
         </LinearLayout>
+
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
@@ -410,7 +464,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="25dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/rounded_border"
         android:backgroundTint="@color/blue"
         android:text="Conferma"

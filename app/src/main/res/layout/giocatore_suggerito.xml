@@ -50,27 +50,6 @@
             >
         </TextView>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/rounded_border"
-            />
-
-        <TextView
-            android:layout_width="350dp"
-            android:layout_height="45dp"
-            android:text="Titolarità: 98%"
-            android:textSize="22sp"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:background="@drawable/rounded_border"
-            android:backgroundTint="@color/green"
-            android:layout_gravity="left"
-            android:layout_marginTop="-48dp"
-            android:layout_marginStart="2.5dp">
-        </TextView>
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -78,25 +57,59 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp">
 
+            <!-- ProgressBar -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:progress="98"
+                android:indeterminate="false"
+                android:max="100"
+                android:progressTint="@color/green" />
+
+            <!-- Testo della percentuale -->
+            <TextView
+                android:id="@+id/percentageTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="98% titolarità"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="MATCH: NAPOLI VS VERONA"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/blueborder"
                 android:padding="10dp"
                 android:textSize="20sp" />
 
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="PERCHÈ SCHIERARLO?"
             android:layout_marginTop="40dp"
-            android:textAlignment="center"
             android:textColor="@color/blue"
             android:textSize="23sp"
             android:textStyle="bold" />
@@ -105,7 +118,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_gravity="center"
+            android:layout_gravity="start"
             android:layout_marginTop="10dp"
             android:background="@drawable/blueborder"
             android:padding="15dp">
@@ -205,7 +218,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="25dp"
             android:layout_gravity="center"
             android:orientation="horizontal">
 

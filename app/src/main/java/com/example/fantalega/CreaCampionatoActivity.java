@@ -17,14 +17,13 @@ public class CreaCampionatoActivity extends AppCompatActivity {
 
 
         crea.setOnClickListener(v -> {
-            Toast.makeText(this,"Lega Creata con successo!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Lega Creata con successo!", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(CreaCampionatoActivity.this, FragmentActivity.class);
             startActivity(intent);
 
         });
 
     }
-
 
 
 }

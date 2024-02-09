@@ -62,8 +62,5 @@
         <activity android:name=".ScegliGiocatoreActivity"/>
         <activity android:name=".CreaCampionatoActivity"/>
         <activity android:name=".AccediCampionatoActivity"/>
-
-
     </application>
-
 </manifest>

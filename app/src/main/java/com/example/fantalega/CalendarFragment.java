@@ -1,15 +1,16 @@
 package com.example.fantalega;
+
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,9 +19,10 @@ import java.util.List;
 
 public class CalendarFragment extends Fragment {
 
-    int i=1;
-    String[] mioArray = {"Culurgiones Fc", "AC Cipicchia", "San Benedetto FC", "Ac Milan","Juventus FC", "Inter Fc",
-            "As Lazio","As Roma","Pog Drug","Sant'anna Fc"};
+    int i = 1;
+    String[] mioArray = {"Culurgiones Fc", "AC Cipicchia", "San Benedetto FC", "Ac Milan", "Juventus FC", "Inter Fc",
+            "As Lazio", "As Roma", "Pog Drug", "Sant'anna Fc"};
+
     public CalendarFragment() {
     }
 
@@ -40,14 +42,14 @@ public class CalendarFragment extends Fragment {
         TextView giornata = view.findViewById(R.id.giornata);
         squadre.add(view.findViewById(R.id.squadra_1));
         squadre.add(view.findViewById(R.id.squadra_2));
-        squadre.add( view.findViewById(R.id.squadra_3));
-        squadre.add( view.findViewById(R.id.squadra_4));
-        squadre.add( view.findViewById(R.id.squadra_5));
+        squadre.add(view.findViewById(R.id.squadra_3));
+        squadre.add(view.findViewById(R.id.squadra_4));
+        squadre.add(view.findViewById(R.id.squadra_5));
         squadre.add(view.findViewById(R.id.squadra_6));
         squadre.add(view.findViewById(R.id.squadra_7));
         squadre.add(view.findViewById(R.id.squadra_8));
         squadre.add(view.findViewById(R.id.squadra_9));
-        squadre.add( view.findViewById(R.id.squadra_10));
+        squadre.add(view.findViewById(R.id.squadra_10));
         giornata.setText(i + "° Giornata");
         mescolaArray(mioArray);
         int j = 0;

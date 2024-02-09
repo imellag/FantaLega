@@ -10,8 +10,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.fantalega.FragmentActivity;
-import com.example.fantalega.HomeActivity;
-import com.example.fantalega.HomeFragment;
 import com.example.fantalega.R;
 import com.example.fantalega.ScegliGiocatoreActivity;
 
@@ -71,16 +69,11 @@ public class FormationActivity extends AppCompatActivity {
     }
 
     private void onPlayerButtonClicked(View view) {
-        // Logica per selezionare il giocatore per la posizione
-        // Potresti voler avviare un'altra Activity per selezionare il giocatore
-        Toast.makeText(this, "Seleziona giocatore per la posizione", Toast.LENGTH_SHORT).show();
-
-            Intent intent = new Intent(this, ScegliGiocatoreActivity.class);
-            startActivity(intent);
+        Intent intent = new Intent(this, ScegliGiocatoreActivity.class);
+        startActivity(intent);
     }
 
     private void onRecommendedFormationClicked() {
-        // Logica per impostare la formazione consigliata
         Toast.makeText(this, "Formazione consigliata impostata", Toast.LENGTH_SHORT).show();
     }
 

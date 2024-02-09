@@ -1,13 +1,13 @@
 package com.example.fantalega.campionato;
 
-import com.example.fantalega.ScegliGiocatoreActivity;
-import com.example.fantalega.R;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.fantalega.R;
+import com.example.fantalega.ScegliGiocatoreActivity;
 
 public class BenchActivity extends AppCompatActivity {
 

@@ -1,8 +1,8 @@
 <resources>
     <string-array name="season_array">
-        <item>2020/2021</item>
-        <item>2021/2022</item>
-        <item>2022/2023</item>
         <item>2023/2024</item>
+        <item>2022/2023</item>
+        <item>2021/2022</item>
+        <item>2020/2021</item>
     </string-array>
 </resources>

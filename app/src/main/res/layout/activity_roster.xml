@@ -1,16 +1,15 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+
+    >
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="16dp"
-        >
+        android:padding="16dp">
 
 
         <LinearLayout
@@ -35,61 +34,57 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Portieri"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_border"
+                android:backgroundTint="@color/purple"
                 android:gravity="center"
                 android:padding="10dp"
-                android:layout_marginTop="20dp"
-                android:textColor="@color/white"
-                android:backgroundTint="@color/purple"
-                android:background="@drawable/rounded_border"
-
-                >
+                android:text="Portieri"
+                android:textColor="@color/white">
             </TextView>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:layout_gravity="center"
-                android:backgroundTint="@color/purple"
                 android:layout_marginTop="10dp"
-                android:outlineAmbientShadowColor="@color/black"
-                >
+                android:backgroundTint="@color/purple"
+                android:orientation="vertical"
+                android:outlineAmbientShadowColor="@color/black">
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/purpleborder"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="10dp"
                     android:text="MAIGNAN"
-                    android:clickable="true"
-                    android:gravity="center"
-                    android:background="@drawable/purpleborder"
-                    android:padding="10dp"
-                    android:textColor="@color/black"
-                    >
+                    android:textColor="@color/black">
                 </TextView>
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/purpleborder"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="10dp"
                     android:text="TURATI"
-                    android:clickable="true"
-                    android:gravity="center"
-                    android:padding="10dp"
-                    android:textColor="@color/black"
-                    android:background="@drawable/purpleborder"
-                    android:layout_marginTop="5dp">
+                    android:textColor="@color/black">
                 </TextView>
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="OKOYE"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/purpleborder"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/purpleborder"
                     android:padding="10dp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="5dp">
+                    android:text="OKOYE"
+                    android:textColor="@color/black">
                 </TextView>
 
             </LinearLayout>
@@ -98,105 +93,106 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Difensori"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/rounded_border"
+                android:backgroundTint="@color/blue"
                 android:gravity="center"
                 android:padding="10dp"
-                android:layout_marginTop="40dp"
-                android:textColor="@color/white"
-                android:backgroundTint="@color/blue"
-                android:background="@drawable/rounded_border">
+                android:text="Difensori"
+                android:textColor="@color/white">
             </TextView>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="SCALVINI"
+                    android:background="@drawable/blueborder"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/blueborder"
-                    android:padding="10dp">
+                    android:padding="10dp"
+                    android:text="SCALVINI">
                 </TextView>
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="BANI"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/blueborder"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/blueborder"
                     android:padding="10dp"
-                    android:layout_marginTop="5dp">
+                    android:text="BANI">
                 </TextView>
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="DUMFRIES"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/blueborder"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/blueborder"
                     android:padding="10dp"
-                    android:layout_marginTop="5dp">
+                    android:text="DUMFRIES">
                 </TextView>
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="MARI"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/blueborder"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/blueborder"
                     android:padding="10dp"
-                    android:layout_marginTop="5dp">
+                    android:text="MARI">
                 </TextView>
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="DIMARCO"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/blueborder"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/blueborder"
                     android:padding="10dp"
-                    android:layout_marginTop="5dp">
+                    android:text="DIMARCO">
                 </TextView>
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="T. HERNANDEZ"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/blueborder"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/blueborder"
                     android:padding="10dp"
-                    android:layout_marginTop="5dp">
+                    android:text="T. HERNANDEZ">
                 </TextView>
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="ZORTEA"
-                    android:gravity="center"
+                    android:layout_marginTop="5dp"
                     android:background="@drawable/blueborder"
+                    android:gravity="center"
                     android:padding="10dp"
-                    android:layout_marginTop="5dp">
+                    android:text="ZORTEA">
                 </TextView>
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="RRAHMANI"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/blueborder"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/blueborder"
                     android:padding="10dp"
-                    android:layout_marginTop="5dp">
+                    android:text="RRAHMANI">
                 </TextView>
 
             </LinearLayout>
@@ -205,107 +201,107 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Centrocampisti"
-                android:gravity="center"
-                android:background="@drawable/rounded_border"
-                android:padding="10dp"
                 android:layout_marginTop="40dp"
-                android:textColor="@color/white"
-                android:backgroundTint="@color/orange">
+                android:background="@drawable/rounded_border"
+                android:backgroundTint="@color/orange"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Centrocampisti"
+                android:textColor="@color/white">
             </TextView>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="PULISIC"
+                    android:background="@drawable/orangeborder"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/orangeborder"
-                    android:padding="10dp">
+                    android:padding="10dp"
+                    android:text="PULISIC">
                 </TextView>
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="IKONE"
-                    android:clickable="true"
-                    android:gravity="center"
-                    android:background="@drawable/orangeborder"
                     android:layout_marginTop="5dp"
-                    android:padding="10dp">
+                    android:background="@drawable/orangeborder"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="IKONE">
                 </TextView>
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="EDERSON"
-                    android:clickable="true"
-                    android:gravity="center"
-                    android:background="@drawable/orangeborder"
                     android:layout_marginTop="5dp"
-                    android:padding="10dp">
+                    android:background="@drawable/orangeborder"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="EDERSON">
                 </TextView>
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="COLPANI"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/orangeborder"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/orangeborder"
                     android:padding="10dp"
-                    android:layout_marginTop="5dp">
+                    android:text="COLPANI">
                 </TextView>
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="GUENDOUZI"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/orangeborder"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/orangeborder"
                     android:padding="10dp"
-                    android:layout_marginTop="5dp">
+                    android:text="GUENDOUZI">
                 </TextView>
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="MAZZITELLI"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/orangeborder"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/orangeborder"
                     android:padding="10dp"
-                    android:layout_marginTop="5dp">
+                    android:text="MAZZITELLI">
                 </TextView>
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="PEREYRA"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/orangeborder"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/orangeborder"
                     android:padding="10dp"
-                    android:layout_marginTop="5dp">
+                    android:text="PEREYRA">
                 </TextView>
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="TRAORE"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/orangeborder"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/orangeborder"
                     android:padding="10dp"
-                    android:layout_marginTop="5dp">
+                    android:text="TRAORE">
                 </TextView>
 
             </LinearLayout>
@@ -314,91 +310,90 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Attaccanti"
-                android:gravity="center"
-                android:background="@drawable/rounded_border"
-                android:padding="10dp"
                 android:layout_marginTop="40dp"
-                android:textColor="@color/white"
-                android:backgroundTint="@color/red">
+                android:background="@drawable/rounded_border"
+                android:backgroundTint="@color/red"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Attaccanti"
+                android:textColor="@color/white">
             </TextView>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/redborder"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="10dp"
                     android:text="LUKAKU"
-                    android:clickable="true"
-                    android:gravity="center"
-                    android:background="@drawable/redborder"
-                    android:padding="10dp"
-                    >
+                    android:onClick="openStats"
+                    android:focusable="true">
                 </TextView>
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="KRSTOVIC"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/redborder"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/redborder"
                     android:padding="10dp"
-                    android:layout_marginTop="5dp">
+                    android:text="KRSTOVIC">
                 </TextView>
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="CAMBIAGHI"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/redborder"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/redborder"
                     android:padding="10dp"
-                    android:layout_marginTop="5dp">
+                    android:text="CAMBIAGHI">
                 </TextView>
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="NIANG"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/redborder"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/redborder"
                     android:padding="10dp"
-                    android:layout_marginTop="5dp">
+                    android:text="NIANG">
                 </TextView>
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="N. GONZALEZ"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/redborder"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/redborder"
                     android:padding="10dp"
-                    android:layout_marginTop="5dp">
+                    android:text="N. GONZALEZ">
                 </TextView>
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="NGONGE"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/redborder"
                     android:clickable="true"
                     android:gravity="center"
-                    android:background="@drawable/redborder"
                     android:padding="10dp"
-                    android:layout_marginTop="5dp">
+                    android:text="NGONGE">
                 </TextView>
 
             </LinearLayout>
-
-
         </LinearLayout>
     </ScrollView>
 
@@ -406,10 +401,9 @@
         android:id="@+id/btnTornaIndietro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Torna Indietro"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/blue"
-        android:background="@drawable/rounded_border"
         android:layout_marginHorizontal="30dp"
-        />
+        android:background="@drawable/rounded_border"
+        android:backgroundTint="@color/blue"
+        android:text="Torna Indietro"
+        android:textColor="@color/white" />
 </LinearLayout>

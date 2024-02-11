@@ -7,9 +7,8 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.fantalega.HomeActivity;
-import com.example.fantalega.R;
 import com.example.fantalega.FragmentActivity;
+import com.example.fantalega.R;
 
 public class LoginActivity extends AppCompatActivity {
 

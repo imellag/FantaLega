@@ -10,8 +10,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.fantalega.FragmentActivity;
-import com.example.fantalega.HomeActivity;
-import com.example.fantalega.HomeFragment;
 import com.example.fantalega.R;
 import com.example.fantalega.ScegliGiocatoreActivity;
 
@@ -47,18 +45,18 @@ public class FormationActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        btnGoalkeeper.setOnClickListener(this::onGoalkeeperPlayerButtonClicked);
-        btnDefender1.setOnClickListener(this::onDefenderPlayerButtonClicked);
-        btnDefender2.setOnClickListener(this::onDefenderPlayerButtonClicked);
-        btnDefender3.setOnClickListener(this::onDefenderPlayerButtonClicked);
-        btnDefender4.setOnClickListener(this::onDefenderPlayerButtonClicked);
-        btnMidfielder1.setOnClickListener(this::onMidfielderPlayerButtonClicked);
-        btnMidfielder2.setOnClickListener(this::onMidfielderPlayerButtonClicked);
-        btnMidfielder3.setOnClickListener(this::onMidfielderPlayerButtonClicked);
-        btnMidfielder4.setOnClickListener(this::onMidfielderPlayerButtonClicked);
+        btnGoalkeeper.setOnClickListener(this::onPlayerButtonClicked);
+        btnDefender1.setOnClickListener(this::onPlayerButtonClicked);
+        btnDefender2.setOnClickListener(this::onPlayerButtonClicked);
+        btnDefender3.setOnClickListener(this::onPlayerButtonClicked);
+        btnDefender4.setOnClickListener(this::onPlayerButtonClicked);
+        btnMidfielder1.setOnClickListener(this::onPlayerButtonClicked);
+        btnMidfielder2.setOnClickListener(this::onPlayerButtonClicked);
+        btnMidfielder3.setOnClickListener(this::onPlayerButtonClicked);
+        btnMidfielder4.setOnClickListener(this::onPlayerButtonClicked);
         // Aggiungere centrocampista 5 (3-5-2)
-        btnStriker1.setOnClickListener(this::onStrikerPlayerButtonClicked);
-        btnStriker2.setOnClickListener(this::onStrikerPlayerButtonClicked);
+        btnStriker1.setOnClickListener(this::onPlayerButtonClicked);
+        btnStriker2.setOnClickListener(this::onPlayerButtonClicked);
         // Aggiungere attaccante 3
 
         // Inizializza e imposta listener per il bottone della formazione consigliata
@@ -70,41 +68,12 @@ public class FormationActivity extends AppCompatActivity {
         btnSaveFormation.setOnClickListener(v -> onSaveFormationClicked());
     }
 
-    private void onGoalkeeperPlayerButtonClicked(View view) {
-        // Logica per selezionare il giocatore per la posizione
-        // Potresti voler avviare un'altra Activity per selezionare il giocatore
-        Toast.makeText(this, "Seleziona giocatore per la posizione", Toast.LENGTH_SHORT).show();
-
-            Intent intent = new Intent(this, ConsigliatoAttaccanteActivity.class);
-            startActivity(intent);
-    }
-    private void onDefenderPlayerButtonClicked(View view) {
-        // Logica per selezionare il giocatore per la posizione
-        // Potresti voler avviare un'altra Activity per selezionare il giocatore
-        Toast.makeText(this, "Seleziona giocatore per la posizione", Toast.LENGTH_SHORT).show();
-
-        Intent intent = new Intent(this, ConsigliatoAttaccanteActivity.class);
-        startActivity(intent);
-    }
-    private void onMidfielderPlayerButtonClicked(View view) {
-        // Logica per selezionare il giocatore per la posizione
-        // Potresti voler avviare un'altra Activity per selezionare il giocatore
-        Toast.makeText(this, "Seleziona giocatore per la posizione", Toast.LENGTH_SHORT).show();
-
-        Intent intent = new Intent(this, ConsigliatoAttaccanteActivity.class);
-        startActivity(intent);
-    }
-    private void onStrikerPlayerButtonClicked(View view) {
-        // Logica per selezionare il giocatore per la posizione
-        // Potresti voler avviare un'altra Activity per selezionare il giocatore
-        Toast.makeText(this, "Seleziona giocatore per la posizione", Toast.LENGTH_SHORT).show();
-
-        Intent intent = new Intent(this, ConsigliatoAttaccanteActivity.class);
+    private void onPlayerButtonClicked(View view) {
+        Intent intent = new Intent(this, ScegliGiocatoreActivity.class);
         startActivity(intent);
     }
 
     private void onRecommendedFormationClicked() {
-        // Logica per impostare la formazione consigliata
         Toast.makeText(this, "Formazione consigliata impostata", Toast.LENGTH_SHORT).show();
     }
 

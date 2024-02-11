@@ -61,9 +61,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:background="@drawable/rounded_border"
-            android:clickable="true"
-            android:focusable="true"
-            android:onClick="aggiungiCampionato"
             android:orientation="vertical"
             android:paddingVertical="10dp">
 
@@ -98,9 +95,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:background="@drawable/rounded_border"
-            android:clickable="true"
-            android:focusable="true"
-            android:onClick="accediCampionato"
             android:orientation="vertical"
             android:padding="10dp">
 

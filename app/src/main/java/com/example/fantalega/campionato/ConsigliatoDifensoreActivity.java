@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.fantalega.R;
 import com.example.fantalega.ScegliGiocatoreAttaccanteActivity;
+import com.example.fantalega.ScegliGiocatoreDifensoreActivity;
 
 public class ConsigliatoDifensoreActivity extends AppCompatActivity {
 
@@ -21,7 +22,7 @@ public class ConsigliatoDifensoreActivity extends AppCompatActivity {
 
         modifica.setOnClickListener(v -> {
 
-            Intent intent = new Intent(this, ScegliGiocatoreAttaccanteActivity.class);
+            Intent intent = new Intent(this, ScegliGiocatoreDifensoreActivity.class);
             startActivity(intent);
             finish();
         });

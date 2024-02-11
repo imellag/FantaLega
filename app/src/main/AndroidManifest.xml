@@ -60,10 +60,15 @@
         <activity android:name=".CampionatoFragment" />
         <activity android:name=".campionato.MatchLiveActivity"/>
         <activity android:name=".ScegliGiocatoreAttaccanteActivity"/>
-        <activity android:name=".CreaCampionatoActivity"/>
-        <activity android:name=".AccediCampionatoActivity"/>
+        <activity android:name=".campionato.CreaCampionatoActivity"/>
+        <activity android:name=".campionato.AccediCampionatoActivity"/>
+        <activity android:name=".campionato.ConsigliatoPortiereActivity"/>
         <activity android:name=".campionato.ConsigliatoCentrocampistaActivity"/>
         <activity android:name=".campionato.ConsigliatoAttaccanteActivity"/>
         <activity android:name=".campionato.ConsigliatoDifensoreActivity"/>
+        <activity android:name=".ScegliGiocatoreCentrocampistaActivity"/>
+        <activity android:name=".ScegliGiocatorePortiereActivity"/>
+        <activity android:name=".ScegliGiocatoreDifensoreActivity"/>
+
     </application>
 </manifest>

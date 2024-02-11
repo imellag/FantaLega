@@ -62,7 +62,7 @@
         <activity android:name=".ScegliGiocatoreActivity"/>
         <activity android:name=".CreaCampionatoActivity"/>
         <activity android:name=".AccediCampionatoActivity"/>
-
+        <activity android:name=".campionato.ConsigliatoAttaccanteActivity"/>
 
     </application>
 

@@ -47,18 +47,18 @@ public class FormationActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        btnGoalkeeper.setOnClickListener(this::onPlayerButtonClicked);
-        btnDefender1.setOnClickListener(this::onPlayerButtonClicked);
-        btnDefender2.setOnClickListener(this::onPlayerButtonClicked);
-        btnDefender3.setOnClickListener(this::onPlayerButtonClicked);
-        btnDefender4.setOnClickListener(this::onPlayerButtonClicked);
-        btnMidfielder1.setOnClickListener(this::onPlayerButtonClicked);
-        btnMidfielder2.setOnClickListener(this::onPlayerButtonClicked);
-        btnMidfielder3.setOnClickListener(this::onPlayerButtonClicked);
-        btnMidfielder4.setOnClickListener(this::onPlayerButtonClicked);
+        btnGoalkeeper.setOnClickListener(this::onGoalkeeperPlayerButtonClicked);
+        btnDefender1.setOnClickListener(this::onDefenderPlayerButtonClicked);
+        btnDefender2.setOnClickListener(this::onDefenderPlayerButtonClicked);
+        btnDefender3.setOnClickListener(this::onDefenderPlayerButtonClicked);
+        btnDefender4.setOnClickListener(this::onDefenderPlayerButtonClicked);
+        btnMidfielder1.setOnClickListener(this::onMidfielderPlayerButtonClicked);
+        btnMidfielder2.setOnClickListener(this::onMidfielderPlayerButtonClicked);
+        btnMidfielder3.setOnClickListener(this::onMidfielderPlayerButtonClicked);
+        btnMidfielder4.setOnClickListener(this::onMidfielderPlayerButtonClicked);
         // Aggiungere centrocampista 5 (3-5-2)
-        btnStriker1.setOnClickListener(this::onPlayerButtonClicked);
-        btnStriker2.setOnClickListener(this::onPlayerButtonClicked);
+        btnStriker1.setOnClickListener(this::onStrikerPlayerButtonClicked);
+        btnStriker2.setOnClickListener(this::onStrikerPlayerButtonClicked);
         // Aggiungere attaccante 3
 
         // Inizializza e imposta listener per il bottone della formazione consigliata
@@ -70,13 +70,37 @@ public class FormationActivity extends AppCompatActivity {
         btnSaveFormation.setOnClickListener(v -> onSaveFormationClicked());
     }
 
-    private void onPlayerButtonClicked(View view) {
+    private void onGoalkeeperPlayerButtonClicked(View view) {
         // Logica per selezionare il giocatore per la posizione
         // Potresti voler avviare un'altra Activity per selezionare il giocatore
         Toast.makeText(this, "Seleziona giocatore per la posizione", Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(this, ScegliGiocatoreActivity.class);
+            Intent intent = new Intent(this, ConsigliatoAttaccanteActivity.class);
             startActivity(intent);
+    }
+    private void onDefenderPlayerButtonClicked(View view) {
+        // Logica per selezionare il giocatore per la posizione
+        // Potresti voler avviare un'altra Activity per selezionare il giocatore
+        Toast.makeText(this, "Seleziona giocatore per la posizione", Toast.LENGTH_SHORT).show();
+
+        Intent intent = new Intent(this, ConsigliatoAttaccanteActivity.class);
+        startActivity(intent);
+    }
+    private void onMidfielderPlayerButtonClicked(View view) {
+        // Logica per selezionare il giocatore per la posizione
+        // Potresti voler avviare un'altra Activity per selezionare il giocatore
+        Toast.makeText(this, "Seleziona giocatore per la posizione", Toast.LENGTH_SHORT).show();
+
+        Intent intent = new Intent(this, ConsigliatoAttaccanteActivity.class);
+        startActivity(intent);
+    }
+    private void onStrikerPlayerButtonClicked(View view) {
+        // Logica per selezionare il giocatore per la posizione
+        // Potresti voler avviare un'altra Activity per selezionare il giocatore
+        Toast.makeText(this, "Seleziona giocatore per la posizione", Toast.LENGTH_SHORT).show();
+
+        Intent intent = new Intent(this, ConsigliatoAttaccanteActivity.class);
+        startActivity(intent);
     }
 
     private void onRecommendedFormationClicked() {

@@ -11,6 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.fantalega.campionato.AccediCampionatoActivity;
+import com.example.fantalega.campionato.CreaCampionatoActivity;
+
 public class CampionatoFragment extends Fragment {
     public CampionatoFragment() {
         // Costruttore pubblico vuoto richiesto

@@ -5,17 +5,6 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Accedi a un Campionato"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold"
-
-        />
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,6 +20,15 @@
             android:orientation="vertical"
             android:padding="24dp">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Accedi a un campionato"
+                android:textColor="@color/blue"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
             <EditText
                 android:id="@+id/loginPassword"
                 android:layout_width="match_parent"
@@ -38,7 +36,7 @@
                 android:layout_marginTop="20dp"
                 android:autofillHints="password"
                 android:background="@drawable/new_edittext"
-                android:drawableEnd="@drawable/baseline_lock_person_24"
+                android:drawableEnd="@drawable/vpn_key_fill0_wght400_grad0_opsz24"
                 android:hint="Codice d'accesso"
                 android:inputType="textPassword"
                 android:padding="8dp"

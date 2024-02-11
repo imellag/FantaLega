@@ -9,12 +9,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.fantalega.R;
 import com.example.fantalega.ScegliGiocatoreAttaccanteActivity;
 
-public class ConsigliatoAttaccanteActivity extends AppCompatActivity {
+public class ConsigliatoDifensoreActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.giocatore_suggerito_attaccante);
+        setContentView(R.layout.giocatore_suggerito_difensore);
 
         Button indietro = findViewById(R.id.indietro);
         Button modifica = findViewById(R.id.modifica_giocatore);

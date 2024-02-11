@@ -5,17 +5,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.fantalega.campionato.FormationActivity;
 
-public class ScegliGiocatoreActivity extends AppCompatActivity {
+public class ScegliGiocatoreAttaccanteActivity extends AppCompatActivity {
 
     @SuppressLint("SetTextI18n")
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.scegli_attaccante);

@@ -229,9 +229,11 @@
                 android:backgroundTint="@color/blue"
                 android:onClick="onLoginClick"
                 android:text="Chiudi"
+                android:id="@+id/indietro"
                 android:textSize="17sp" />
 
             <Button
+                android:id="@+id/modifica_giocatore"
                 android:layout_width="130dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"

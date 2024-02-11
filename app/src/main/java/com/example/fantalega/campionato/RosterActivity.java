@@ -9,7 +9,6 @@ import androidx.appcompat.widget.AppCompatButton;
 
 import com.example.fantalega.FragmentActivity;
 import com.example.fantalega.R;
-import com.example.fantalega.ScegliGiocatoreActivity;
 import com.example.fantalega.player.PlayerStatsActivity;
 
 public class RosterActivity extends AppCompatActivity {

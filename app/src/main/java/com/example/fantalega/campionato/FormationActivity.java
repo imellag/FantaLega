@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.fantalega.FragmentActivity;
 import com.example.fantalega.R;
-import com.example.fantalega.ScegliGiocatoreActivity;
 
 public class FormationActivity extends AppCompatActivity {
 
@@ -34,9 +33,7 @@ public class FormationActivity extends AppCompatActivity {
         // Aggiungere centrocampista 5 (3-5-2)
         Button btnStriker1 = findViewById(R.id.btnStriker1);
         Button btnStriker2 = findViewById(R.id.btnStriker2);
-        // Aggiungere attaccante 3
 
-        // Inizializza gli altri bottoni dei giocatori...
 
         TextView openBench = findViewById(R.id.tvOpenBench);
         openBench.setOnClickListener(v -> {
@@ -45,18 +42,18 @@ public class FormationActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        btnGoalkeeper.setOnClickListener(this::onPlayerButtonClicked);
-        btnDefender1.setOnClickListener(this::onPlayerButtonClicked);
-        btnDefender2.setOnClickListener(this::onPlayerButtonClicked);
-        btnDefender3.setOnClickListener(this::onPlayerButtonClicked);
-        btnDefender4.setOnClickListener(this::onPlayerButtonClicked);
-        btnMidfielder1.setOnClickListener(this::onPlayerButtonClicked);
-        btnMidfielder2.setOnClickListener(this::onPlayerButtonClicked);
-        btnMidfielder3.setOnClickListener(this::onPlayerButtonClicked);
-        btnMidfielder4.setOnClickListener(this::onPlayerButtonClicked);
+        btnGoalkeeper.setOnClickListener(this::onPlayerGoalkeeperButtonClicked);
+        btnDefender1.setOnClickListener(this::onPlayerDefenderButtonClicked);
+        btnDefender2.setOnClickListener(this::onPlayerDefenderButtonClicked);
+        btnDefender3.setOnClickListener(this::onPlayerDefenderButtonClicked);
+        btnDefender4.setOnClickListener(this::onPlayerDefenderButtonClicked);
+        btnMidfielder1.setOnClickListener(this::onPlayerMidfielderButtonClicked);
+        btnMidfielder2.setOnClickListener(this::onPlayerMidfielderButtonClicked);
+        btnMidfielder3.setOnClickListener(this::onPlayerMidfielderButtonClicked);
+        btnMidfielder4.setOnClickListener(this::onPlayerMidfielderButtonClicked);
         // Aggiungere centrocampista 5 (3-5-2)
-        btnStriker1.setOnClickListener(this::onPlayerButtonClicked);
-        btnStriker2.setOnClickListener(this::onPlayerButtonClicked);
+        btnStriker1.setOnClickListener(this::onPlayerStrikerButtonClicked);
+        btnStriker2.setOnClickListener(this::onPlayerStrikerButtonClicked);
         // Aggiungere attaccante 3
 
         // Inizializza e imposta listener per il bottone della formazione consigliata
@@ -68,8 +65,20 @@ public class FormationActivity extends AppCompatActivity {
         btnSaveFormation.setOnClickListener(v -> onSaveFormationClicked());
     }
 
-    private void onPlayerButtonClicked(View view) {
-        Intent intent = new Intent(this, ScegliGiocatoreActivity.class);
+    private void onPlayerStrikerButtonClicked(View view) {
+        Intent intent = new Intent(this, ConsigliatoAttaccanteActivity.class);
+        startActivity(intent);
+    }
+    private void onPlayerMidfielderButtonClicked(View view) {
+        Intent intent = new Intent(this, ConsigliatoCentrocampistaActivity.class);
+        startActivity(intent);
+    }
+    private void onPlayerDefenderButtonClicked(View view) {
+        Intent intent = new Intent(this, ConsigliatoDifensoreActivity.class);
+        startActivity(intent);
+    }
+    private void onPlayerGoalkeeperButtonClicked(View view) {
+        Intent intent = new Intent(this, ConsigliatoPortiereActivity.class);
         startActivity(intent);
     }
 

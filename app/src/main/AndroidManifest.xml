@@ -59,8 +59,11 @@
         <activity android:name=".campionato.ClassificaFragment" />
         <activity android:name=".CampionatoFragment" />
         <activity android:name=".campionato.MatchLiveActivity"/>
-        <activity android:name=".ScegliGiocatoreActivity"/>
+        <activity android:name=".ScegliGiocatoreAttaccanteActivity"/>
         <activity android:name=".CreaCampionatoActivity"/>
         <activity android:name=".AccediCampionatoActivity"/>
+        <activity android:name=".campionato.ConsigliatoCentrocampistaActivity"/>
+        <activity android:name=".campionato.ConsigliatoAttaccanteActivity"/>
+        <activity android:name=".campionato.ConsigliatoDifensoreActivity"/>
     </application>
 </manifest>

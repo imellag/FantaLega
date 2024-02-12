@@ -1,18 +1,19 @@
 package com.example.fantalega;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.fantalega.campionato.FormationActivity;
-
 public class ScegliGiocatorePortiereActivity extends AppCompatActivity {
+
+    private SharedPreferences preferences;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -20,8 +21,11 @@ public class ScegliGiocatorePortiereActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.scegli_portiere);
 
+        initSharedPreferences();
+
         Button conferma = findViewById(R.id.conferma_attaccante);
         Button indietro = findViewById(R.id.indietro_attaccante);
+
         TextView nomeGiocatore = findViewById(R.id.nome_giocatore);
         TextView nomeSquadra = findViewById(R.id.nome_squadra);
         TextView match = findViewById(R.id.match);
@@ -30,36 +34,46 @@ public class ScegliGiocatorePortiereActivity extends AppCompatActivity {
         LinearLayout portiere2 = findViewById(R.id.portiere2);
         LinearLayout portiere3 = findViewById(R.id.portiere3);
 
-
-
         conferma.setOnClickListener(v -> {
-            Intent intent = new Intent(this, FormationActivity.class);
-            startActivity(intent);
-            ProgressBar progressBar = findViewById(R.id.progressBar);
-            progressBar.setProgress(50); // Imposta il progresso al 50%
+            SharedPreferences.Editor editor = preferences.edit();
+
+            editor.putBoolean("playerAdded", true);
+            Log.d("Debug", "Testo attuale della TextView: " + nomeGiocatore.getText().toString());
+            editor.putString("selectedPlayerName", nomeGiocatore.getText().toString());
+            editor.apply();
+
+            finish();
         });
 
         indietro.setOnClickListener(v -> {
-            Intent intent = new Intent(this, FormationActivity.class);
-            startActivity(intent);
+            SharedPreferences.Editor editor = preferences.edit();
+
+            editor.putBoolean("playerAdded", false);
+            editor.apply();
+
+            finish();
         });
+
         portiere1.setOnClickListener(v -> {
             nomeGiocatore.setText("MAIGNAN");
-            nomeSquadra.setText("(MILAN)");
+            nomeSquadra.setText("(Milan)");
             match.setText("MILAN VS NAPOLI");
         });
+
         portiere2.setOnClickListener(v -> {
             nomeGiocatore.setText("TURATI");
             nomeSquadra.setText("(Frosinone)");
             match.setText("INTER VS LAZIO");
         });
+
         portiere3.setOnClickListener(v -> {
             nomeGiocatore.setText("OKOYE");
             nomeSquadra.setText("(Inter)");
             match.setText("INTER VS LAZIO");
         });
-
     }
 
-
+    private void initSharedPreferences() {
+        preferences = getSharedPreferences("PlayerPrefs", Context.MODE_PRIVATE);
+    }
 }

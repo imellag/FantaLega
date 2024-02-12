@@ -91,7 +91,7 @@
             android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnGoalkeeper"
+                android:id="@+id/btn1"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginStart="23dp"
@@ -100,10 +100,12 @@
                 android:backgroundTint="@color/purple" />
 
             <TextView
-                android:id="@+id/tvPortiere"
+                android:id="@+id/tv1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="" />
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="12sp" />
         </LinearLayout>
 
         <!-- LinearLayout per i difensori -->
@@ -123,7 +125,7 @@
                 android:orientation="vertical">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btnDefender1"
+                    android:id="@+id/btn2"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_marginStart="23dp"
@@ -132,10 +134,12 @@
                     android:backgroundTint="@color/blue" />
 
                 <TextView
-                    android:id="@+id/tvDifensore1"
+                    android:id="@+id/tv2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="" />
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -147,7 +151,7 @@
                 android:orientation="vertical">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btnDefender2"
+                    android:id="@+id/btn3"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_marginStart="23dp"
@@ -156,10 +160,12 @@
                     android:backgroundTint="@color/blue" />
 
                 <TextView
-                    android:id="@+id/tvDifensore2"
+                    android:id="@+id/tv3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="" />
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -171,7 +177,7 @@
                 android:orientation="vertical">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btnDefender3"
+                    android:id="@+id/btn4"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_marginStart="23dp"
@@ -180,10 +186,12 @@
                     android:backgroundTint="@color/blue" />
 
                 <TextView
-                    android:id="@+id/tvDifensore3"
+                    android:id="@+id/tv4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="" />
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -195,7 +203,7 @@
                 android:orientation="vertical">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btnDefender4"
+                    android:id="@+id/btn5"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_marginStart="23dp"
@@ -204,10 +212,12 @@
                     android:backgroundTint="@color/blue" />
 
                 <TextView
-                    android:id="@+id/tvDifensore4"
+                    android:id="@+id/tv5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="" />
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -227,7 +237,7 @@
                 android:orientation="vertical">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btnMidfielder1"
+                    android:id="@+id/btn6"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_marginStart="23dp"
@@ -236,10 +246,12 @@
                     android:backgroundTint="@color/orange" />
 
                 <TextView
-                    android:id="@+id/tvCentrocampista1"
+                    android:id="@+id/tv6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="" />
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -250,7 +262,7 @@
                 android:orientation="vertical">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btnMidfielder2"
+                    android:id="@+id/btn7"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_marginStart="23dp"
@@ -259,10 +271,12 @@
                     android:backgroundTint="@color/orange" />
 
                 <TextView
-                    android:id="@+id/tvCentrocampista2"
+                    android:id="@+id/tv7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="" />
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -273,7 +287,7 @@
                 android:orientation="vertical">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btnMidfielder3"
+                    android:id="@+id/btn8"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_marginStart="23dp"
@@ -282,10 +296,12 @@
                     android:backgroundTint="@color/orange" />
 
                 <TextView
-                    android:id="@+id/tvCentrocampista3"
+                    android:id="@+id/tv8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="" />
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -296,7 +312,7 @@
                 android:orientation="vertical">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btnMidfielder4"
+                    android:id="@+id/btn9"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_marginStart="23dp"
@@ -305,10 +321,12 @@
                     android:backgroundTint="@color/orange" />
 
                 <TextView
-                    android:id="@+id/tvCentrocampista4"
+                    android:id="@+id/tv9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="" />
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -327,7 +345,7 @@
                 android:orientation="vertical">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btnStriker1"
+                    android:id="@+id/btn10"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_marginStart="40dp"
@@ -335,10 +353,13 @@
                     android:backgroundTint="@color/red" />
 
                 <TextView
-                    android:id="@+id/tvAttaccante1"
+                    android:id="@+id/tv10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="" />
+                    android:layout_marginStart="40dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -349,7 +370,7 @@
                 android:orientation="vertical">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btnStriker2"
+                    android:id="@+id/btn11"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_marginEnd="40dp"
@@ -357,10 +378,13 @@
                     android:backgroundTint="@color/red" />
 
                 <TextView
-                    android:id="@+id/tvAttaccante2"
+                    android:id="@+id/tv11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="" />
+                    android:layout_marginEnd="40dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

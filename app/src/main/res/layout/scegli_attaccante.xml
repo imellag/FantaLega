@@ -251,7 +251,6 @@
                             android:background="@drawable/attaccante"
                             android:gravity="center"
                             android:text="A"
-
                             android:textColor="@color/white" />
 
                         <TextView

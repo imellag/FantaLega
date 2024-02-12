@@ -1,18 +1,19 @@
 package com.example.fantalega;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.fantalega.campionato.FormationActivity;
-
 public class ScegliGiocatoreDifensoreActivity extends AppCompatActivity {
+
+    private SharedPreferences preferences;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -20,8 +21,11 @@ public class ScegliGiocatoreDifensoreActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.scegli_difensore);
 
+        initSharedPreferences();
+
         Button conferma = findViewById(R.id.conferma_attaccante);
         Button indietro = findViewById(R.id.indietro_attaccante);
+
         TextView nomeGiocatore = findViewById(R.id.nome_giocatore);
         TextView nomeSquadra = findViewById(R.id.nome_squadra);
         TextView match = findViewById(R.id.match);
@@ -36,15 +40,23 @@ public class ScegliGiocatoreDifensoreActivity extends AppCompatActivity {
         LinearLayout difensore8 = findViewById(R.id.difensore8);
 
         conferma.setOnClickListener(v -> {
-            Intent intent = new Intent(this, FormationActivity.class);
-            startActivity(intent);
-            ProgressBar progressBar = findViewById(R.id.progressBar);
-            progressBar.setProgress(50); // Imposta il progresso al 50%
+            SharedPreferences.Editor editor = preferences.edit();
+
+            editor.putBoolean("playerAdded", true);
+            Log.d("Debug", "Testo attuale della TextView: " + nomeGiocatore.getText().toString());
+            editor.putString("selectedPlayerName", nomeGiocatore.getText().toString());
+            editor.apply();
+
+            finish();
         });
 
         indietro.setOnClickListener(v -> {
-            Intent intent = new Intent(this, FormationActivity.class);
-            startActivity(intent);
+            SharedPreferences.Editor editor = preferences.edit();
+
+            editor.putBoolean("playerAdded", false);
+            editor.apply();
+
+            finish();
         });
 
 
@@ -104,5 +116,7 @@ public class ScegliGiocatoreDifensoreActivity extends AppCompatActivity {
         });
     }
 
-
+    private void initSharedPreferences() {
+        preferences = getSharedPreferences("PlayerPrefs", Context.MODE_PRIVATE);
+    }
 }

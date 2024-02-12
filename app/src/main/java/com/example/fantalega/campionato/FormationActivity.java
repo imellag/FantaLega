@@ -1,7 +1,9 @@
 package com.example.fantalega.campionato;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -14,26 +16,25 @@ import com.example.fantalega.R;
 
 public class FormationActivity extends AppCompatActivity {
 
+    private int selectedPlayerButtonId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formation);
 
-        // Inizializza i bottoni dei giocatori
         // Bottoni per i giocatori
-        Button btnGoalkeeper = findViewById(R.id.btnGoalkeeper);
-        Button btnDefender1 = findViewById(R.id.btnDefender1);
-        Button btnDefender2 = findViewById(R.id.btnDefender2);
-        Button btnDefender3 = findViewById(R.id.btnDefender3);
-        Button btnDefender4 = findViewById(R.id.btnDefender4);
-        Button btnMidfielder1 = findViewById(R.id.btnMidfielder1);
-        Button btnMidfielder2 = findViewById(R.id.btnMidfielder2);
-        Button btnMidfielder3 = findViewById(R.id.btnMidfielder3);
-        Button btnMidfielder4 = findViewById(R.id.btnMidfielder4);
-        // Aggiungere centrocampista 5 (3-5-2)
-        Button btnStriker1 = findViewById(R.id.btnStriker1);
-        Button btnStriker2 = findViewById(R.id.btnStriker2);
-
+        Button btn1 = findViewById(R.id.btn1);
+        Button btn2 = findViewById(R.id.btn2);
+        Button btn3 = findViewById(R.id.btn3);
+        Button btn4 = findViewById(R.id.btn4);
+        Button btn5 = findViewById(R.id.btn5);
+        Button btn6 = findViewById(R.id.btn6);
+        Button btn7 = findViewById(R.id.btn7);
+        Button btn8 = findViewById(R.id.btn8);
+        Button btn9 = findViewById(R.id.btn9);
+        Button btn10 = findViewById(R.id.btn10);
+        Button btn11 = findViewById(R.id.btn11);
 
         TextView openBench = findViewById(R.id.tvOpenBench);
         openBench.setOnClickListener(v -> {
@@ -42,19 +43,17 @@ public class FormationActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        btnGoalkeeper.setOnClickListener(this::onPlayerGoalkeeperButtonClicked);
-        btnDefender1.setOnClickListener(this::onPlayerDefenderButtonClicked);
-        btnDefender2.setOnClickListener(this::onPlayerDefenderButtonClicked);
-        btnDefender3.setOnClickListener(this::onPlayerDefenderButtonClicked);
-        btnDefender4.setOnClickListener(this::onPlayerDefenderButtonClicked);
-        btnMidfielder1.setOnClickListener(this::onPlayerMidfielderButtonClicked);
-        btnMidfielder2.setOnClickListener(this::onPlayerMidfielderButtonClicked);
-        btnMidfielder3.setOnClickListener(this::onPlayerMidfielderButtonClicked);
-        btnMidfielder4.setOnClickListener(this::onPlayerMidfielderButtonClicked);
-        // Aggiungere centrocampista 5 (3-5-2)
-        btnStriker1.setOnClickListener(this::onPlayerStrikerButtonClicked);
-        btnStriker2.setOnClickListener(this::onPlayerStrikerButtonClicked);
-        // Aggiungere attaccante 3
+        btn1.setOnClickListener(this::onPlayerGoalkeeperButtonClicked);
+        btn2.setOnClickListener(this::onPlayerDefenderButtonClicked);
+        btn3.setOnClickListener(this::onPlayerDefenderButtonClicked);
+        btn4.setOnClickListener(this::onPlayerDefenderButtonClicked);
+        btn5.setOnClickListener(this::onPlayerDefenderButtonClicked);
+        btn6.setOnClickListener(this::onPlayerMidfielderButtonClicked);
+        btn7.setOnClickListener(this::onPlayerMidfielderButtonClicked);
+        btn8.setOnClickListener(this::onPlayerMidfielderButtonClicked);
+        btn9.setOnClickListener(this::onPlayerMidfielderButtonClicked);
+        btn10.setOnClickListener(this::onPlayerStrikerButtonClicked);
+        btn11.setOnClickListener(this::onPlayerStrikerButtonClicked);
 
         // Inizializza e imposta listener per il bottone della formazione consigliata
         Button btnRecommendedFormation = findViewById(R.id.btnRecommendedFormation);
@@ -66,18 +65,22 @@ public class FormationActivity extends AppCompatActivity {
     }
 
     private void onPlayerStrikerButtonClicked(View view) {
+        selectedPlayerButtonId = view.getId();
         Intent intent = new Intent(this, ConsigliatoAttaccanteActivity.class);
         startActivity(intent);
     }
     private void onPlayerMidfielderButtonClicked(View view) {
+        selectedPlayerButtonId = view.getId();
         Intent intent = new Intent(this, ConsigliatoCentrocampistaActivity.class);
         startActivity(intent);
     }
     private void onPlayerDefenderButtonClicked(View view) {
+        selectedPlayerButtonId = view.getId();
         Intent intent = new Intent(this, ConsigliatoDifensoreActivity.class);
         startActivity(intent);
     }
     private void onPlayerGoalkeeperButtonClicked(View view) {
+        selectedPlayerButtonId = view.getId();
         Intent intent = new Intent(this, ConsigliatoPortiereActivity.class);
         startActivity(intent);
     }
@@ -95,4 +98,63 @@ public class FormationActivity extends AppCompatActivity {
             startActivity(intent);
         });
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        SharedPreferences prefs = getSharedPreferences("PlayerPrefs", MODE_PRIVATE);
+
+        boolean playerAdded = prefs.getBoolean("playerAdded", false);
+        if (playerAdded)  {
+            String playerName = prefs.getString("selectedPlayerName", "");
+            Log.d("Debug", "Testo attuale del giocatore: " + playerName);
+
+            // Mappa l'ID del bottone all'ID della textView corrispondente
+            String textViewId = mapPlayerButtonToTextView(selectedPlayerButtonId);
+
+            // Verifica se l'ID della textView è valido
+            if (textViewId != null) {
+                // Trova la textView corrispondente e aggiorna il suo testo
+                int textViewResId = getResources().getIdentifier(textViewId, "id", getPackageName());
+                TextView textViewToUpdate = findViewById(textViewResId);
+                textViewToUpdate.setText(playerName);
+            }
+
+            // Pulisci le preferenze condivise
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.clear();
+            editor.apply();
+        }
+    }
+
+    private String mapPlayerButtonToTextView(int buttonId) {
+        String textViewId;
+        if (buttonId == R.id.btn1) {
+            textViewId = "tv1";
+        } else if (buttonId == R.id.btn2) {
+            textViewId = "tv2";
+        } else if (buttonId == R.id.btn3) {
+            textViewId = "tv3";
+        } else if (buttonId == R.id.btn4) {
+            textViewId = "tv4";
+        } else if (buttonId == R.id.btn5) {
+            textViewId = "tv5";
+        } else if (buttonId == R.id.btn6) {
+            textViewId = "tv6";
+        } else if (buttonId == R.id.btn7) {
+            textViewId = "tv7";
+        } else if (buttonId == R.id.btn8) {
+            textViewId = "tv8";
+        } else if (buttonId == R.id.btn9) {
+            textViewId = "tv9";
+        } else if (buttonId == R.id.btn10) {
+            textViewId = "tv10";
+        } else if (buttonId == R.id.btn11) {
+            textViewId = "tv11";
+        } else {
+            textViewId = null; // ID non valido
+        }
+        return textViewId;
+    }
+
 }

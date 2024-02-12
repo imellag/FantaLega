@@ -55,10 +55,6 @@ public class FormationActivity extends AppCompatActivity {
         btn10.setOnClickListener(this::onPlayerStrikerButtonClicked);
         btn11.setOnClickListener(this::onPlayerStrikerButtonClicked);
 
-        // Inizializza e imposta listener per il bottone della formazione consigliata
-        Button btnRecommendedFormation = findViewById(R.id.btnRecommendedFormation);
-        btnRecommendedFormation.setOnClickListener(v -> onRecommendedFormationClicked());
-
         // Inizializza e imposta listener per il bottone di salvataggio formazione
         Button btnSaveFormation = findViewById(R.id.btnSaveFormation);
         btnSaveFormation.setOnClickListener(v -> onSaveFormationClicked());
@@ -85,9 +81,6 @@ public class FormationActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void onRecommendedFormationClicked() {
-        Toast.makeText(this, "Formazione consigliata impostata", Toast.LENGTH_SHORT).show();
-    }
 
     private void onSaveFormationClicked() {
         // Logica per salvare la formazione (bisogna schiacciare due volte)

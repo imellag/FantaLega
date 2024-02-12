@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,6 +26,15 @@ public class FormationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_formation);
 
         // Bottoni per i giocatori
+        Button modulo1 = findViewById(R.id.btnModule1);
+        Button modulo2 = findViewById(R.id.btnModule2);
+        Button modulo3 = findViewById(R.id.btnModule3);
+        Button modulo4 = findViewById(R.id.btnModule4);
+
+        LinearLayout cambioAttacco = findViewById(R.id.cambio_attacco);
+        LinearLayout cambioDifesa = findViewById(R.id.cambio_modulo_difesa);
+        LinearLayout cambioCentrocampo = findViewById(R.id.cambio_modulo_centrocampo);
+        LinearLayout cambioCentrocampo2 = findViewById(R.id.cambio_modulo_centrocampo2);
         Button btn1 = findViewById(R.id.btn1);
         Button btn2 = findViewById(R.id.btn2);
         Button btn3 = findViewById(R.id.btn3);
@@ -36,6 +46,59 @@ public class FormationActivity extends AppCompatActivity {
         Button btn9 = findViewById(R.id.btn9);
         Button btn10 = findViewById(R.id.btn10);
         Button btn11 = findViewById(R.id.btn11);
+        Button btn12 = findViewById(R.id.btn12);
+        Button btn13 = findViewById(R.id.btn13);
+
+        modulo1.setBackgroundColor(0);
+        cambioDifesa.setVisibility(View.VISIBLE);
+        cambioCentrocampo2.setVisibility(View.VISIBLE);
+        cambioCentrocampo.setVisibility(View.GONE);
+        cambioAttacco.setVisibility(View.GONE);
+
+        modulo1.setBackgroundColor(getResources().getColor(R.color.purple));
+
+
+        modulo1.setOnClickListener(v -> {
+            modulo1.setBackgroundColor(getResources().getColor(R.color.purple));
+            modulo2.setBackgroundColor(getResources().getColor(R.color.blue));
+            modulo3.setBackgroundColor(getResources().getColor(R.color.blue));
+            modulo4.setBackgroundColor(getResources().getColor(R.color.blue));
+
+            cambioDifesa.setVisibility(View.VISIBLE);
+            cambioCentrocampo2.setVisibility(View.VISIBLE);
+            cambioCentrocampo.setVisibility(View.GONE);
+            cambioAttacco.setVisibility(View.GONE);
+        });
+        modulo2.setOnClickListener(v -> {
+            modulo1.setBackgroundColor(getResources().getColor(R.color.blue));
+            modulo2.setBackgroundColor(getResources().getColor(R.color.purple));
+            modulo3.setBackgroundColor(getResources().getColor(R.color.blue));
+            modulo4.setBackgroundColor(getResources().getColor(R.color.blue));
+            cambioDifesa.setVisibility(View.VISIBLE);
+            cambioCentrocampo.setVisibility(View.GONE);
+            cambioCentrocampo2.setVisibility(View.GONE);
+            cambioAttacco.setVisibility(View.VISIBLE);
+        });
+        modulo3.setOnClickListener(v -> {
+            modulo1.setBackgroundColor(getResources().getColor(R.color.blue));
+            modulo2.setBackgroundColor(getResources().getColor(R.color.blue));
+            modulo3.setBackgroundColor(getResources().getColor(R.color.purple));
+            modulo4.setBackgroundColor(getResources().getColor(R.color.blue));
+            cambioDifesa.setVisibility(View.GONE);
+            cambioCentrocampo.setVisibility(View.GONE);
+            cambioCentrocampo2.setVisibility(View.VISIBLE);
+            cambioAttacco.setVisibility(View.VISIBLE);
+        });
+        modulo4.setOnClickListener(v -> {
+            modulo1.setBackgroundColor(getResources().getColor(R.color.blue));
+            modulo2.setBackgroundColor(getResources().getColor(R.color.blue));
+            modulo3.setBackgroundColor(getResources().getColor(R.color.blue));
+            modulo4.setBackgroundColor(getResources().getColor(R.color.purple));
+            cambioDifesa.setVisibility(View.GONE);
+            cambioCentrocampo.setVisibility(View.VISIBLE);
+            cambioCentrocampo.setVisibility(View.VISIBLE);
+            cambioAttacco.setVisibility(View.GONE);
+        });
 
         TextView openBench = findViewById(R.id.tvOpenBench);
         openBench.setOnClickListener(v -> {
@@ -55,6 +118,11 @@ public class FormationActivity extends AppCompatActivity {
         btn9.setOnClickListener(this::onPlayerMidfielderButtonClicked);
         btn10.setOnClickListener(this::onPlayerStrikerButtonClicked);
         btn11.setOnClickListener(this::onPlayerStrikerButtonClicked);
+
+
+
+        btn12.setOnClickListener(this::onPlayerMidfielderButtonClicked);
+        btn13.setOnClickListener(this::onPlayerStrikerButtonClicked);
 
         // Inizializza e imposta listener per il bottone di salvataggio formazione
         btnSaveFormation = findViewById(R.id.btnSaveFormation);
@@ -153,7 +221,14 @@ public class FormationActivity extends AppCompatActivity {
             textViewId = "tv10";
         } else if (buttonId == R.id.btn11) {
             textViewId = "tv11";
-        } else {
+        }
+        else if (buttonId == R.id.btn12) {
+            textViewId = "tv12";
+        }
+        else if (buttonId == R.id.btn13) {
+            textViewId = "tv13";
+        }
+        else {
             textViewId = null; // ID non valido
         }
         return textViewId;

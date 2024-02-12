@@ -151,6 +151,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/cambio_modulo_difesa"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -262,6 +263,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/cambio_modulo_centrocampo"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -279,6 +281,31 @@
 
                     <TextView
                         android:id="@+id/tv7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/cambio_modulo_centrocampo2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn12"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="23dp"
+                        android:layout_marginEnd="23dp"
+                        android:background="@drawable/circle_background"
+                        android:backgroundTint="@color/orange" />
+
+                    <TextView
+                        android:id="@+id/tv12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -361,6 +388,31 @@
 
                     <TextView
                         android:id="@+id/tv10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/cambio_attacco"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn13"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+
+                        android:background="@drawable/circle_background"
+                        android:backgroundTint="@color/red" />
+
+                    <TextView
+                        android:id="@+id/tv13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="40dp"

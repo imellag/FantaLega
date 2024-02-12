@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.fantalega.FragmentActivity;
 import com.example.fantalega.R;
 
-public class FormationActivity extends AppCompatActivity {
+public class FormazioneConsigliata extends AppCompatActivity {
 
     Button btnSaveFormation, btnFormazioneConsigliata;
     private int selectedPlayerButtonId;
@@ -22,7 +22,7 @@ public class FormationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_formation);
+        setContentView(R.layout.activity_formazione_suggerita);
 
         // Bottoni per i giocatori
         Button btn1 = findViewById(R.id.btn1);
@@ -84,7 +84,6 @@ public class FormationActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ConsigliatoPortiereActivity.class);
         startActivity(intent);
     }
-
 
     private void onSaveFormationClicked() {
         btnSaveFormation.setOnClickListener(v -> {

@@ -55,7 +55,6 @@ attaccante1.setBackground(ContextCompat.getDrawable(this,R.drawable.blueborder))
             nomeGiocatore.setText("NGONGE");
             nomeSquadra.setText("(Napoli)");
             match.setText("NAPOLI VS LAZIO");
-
         });
 
         attaccante3.setOnClickListener(v -> {

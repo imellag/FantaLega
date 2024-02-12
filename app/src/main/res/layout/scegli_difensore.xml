@@ -40,6 +40,7 @@
                     android:background="@drawable/baseline_person_24" />
 
                 <TextView
+                    android:id="@+id/nome_giocatore"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -52,6 +53,7 @@
                     android:textSize="20sp" />
 
                 <TextView
+                    android:id="@+id/nome_squadra"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -107,6 +109,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:id="@+id/match"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
@@ -231,6 +234,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/difensore1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -257,6 +261,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/difensore2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -290,6 +295,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/difensore3"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -315,6 +321,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/difensore4"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -348,6 +355,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/difensore5"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -374,6 +382,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/difensore6"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -407,6 +416,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/difensore7"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -432,6 +442,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/difensore8"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"

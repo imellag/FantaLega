@@ -3,6 +3,7 @@
     android:layout_height="wrap_content"
     android:layout_marginBottom="10dp"
     android:orientation="horizontal"
+    android:background="@drawable/rettangolo_blu"
     android:padding="10dp">
 
     <TextView
@@ -20,6 +21,6 @@
         android:gravity="center"
         android:text="6"
         android:textSize="16sp"
-        android:background="@drawable/rettangolo_viola"
+        android:background="@drawable/rettangolo_blu"
         android:padding="5dp"/>
 </LinearLayout>

@@ -70,6 +70,15 @@
                 android:backgroundTint="@color/blue"
                 android:text="3-5-2"
                 android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/helper"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="?"
+                android:textColor="@color/white" />
         </LinearLayout>
 
         <!-- Bottoni per i giocatori -->
@@ -415,7 +424,6 @@
                         android:id="@+id/tv13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="40dp"
                         android:text=""
                         android:textColor="@color/white"
                         android:textSize="12sp" />

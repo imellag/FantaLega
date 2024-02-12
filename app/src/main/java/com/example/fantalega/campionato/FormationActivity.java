@@ -1,5 +1,7 @@
 package com.example.fantalega.campionato;
 
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -10,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.fantalega.FragmentActivity;
@@ -31,6 +34,9 @@ public class FormationActivity extends AppCompatActivity {
         Button modulo3 = findViewById(R.id.btnModule3);
         Button modulo4 = findViewById(R.id.btnModule4);
 
+        Button helper = findViewById(R.id.helper);
+        Button formazioneConsgiliata= findViewById(R.id.btnFormazioneConsigliata);
+
         LinearLayout cambioAttacco = findViewById(R.id.cambio_attacco);
         LinearLayout cambioDifesa = findViewById(R.id.cambio_modulo_difesa);
         LinearLayout cambioCentrocampo = findViewById(R.id.cambio_modulo_centrocampo);
@@ -48,6 +54,34 @@ public class FormationActivity extends AppCompatActivity {
         Button btn11 = findViewById(R.id.btn11);
         Button btn12 = findViewById(R.id.btn12);
         Button btn13 = findViewById(R.id.btn13);
+
+        helper.setOnClickListener(v -> {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("Helper");  // Imposta il titolo del dialog
+            builder.setMessage("Inserisci la tua formazione!\n I ruoli sono indicato così:\n" +
+                    "Viola per il portiere\n" +
+                    "Celeste per i difensori\n" +
+                    "Arancione per i centrocampisti\n" +
+                    "Rosso per gli attaccanti\n" +
+                    "\n\nSotto è presente un tasto che suggerisce la formazione in base alle statistiche\n" +
+                    "Cliccando giascun giocatore sarà spiegato opportunamente il perchè sia stato inserito" +
+                    "Sarà comunque possibile modificarla a tuo piacimento");
+
+
+            builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+
+                    dialog.dismiss();  // Chiude il dialog
+                }
+            });
+
+            // Crea e mostra il dialog
+            AlertDialog dialog = builder.create();
+            dialog.show();
+
+
+        });
 
         modulo1.setBackgroundColor(0);
         cambioDifesa.setVisibility(View.VISIBLE);

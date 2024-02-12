@@ -485,6 +485,17 @@
             android:textColor="@color/white" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mostra_suggerito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_border"
+            android:backgroundTint="@color/blue"
+            android:text="Mostra Giocatore suggerito"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/indietro_attaccante"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

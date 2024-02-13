@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="25dp"
     android:layout_weight="1">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_formazione"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingVertical="25dp">
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/tvInsertFormation"
@@ -90,7 +87,7 @@
             android:background="@drawable/football_field"
             android:orientation="vertical"
             app:layout_constraintBottom_toTopOf="@id/tvOpenBench"
-            app:layout_constraintDimensionRatio="H,1:1"
+            app:layout_constraintDimensionRatio="H,9:7"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/layoutModuleButtons">
@@ -415,7 +412,6 @@
                         android:id="@+id/btn13"
                         android:layout_width="35dp"
                         android:layout_height="35dp"
-
                         android:background="@drawable/circle_background"
                         android:backgroundTint="@color/red" />
 
@@ -460,7 +456,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
-            android:layout_marginBottom="8dp"
             android:clickable="true"
             android:focusable="true"
             android:padding="12dp"

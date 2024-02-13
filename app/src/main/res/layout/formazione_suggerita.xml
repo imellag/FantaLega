@@ -1,9 +1,6 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    >
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,20 +21,20 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
             android:text="CHE COS'È?"
             android:textColor="@color/blue"
             android:textSize="23sp"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="10dp"
             android:textStyle="bold">
         </TextView>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@drawable/blueborder"
             android:layout_marginTop="10dp"
+            android:background="@drawable/blueborder"
+            android:orientation="vertical"
             android:padding="15dp">
 
             <TextView
@@ -52,10 +49,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
             android:text="QUALI SONO I REQUISITI?"
             android:textColor="@color/blue"
-            android:layout_marginTop="45dp"
-            android:layout_marginLeft="10dp"
             android:textSize="23sp"
             android:textStyle="bold">
         </TextView>
@@ -63,53 +60,51 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@drawable/blueborder"
             android:layout_marginTop="10dp"
+            android:background="@drawable/blueborder"
+            android:orientation="vertical"
             android:padding="15dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
+                android:clickable="true"
+                android:orientation="horizontal">
 
-                android:clickable="true">
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/arrow_right_fill0_wght400_grad0_opsz24"
+                    android:backgroundTint="@color/blue"
+                    android:gravity="center">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Titolarità"
+                    android:textSize="20sp">
+                </TextView>
+
+            </LinearLayout>
+
             <TextView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/arrow_right_fill0_wght400_grad0_opsz24"
-                android:backgroundTint="@color/blue"
-                android:gravity="center">
-
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="45dp"
+                android:text="Viene considerata la probabilità di scendere in campo dal primo minuto."
+                android:textSize="20sp">
             </TextView>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Titolarità"
-                    android:textSize="20sp"
-                    android:layout_gravity="center">
-                </TextView>
-
-
-            </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Viene considerata la probabilità di scendere in campo dal primo minuto."
-                    android:textSize="20sp"
-                    android:layout_marginStart="45dp"
-                    android:layout_gravity="center"
-                    >
-                </TextView>
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
                 android:clickable="true"
-                android:layout_marginTop="5dp">
+                android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
@@ -121,9 +116,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:text="In Casa o Fuori Casa"
-                    android:textSize="20sp"
-                    android:layout_gravity="center">
+                    android:textSize="20sp">
                 </TextView>
 
             </LinearLayout>
@@ -131,8 +126,9 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:clickable="true">
+                android:clickable="true"
+                android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
@@ -144,9 +140,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:text="Classifica"
-                    android:textSize="20sp"
-                    android:layout_gravity="center">
+                    android:textSize="20sp">
                 </TextView>
 
             </LinearLayout>
@@ -157,13 +153,11 @@
             android:layout_width="130dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:backgroundTint="@color/blue"
-            android:onClick="onLoginClick"
             android:layout_marginTop="40dp"
+            android:backgroundTint="@color/blue"
+            android:onClick="onCloseClick"
             android:text="Chiudi"
             android:textSize="17sp" />
 
     </LinearLayout>
-
-
-</LinearLayout>
+</ScrollView>

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginBottom="25dp"
     android:layout_weight="1">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_formazione"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -71,20 +72,16 @@
                 android:text="3-5-2"
                 android:textColor="@color/white" />
 
-            <Button
+            <ImageView
                 android:id="@+id/helper"
-                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/black"
-                android:text="?"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="8dp"
+                android:src="@drawable/info"/>
         </LinearLayout>
-
-        <!-- Bottoni per i giocatori -->
-        <!-- Esempio: 11 bottoni per una formazione 4-4-2 -->
-        <!-- Nota: la posizione specifica dipenderà dal modulo selezionato e dall'immagine del campo -->
-        <!-- Esempio di posizionamento di un bottone -->
 
         <LinearLayout
             android:id="@+id/layoutFootballField"
@@ -296,6 +293,7 @@
                         android:textColor="@color/white"
                         android:textSize="12sp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/cambio_modulo_centrocampo2"
                     android:layout_width="0dp"
@@ -404,6 +402,7 @@
                         android:textColor="@color/white"
                         android:textSize="12sp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/cambio_attacco"
                     android:layout_width="0dp"
@@ -474,31 +473,42 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/layoutFootballField" />
 
-
         <Button
-        android:id="@+id/btnSaveFormation"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="25dp"
-        android:backgroundTint="@color/blue"
-        android:text="@string/button_salva_formazione"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvOpenBench" />
+            android:id="@+id/btnSaveFormation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:backgroundTint="@color/blue"
+            android:text="@string/button_salva_formazione"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvOpenBench" />
+
+        <ImageView
+            android:id="@+id/info"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="25dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:src="@drawable/info"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnSaveFormation" />
 
         <Button
             android:id="@+id/btnFormazioneConsigliata"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="25dp"
+            android:layout_marginEnd="25dp"
             android:backgroundTint="@color/blue"
             android:text="@string/button_formazione_consigliata"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@id/info"
             app:layout_constraintTop_toBottomOf="@id/btnSaveFormation" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

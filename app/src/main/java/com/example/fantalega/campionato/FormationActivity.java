@@ -1,6 +1,5 @@
 package com.example.fantalega.campionato;
 
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -8,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,6 +15,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.fantalega.FormazioneSuggerita;
 import com.example.fantalega.FragmentActivity;
 import com.example.fantalega.R;
 
@@ -34,13 +35,14 @@ public class FormationActivity extends AppCompatActivity {
         Button modulo3 = findViewById(R.id.btnModule3);
         Button modulo4 = findViewById(R.id.btnModule4);
 
-        Button helper = findViewById(R.id.helper);
-        Button formazioneConsgiliata= findViewById(R.id.btnFormazioneConsigliata);
+        ImageView helper = findViewById(R.id.helper);
+        ImageView info = findViewById(R.id.info);
 
         LinearLayout cambioAttacco = findViewById(R.id.cambio_attacco);
         LinearLayout cambioDifesa = findViewById(R.id.cambio_modulo_difesa);
         LinearLayout cambioCentrocampo = findViewById(R.id.cambio_modulo_centrocampo);
         LinearLayout cambioCentrocampo2 = findViewById(R.id.cambio_modulo_centrocampo2);
+
         Button btn1 = findViewById(R.id.btn1);
         Button btn2 = findViewById(R.id.btn2);
         Button btn3 = findViewById(R.id.btn3);
@@ -79,8 +81,11 @@ public class FormationActivity extends AppCompatActivity {
             // Crea e mostra il dialog
             AlertDialog dialog = builder.create();
             dialog.show();
+        });
 
-
+        info.setOnClickListener(v -> {
+            Intent intent = new Intent(this, FormazioneSuggerita.class);
+            startActivity(intent);
         });
 
         modulo1.setBackgroundColor(0);

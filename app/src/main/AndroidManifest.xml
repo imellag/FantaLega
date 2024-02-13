@@ -70,5 +70,6 @@
         <activity android:name=".ScegliGiocatorePortiereActivity"/>
         <activity android:name=".ScegliGiocatoreDifensoreActivity"/>
         <activity android:name=".campionato.FormazioneConsigliata"/>
+        <activity android:name=".FormazioneSuggerita"/>
     </application>
 </manifest>

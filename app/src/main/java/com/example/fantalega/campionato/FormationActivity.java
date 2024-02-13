@@ -34,7 +34,6 @@ public class FormationActivity extends AppCompatActivity {
         Button modulo3 = findViewById(R.id.btnModule3);
         Button modulo4 = findViewById(R.id.btnModule4);
 
-        ImageView helper = findViewById(R.id.helper);
         ImageView info = findViewById(R.id.info);
 
         LinearLayout cambioAttacco = findViewById(R.id.cambio_attacco);
@@ -56,31 +55,7 @@ public class FormationActivity extends AppCompatActivity {
         Button btn12 = findViewById(R.id.btn12);
         Button btn13 = findViewById(R.id.btn13);
 
-        helper.setOnClickListener(v -> {
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle("Helper");  // Imposta il titolo del dialog
-            builder.setMessage("Inserisci la tua formazione!\nI ruoli sono indicato così:\n" +
-                    "Viola per il portiere\n" +
-                    "Celeste per i difensori\n" +
-                    "Arancione per i centrocampisti\n" +
-                    "Rosso per gli attaccanti\n" +
-                    "\n\nSotto è presente un tasto che imposta automaticamente la formazione in base alle statistiche.\n" +
-                    "Cliccando giascun giocatore saranno spiegate opportunamente le motivazioni per cui è stato inserito. " +
-                    "Sarà comunque possibile modificare la formazione a tuo piacimento");
 
-
-            builder.setPositiveButton("Ho capito!", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-
-                    dialog.dismiss();  // Chiude il dialog
-                }
-            });
-
-            // Crea e mostra il dialog
-            AlertDialog dialog = builder.create();
-            dialog.show();
-        });
 
         info.setOnClickListener(v -> {
             Intent intent = new Intent(this, FormazioneSuggerita.class);

@@ -72,15 +72,7 @@
                 android:text="3-5-2"
                 android:textColor="@color/white" />
 
-            <ImageView
-                android:id="@+id/helper"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:clickable="true"
-                android:focusable="true"
-                android:padding="8dp"
-                android:src="@drawable/info"/>
+
         </LinearLayout>
 
         <LinearLayout
@@ -104,13 +96,17 @@
                 android:orientation="vertical">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:text="P"
                     android:id="@+id/btn1"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_marginStart="23dp"
                     android:layout_marginEnd="23dp"
                     android:background="@drawable/circle_background"
-                    android:backgroundTint="@color/purple" />
+                    android:backgroundTint="@color/purple"
+
+                    android:textColor="@color/white"
+                    />
 
                 <TextView
                     android:id="@+id/tv1"
@@ -144,7 +140,10 @@
                         android:layout_marginStart="23dp"
                         android:layout_marginEnd="23dp"
                         android:background="@drawable/circle_background"
-                        android:backgroundTint="@color/blue" />
+                        android:backgroundTint="@color/blue"
+                        android:text="D"
+                        android:textColor="@color/white"
+                        />
 
                     <TextView
                         android:id="@+id/tv2"
@@ -171,7 +170,10 @@
                         android:layout_marginStart="23dp"
                         android:layout_marginEnd="23dp"
                         android:background="@drawable/circle_background"
-                        android:backgroundTint="@color/blue" />
+                        android:backgroundTint="@color/blue"
+                        android:text="D"
+                        android:textColor="@color/white"
+                        />
 
                     <TextView
                         android:id="@+id/tv3"
@@ -197,7 +199,10 @@
                         android:layout_marginStart="23dp"
                         android:layout_marginEnd="23dp"
                         android:background="@drawable/circle_background"
-                        android:backgroundTint="@color/blue" />
+                        android:backgroundTint="@color/blue"
+                        android:text="D"
+                        android:textColor="@color/white"
+                        />
 
                     <TextView
                         android:id="@+id/tv4"
@@ -223,7 +228,10 @@
                         android:layout_marginStart="23dp"
                         android:layout_marginEnd="23dp"
                         android:background="@drawable/circle_background"
-                        android:backgroundTint="@color/blue" />
+                        android:backgroundTint="@color/blue"
+                        android:text="D"
+                        android:textColor="@color/white"
+                        />
 
                     <TextView
                         android:id="@+id/tv5"
@@ -257,7 +265,10 @@
                         android:layout_marginStart="23dp"
                         android:layout_marginEnd="23dp"
                         android:background="@drawable/circle_background"
-                        android:backgroundTint="@color/orange" />
+                        android:backgroundTint="@color/orange"
+                        android:text="C"
+                        android:textColor="@color/white"
+                        />
 
                     <TextView
                         android:id="@+id/tv6"
@@ -283,7 +294,10 @@
                         android:layout_marginStart="23dp"
                         android:layout_marginEnd="23dp"
                         android:background="@drawable/circle_background"
-                        android:backgroundTint="@color/orange" />
+                        android:backgroundTint="@color/orange"
+                        android:text="C"
+                        android:textColor="@color/white"
+                        />
 
                     <TextView
                         android:id="@+id/tv7"
@@ -309,7 +323,10 @@
                         android:layout_marginStart="23dp"
                         android:layout_marginEnd="23dp"
                         android:background="@drawable/circle_background"
-                        android:backgroundTint="@color/orange" />
+                        android:backgroundTint="@color/orange"
+                        android:text="C"
+                        android:textColor="@color/white"
+                        />
 
                     <TextView
                         android:id="@+id/tv12"
@@ -334,7 +351,10 @@
                         android:layout_marginStart="23dp"
                         android:layout_marginEnd="23dp"
                         android:background="@drawable/circle_background"
-                        android:backgroundTint="@color/orange" />
+                        android:backgroundTint="@color/orange"
+                        android:text="C"
+                        android:textColor="@color/white"
+                        />
 
                     <TextView
                         android:id="@+id/tv8"
@@ -359,7 +379,10 @@
                         android:layout_marginStart="23dp"
                         android:layout_marginEnd="23dp"
                         android:background="@drawable/circle_background"
-                        android:backgroundTint="@color/orange" />
+                        android:backgroundTint="@color/orange"
+                        android:text="C"
+                        android:textColor="@color/white"
+                        />
 
                     <TextView
                         android:id="@+id/tv9"
@@ -391,7 +414,10 @@
                         android:layout_height="35dp"
                         android:layout_marginStart="40dp"
                         android:background="@drawable/circle_background"
-                        android:backgroundTint="@color/red" />
+                        android:backgroundTint="@color/red"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        />
 
                     <TextView
                         android:id="@+id/tv10"
@@ -417,7 +443,10 @@
                         android:layout_height="35dp"
 
                         android:background="@drawable/circle_background"
-                        android:backgroundTint="@color/red" />
+                        android:backgroundTint="@color/red"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        />
 
                     <TextView
                         android:id="@+id/tv13"
@@ -441,7 +470,10 @@
                         android:layout_height="35dp"
                         android:layout_marginEnd="40dp"
                         android:background="@drawable/circle_background"
-                        android:backgroundTint="@color/red" />
+                        android:backgroundTint="@color/red"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        />
 
                     <TextView
                         android:id="@+id/tv11"
@@ -484,7 +516,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvOpenBench" />
+            app:layout_constraintTop_toBottomOf="@id/layoutFootballField" />
 
         <ImageView
             android:id="@+id/info"

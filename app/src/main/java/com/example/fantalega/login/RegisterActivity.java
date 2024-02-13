@@ -41,6 +41,7 @@ public class RegisterActivity extends AppCompatActivity {
     private void navigateToLogin() {
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
+        finish();
     }
 
     protected boolean checkInput() {

@@ -87,6 +87,7 @@
                 android:contentDescription="Team 2"
                 android:src="@drawable/team2" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -96,25 +97,27 @@
             android:orientation="horizontal">
 
             <TextView
-             android:textSize="21sp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-              android:text="AC Culurgiones"
-                android:src="@drawable/team1" />
-
+                android:src="@drawable/team1"
+                android:text="AC Culurgiones"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
 
 
             <TextView
-                android:gravity="end"
-                android:textSize="21sp"
-                android:text="AC Cipicchia"
-                android:layout_weight="1"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:layout_weight="1"
                 android:contentDescription="Team 2"
-                android:src="@drawable/team2" />
+                android:gravity="end"
+                android:src="@drawable/team2"
+                android:text="AC Cipicchia"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
         </LinearLayout>
+
         <TextView
             android:id="@+id/tvRosa"
             android:layout_width="match_parent"

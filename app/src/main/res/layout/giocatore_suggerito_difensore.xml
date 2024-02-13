@@ -34,6 +34,7 @@
 
 
             <TextView
+                android:id="@+id/nome_giocatore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -205,17 +206,29 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/conferma"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/blue"
+                android:onClick="onConfirmClick"
+                android:text="Conferma"
+                android:textSize="17sp"
+                android:layout_marginTop="25dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/indietro"
-                    android:layout_width="130dp"
-                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:layout_gravity="center"
                     android:backgroundTint="@color/blue"
                     android:onClick="onLoginClick"
@@ -224,8 +237,9 @@
 
                 <Button
                     android:id="@+id/modifica_giocatore"
-                    android:layout_width="130dp"
-                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:layout_gravity="center"
                     android:layout_marginStart="50dp"
                     android:backgroundTint="@color/blue"

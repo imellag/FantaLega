@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
+import com.example.fantalega.FragmentActivity;
 import com.example.fantalega.R;
 import com.example.fantalega.ScegliGiocatoreAttaccanteActivity;
 
@@ -24,6 +26,14 @@ public class BenchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bench);
 
+        AppCompatButton indietro = findViewById(R.id.btnTornaIndietro);
+
+        indietro.setOnClickListener(v -> {
+            Intent intent = new Intent(this, FormationActivity.class);
+            startActivity(intent);
+
+
+        });
         // Itera su ogni ID dei TextView dei giocatori e imposta gli onClickListener
         for (int giocatoriId : giocatoriIds) {
             TextView textView = findViewById(giocatoriId);

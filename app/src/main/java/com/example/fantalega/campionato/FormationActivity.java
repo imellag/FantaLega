@@ -29,7 +29,6 @@ public class FormationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formation);
 
-        // Bottoni per i giocatori
         Button modulo1 = findViewById(R.id.btnModule1);
         Button modulo2 = findViewById(R.id.btnModule2);
         Button modulo3 = findViewById(R.id.btnModule3);
@@ -70,7 +69,7 @@ public class FormationActivity extends AppCompatActivity {
                     "Sarà comunque possibile modificarla a tuo piacimento");
 
 
-            builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            builder.setPositiveButton("Ho capito!", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
 

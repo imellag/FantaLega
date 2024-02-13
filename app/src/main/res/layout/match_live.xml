@@ -70,14 +70,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="VS"
+                android:text="72-68"
                 android:textSize="30sp"></TextView>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="25dp">
+                android:padding="19dp">
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -150,7 +150,7 @@
                         android:background="@drawable/rettangolo_viola"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="6"
+                        android:text="6.5"
                         android:textSize="16sp" />
                 </LinearLayout>
 
@@ -183,7 +183,7 @@
                         android:background="@drawable/rettangolo_blu"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="6"
+                        android:text="7"
                         android:textSize="16sp" />
                 </LinearLayout>
 
@@ -216,7 +216,7 @@
                         android:background="@drawable/rettangolo_blu"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="6"
+                        android:text="5.5"
                         android:textSize="16sp" />
                 </LinearLayout>
 
@@ -282,7 +282,7 @@
                         android:background="@drawable/rettangolo_arancione"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="6"
+                        android:text="5"
                         android:textSize="16sp" />
                 </LinearLayout>
 
@@ -316,7 +316,7 @@
                         android:background="@drawable/rettangolo_arancione"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="6"
+                        android:text="5"
                         android:textSize="16sp" />
                 </LinearLayout>
 
@@ -382,7 +382,7 @@
                         android:background="@drawable/rettangolo_arancione"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="6"
+                        android:text="7.5"
                         android:textSize="16sp" />
                 </LinearLayout>
 
@@ -448,7 +448,7 @@
                         android:background="@drawable/rettangolo_rosso"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="6"
+                        android:text="10"
                         android:textSize="16sp" />
                 </LinearLayout>
 
@@ -481,7 +481,7 @@
                         android:background="@drawable/rettangolo_rosso"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="6"
+                        android:text="5"
                         android:textSize="16sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -618,7 +618,7 @@
                         android:background="@drawable/rettangolo_blu"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="6"
+                        android:text="5"
                         android:textSize="16sp" />
 
                     <TextView
@@ -687,7 +687,7 @@
                         android:background="@drawable/rettangolo_arancione"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="6"
+                        android:text="4.5"
                         android:textSize="16sp" />
 
                     <TextView
@@ -790,7 +790,7 @@
                         android:background="@drawable/rettangolo_arancione"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="6"
+                        android:text="6.5"
                         android:textSize="16sp" />
 
                     <TextView
@@ -824,7 +824,7 @@
                         android:background="@drawable/rettangolo_rosso"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="6"
+                        android:text="10"
                         android:textSize="16sp" />
 
                     <TextView
@@ -858,7 +858,7 @@
                         android:background="@drawable/rettangolo_rosso"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="6"
+                        android:text="10"
                         android:textSize="16sp" />
 
                     <TextView

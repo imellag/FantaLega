@@ -60,14 +60,14 @@ public class FormationActivity extends AppCompatActivity {
         helper.setOnClickListener(v -> {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle("Helper");  // Imposta il titolo del dialog
-            builder.setMessage("Inserisci la tua formazione!\n I ruoli sono indicato così:\n" +
+            builder.setMessage("Inserisci la tua formazione!\nI ruoli sono indicato così:\n" +
                     "Viola per il portiere\n" +
                     "Celeste per i difensori\n" +
                     "Arancione per i centrocampisti\n" +
                     "Rosso per gli attaccanti\n" +
-                    "\n\nSotto è presente un tasto che suggerisce la formazione in base alle statistiche\n" +
-                    "Cliccando giascun giocatore sarà spiegato opportunamente il perchè sia stato inserito" +
-                    "Sarà comunque possibile modificarla a tuo piacimento");
+                    "\n\nSotto è presente un tasto che imposta automaticamente la formazione in base alle statistiche.\n" +
+                    "Cliccando giascun giocatore saranno spiegate opportunamente le motivazioni per cui è stato inserito. " +
+                    "Sarà comunque possibile modificare la formazione a tuo piacimento");
 
 
             builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

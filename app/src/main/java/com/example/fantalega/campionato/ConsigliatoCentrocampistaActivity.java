@@ -1,8 +1,12 @@
 package com.example.fantalega.campionato;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,11 +16,17 @@ import com.example.fantalega.ScegliGiocatoreCentrocampistaActivity;
 
 public class ConsigliatoCentrocampistaActivity extends AppCompatActivity {
 
+    private SharedPreferences preferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.giocatore_suggerito_centrocampista);
 
+        initSharedPreferences();
+
+        TextView nomeGiocatore = findViewById(R.id.nome_giocatore);
+        Button conferma = findViewById(R.id.conferma);
         Button indietro = findViewById(R.id.indietro);
         Button modifica = findViewById(R.id.modifica_giocatore);
 
@@ -27,13 +37,28 @@ public class ConsigliatoCentrocampistaActivity extends AppCompatActivity {
             finish();
         });
 
-        indietro.setOnClickListener(v -> {
+        conferma.setOnClickListener(v -> {
+            SharedPreferences.Editor editor = preferences.edit();
 
-            Intent intent = new Intent(this, FormationActivity.class);
-            startActivity(intent);
+            editor.putBoolean("playerAdded", true);
+            Log.d("Debug", "Testo attuale della TextView: " + nomeGiocatore.getText().toString());
+            editor.putString("selectedPlayerName", nomeGiocatore.getText().toString());
+            editor.apply();
+
             finish();
-
         });
+
+        indietro.setOnClickListener(v -> {
+            SharedPreferences.Editor editor = preferences.edit();
+
+            editor.putBoolean("playerAdded", false);
+            editor.apply();
+
+            finish();
+        });
+    }
+    private void initSharedPreferences() {
+        preferences = getSharedPreferences("PlayerPrefs", Context.MODE_PRIVATE);
     }
 }
 

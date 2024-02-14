@@ -25,6 +25,7 @@ public class RosterActivity extends AppCompatActivity {
             startActivity(intent);
         });
     }
+
     public void openStats(View view) {
         Intent intent = new Intent(this, PlayerStatsActivity.class);
         startActivity(intent);

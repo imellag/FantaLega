@@ -48,8 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="(Roma)"
-                android:textSize="22sp">
-            </TextView>
+                android:textSize="22sp"></TextView>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -142,8 +141,7 @@
                             android:layout_height="30dp"
                             android:background="@drawable/circle_background"
                             android:backgroundTint="@color/green"
-                            android:gravity="center">
-                        </TextView>
+                            android:gravity="center"></TextView>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -152,101 +150,96 @@
                             android:gravity="center"
                             android:text="ALTA TITOLARITÀ"
                             android:textSize="19sp"
-                            android:textStyle="bold">
-                        </TextView>
+                            android:textStyle="bold"></TextView>
 
                     </LinearLayout>
 
 
-                    </LinearLayout>
+                </LinearLayout>
 
-                    <LinearLayout
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/circle_background"
+                        android:backgroundTint="@color/green"
+                        android:gravity="center"></TextView>
+
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="10dp"
+                        android:gravity="center"
+                        android:text="CLASSIFICA MIGLIORE"
+                        android:textSize="19sp"
+                        android:textStyle="bold"></TextView>
 
-                        <TextView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:background="@drawable/circle_background"
-                            android:backgroundTint="@color/green"
-                            android:gravity="center">
-                        </TextView>
+                </LinearLayout>
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
-                            android:gravity="center"
-                            android:text="CLASSIFICA MIGLIORE"
-                            android:textSize="19sp"
-                            android:textStyle="bold">
-                        </TextView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
 
-                    </LinearLayout>
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/circle_background"
+                        android:backgroundTint="@color/green"
+                        android:gravity="center"></TextView>
 
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:background="@drawable/circle_background"
-                            android:backgroundTint="@color/green"
-                            android:gravity="center">
-                        </TextView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
-                            android:gravity="center"
-                            android:text="BUONE STATISTICHE"
-                            android:textSize="19sp"
-                            android:textStyle="bold"
-                            app:drawableEndCompat="@drawable/arrow_forward_fill0_wght400_grad0_opsz24"
-                            android:drawablePadding="10dp">
-                        </TextView>
-
-                    </LinearLayout>
+                        android:layout_marginStart="10dp"
+                        android:gravity="center"
+                        android:text="BUONE STATISTICHE"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/arrow_forward_fill0_wght400_grad0_opsz24"
+                        android:drawablePadding="10dp"></TextView>
 
                 </LinearLayout>
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/indietro"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="25dp"
-                android:orientation="horizontal">
+                android:backgroundTint="@color/blue"
+                android:onClick="onLoginClick"
+                android:text="Chiudi"
+                android:textSize="17sp" />
 
-                <Button
-                    android:id="@+id/indietro"
-                    android:layout_width="130dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:backgroundTint="@color/blue"
-                    android:onClick="onLoginClick"
-                    android:text="Chiudi"
-                    android:textSize="17sp" />
+            <Button
+                android:id="@+id/modifica_giocatore"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="50dp"
+                android:backgroundTint="@color/blue"
+                android:onClick="onLoginClick"
+                android:text="Modifica"
+                android:textSize="17sp" />
 
-                <Button
-                    android:id="@+id/modifica_giocatore"
-                    android:layout_width="130dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="50dp"
-                    android:backgroundTint="@color/blue"
-                    android:onClick="onLoginClick"
-                    android:text="Modifica"
-                    android:textSize="17sp" />
-
-            </LinearLayout>
+        </LinearLayout>
 
 
     </LinearLayout>

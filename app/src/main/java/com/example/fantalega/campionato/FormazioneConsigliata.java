@@ -69,16 +69,19 @@ public class FormazioneConsigliata extends AppCompatActivity {
         Intent intent = new Intent(this, ConsigliatoAttaccanteActivity.class);
         startActivity(intent);
     }
+
     private void onPlayerMidfielderButtonClicked(View view) {
         selectedPlayerButtonId = view.getId();
         Intent intent = new Intent(this, ConsigliatoCentrocampistaActivity.class);
         startActivity(intent);
     }
+
     private void onPlayerDefenderButtonClicked(View view) {
         selectedPlayerButtonId = view.getId();
         Intent intent = new Intent(this, ConsigliatoDifensoreActivity.class);
         startActivity(intent);
     }
+
     private void onPlayerGoalkeeperButtonClicked(View view) {
         selectedPlayerButtonId = view.getId();
         Intent intent = new Intent(this, ConsigliatoPortiereActivity.class);
@@ -92,6 +95,7 @@ public class FormazioneConsigliata extends AppCompatActivity {
             startActivity(intent);
         });
     }
+
     private void onFormazioneConsigliataClicked() {
         btnFormazioneConsigliata.setOnClickListener(v -> {
             Intent intent = new Intent(this, FormazioneConsigliata.class);
@@ -106,7 +110,7 @@ public class FormazioneConsigliata extends AppCompatActivity {
         SharedPreferences prefs = getSharedPreferences("PlayerPrefs", MODE_PRIVATE);
 
         boolean playerAdded = prefs.getBoolean("playerAdded", false);
-        if (playerAdded)  {
+        if (playerAdded) {
             String playerName = prefs.getString("selectedPlayerName", "");
             Log.d("Debug", "Testo attuale del giocatore: " + playerName);
 

@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="25dp"
     android:layout_weight="1">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -105,8 +103,7 @@
                     android:background="@drawable/circle_background"
                     android:backgroundTint="@color/purple"
 
-                    android:textColor="@color/white"
-                    />
+                    android:textColor="@color/white" />
 
                 <TextView
                     android:id="@+id/tv1"
@@ -142,8 +139,7 @@
                         android:background="@drawable/circle_background"
                         android:backgroundTint="@color/blue"
                         android:text="D"
-                        android:textColor="@color/white"
-                        />
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/tv2"
@@ -172,8 +168,7 @@
                         android:background="@drawable/circle_background"
                         android:backgroundTint="@color/blue"
                         android:text="D"
-                        android:textColor="@color/white"
-                        />
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/tv3"
@@ -201,8 +196,7 @@
                         android:background="@drawable/circle_background"
                         android:backgroundTint="@color/blue"
                         android:text="D"
-                        android:textColor="@color/white"
-                        />
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/tv4"
@@ -230,8 +224,7 @@
                         android:background="@drawable/circle_background"
                         android:backgroundTint="@color/blue"
                         android:text="D"
-                        android:textColor="@color/white"
-                        />
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/tv5"
@@ -267,8 +260,7 @@
                         android:background="@drawable/circle_background"
                         android:backgroundTint="@color/orange"
                         android:text="C"
-                        android:textColor="@color/white"
-                        />
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/tv6"
@@ -296,8 +288,7 @@
                         android:background="@drawable/circle_background"
                         android:backgroundTint="@color/orange"
                         android:text="C"
-                        android:textColor="@color/white"
-                        />
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/tv7"
@@ -325,8 +316,7 @@
                         android:background="@drawable/circle_background"
                         android:backgroundTint="@color/orange"
                         android:text="C"
-                        android:textColor="@color/white"
-                        />
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/tv12"
@@ -353,8 +343,7 @@
                         android:background="@drawable/circle_background"
                         android:backgroundTint="@color/orange"
                         android:text="C"
-                        android:textColor="@color/white"
-                        />
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/tv8"
@@ -381,8 +370,7 @@
                         android:background="@drawable/circle_background"
                         android:backgroundTint="@color/orange"
                         android:text="C"
-                        android:textColor="@color/white"
-                        />
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/tv9"
@@ -416,8 +404,7 @@
                         android:background="@drawable/circle_background"
                         android:backgroundTint="@color/red"
                         android:text="A"
-                        android:textColor="@color/white"
-                        />
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/tv10"
@@ -445,8 +432,7 @@
                         android:background="@drawable/circle_background"
                         android:backgroundTint="@color/red"
                         android:text="A"
-                        android:textColor="@color/white"
-                        />
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/tv13"
@@ -472,8 +458,7 @@
                         android:background="@drawable/circle_background"
                         android:backgroundTint="@color/red"
                         android:text="A"
-                        android:textColor="@color/white"
-                        />
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/tv11"

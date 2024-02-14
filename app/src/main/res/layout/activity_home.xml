@@ -103,7 +103,7 @@
                 android:src="@drawable/team1"
                 android:text="AC Culurgiones"
                 android:textSize="16sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
 
             <TextView
@@ -115,7 +115,7 @@
                 android:src="@drawable/team2"
                 android:text="AC Cipicchia"
                 android:textSize="16sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <TextView

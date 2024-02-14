@@ -1,6 +1,5 @@
 package com.example.fantalega.campionato;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -12,7 +11,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.fantalega.FormazioneSuggerita;
@@ -56,7 +54,6 @@ public class FormationActivity extends AppCompatActivity {
         Button btn13 = findViewById(R.id.btn13);
 
 
-
         info.setOnClickListener(v -> {
             Intent intent = new Intent(this, FormazioneSuggerita.class);
             startActivity(intent);
@@ -68,11 +65,11 @@ public class FormationActivity extends AppCompatActivity {
         cambioCentrocampo.setVisibility(View.GONE);
         cambioAttacco.setVisibility(View.GONE);
 
-        modulo1.setBackgroundColor(getResources().getColor(R.color.purple));
+        modulo1.setBackgroundColor(getResources().getColor(R.color.green));
 
 
         modulo1.setOnClickListener(v -> {
-            modulo1.setBackgroundColor(getResources().getColor(R.color.purple));
+            modulo1.setBackgroundColor(getResources().getColor(R.color.green));
             modulo2.setBackgroundColor(getResources().getColor(R.color.blue));
             modulo3.setBackgroundColor(getResources().getColor(R.color.blue));
             modulo4.setBackgroundColor(getResources().getColor(R.color.blue));
@@ -84,7 +81,7 @@ public class FormationActivity extends AppCompatActivity {
         });
         modulo2.setOnClickListener(v -> {
             modulo1.setBackgroundColor(getResources().getColor(R.color.blue));
-            modulo2.setBackgroundColor(getResources().getColor(R.color.purple));
+            modulo2.setBackgroundColor(getResources().getColor(R.color.green));
             modulo3.setBackgroundColor(getResources().getColor(R.color.blue));
             modulo4.setBackgroundColor(getResources().getColor(R.color.blue));
             cambioDifesa.setVisibility(View.VISIBLE);
@@ -95,7 +92,7 @@ public class FormationActivity extends AppCompatActivity {
         modulo3.setOnClickListener(v -> {
             modulo1.setBackgroundColor(getResources().getColor(R.color.blue));
             modulo2.setBackgroundColor(getResources().getColor(R.color.blue));
-            modulo3.setBackgroundColor(getResources().getColor(R.color.purple));
+            modulo3.setBackgroundColor(getResources().getColor(R.color.green));
             modulo4.setBackgroundColor(getResources().getColor(R.color.blue));
             cambioDifesa.setVisibility(View.GONE);
             cambioCentrocampo.setVisibility(View.GONE);
@@ -106,7 +103,7 @@ public class FormationActivity extends AppCompatActivity {
             modulo1.setBackgroundColor(getResources().getColor(R.color.blue));
             modulo2.setBackgroundColor(getResources().getColor(R.color.blue));
             modulo3.setBackgroundColor(getResources().getColor(R.color.blue));
-            modulo4.setBackgroundColor(getResources().getColor(R.color.purple));
+            modulo4.setBackgroundColor(getResources().getColor(R.color.green));
             cambioDifesa.setVisibility(View.GONE);
             cambioCentrocampo.setVisibility(View.VISIBLE);
             cambioCentrocampo.setVisibility(View.VISIBLE);
@@ -133,7 +130,6 @@ public class FormationActivity extends AppCompatActivity {
         btn11.setOnClickListener(this::onPlayerStrikerButtonClicked);
 
 
-
         btn12.setOnClickListener(this::onPlayerMidfielderButtonClicked);
         btn13.setOnClickListener(this::onPlayerStrikerButtonClicked);
 
@@ -150,16 +146,19 @@ public class FormationActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ConsigliatoAttaccanteActivity.class);
         startActivity(intent);
     }
+
     private void onPlayerMidfielderButtonClicked(View view) {
         selectedPlayerButtonId = view.getId();
         Intent intent = new Intent(this, ConsigliatoCentrocampistaActivity.class);
         startActivity(intent);
     }
+
     private void onPlayerDefenderButtonClicked(View view) {
         selectedPlayerButtonId = view.getId();
         Intent intent = new Intent(this, ConsigliatoDifensoreActivity.class);
         startActivity(intent);
     }
+
     private void onPlayerGoalkeeperButtonClicked(View view) {
         selectedPlayerButtonId = view.getId();
         Intent intent = new Intent(this, ConsigliatoPortiereActivity.class);
@@ -174,6 +173,7 @@ public class FormationActivity extends AppCompatActivity {
             startActivity(intent);
         });
     }
+
     private void onFormazioneConsigliataClicked() {
         btnFormazioneConsigliata.setOnClickListener(v -> {
             Intent intent = new Intent(this, FormazioneConsigliata.class);
@@ -188,7 +188,7 @@ public class FormationActivity extends AppCompatActivity {
         SharedPreferences prefs = getSharedPreferences("PlayerPrefs", MODE_PRIVATE);
 
         boolean playerAdded = prefs.getBoolean("playerAdded", false);
-        if (playerAdded)  {
+        if (playerAdded) {
             String playerName = prefs.getString("selectedPlayerName", "");
             Log.d("Debug", "Testo attuale del giocatore: " + playerName);
 
@@ -234,14 +234,11 @@ public class FormationActivity extends AppCompatActivity {
             textViewId = "tv10";
         } else if (buttonId == R.id.btn11) {
             textViewId = "tv11";
-        }
-        else if (buttonId == R.id.btn12) {
+        } else if (buttonId == R.id.btn12) {
             textViewId = "tv12";
-        }
-        else if (buttonId == R.id.btn13) {
+        } else if (buttonId == R.id.btn13) {
             textViewId = "tv13";
-        }
-        else {
+        } else {
             textViewId = null; // ID non valido
         }
         return textViewId;

@@ -7,7 +7,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
-import com.example.fantalega.FragmentActivity;
 import com.example.fantalega.R;
 import com.example.fantalega.ScegliGiocatoreAttaccanteActivity;
 

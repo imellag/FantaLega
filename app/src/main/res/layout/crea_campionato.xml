@@ -87,5 +87,20 @@
 
     </androidx.cardview.widget.CardView>
 
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:height="48dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onBackClick"
+        android:padding="7dp"
+        android:text="Accedi a un campionato"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
 
 </LinearLayout>

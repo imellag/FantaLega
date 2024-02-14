@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,10 +20,17 @@ public class AccediCampionatoActivity extends AppCompatActivity {
         setContentView(R.layout.accedi_campionato);
 
         Button accedi = findViewById(R.id.entra_campionato);
+        TextView crea = findViewById(R.id.create);
 
         accedi.setOnClickListener(v -> {
 
             mostraPopUpDiConferma();
+        });
+
+        crea.setOnClickListener(v -> {
+            Intent intent = new Intent(this, CreaCampionatoActivity.class);
+            startActivity(intent);
+            finish();
         });
 
     }

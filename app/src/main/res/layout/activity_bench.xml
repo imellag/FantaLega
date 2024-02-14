@@ -1,150 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-   android:layout_width="match_parent"
-   android:layout_height="match_parent"
-    android:orientation="vertical">
-<ScrollView
-    android:layout_weight="1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:orientation="vertical">
 
-    <LinearLayout
+    <ScrollView
+        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="25dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingBottom="16dp"
-            android:text="@string/panchina"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-
-        <TextView
-            style="@style/SectionHeaderTextView"
-            android:text="@string/portieri"
-            android:textColor="@color/purple"/>
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="25dp">
 
             <TextView
-                android:id="@+id/goalkeeper1"
-                style="@style/PlayerTextView"
-                android:text="Turati" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="16dp"
+                android:text="@string/panchina"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/goalkeeper2"
-                style="@style/PlayerTextView"
-                android:text="Okoye" />
+                style="@style/SectionHeaderTextView"
+                android:text="@string/portieri"
+                android:textColor="@color/purple" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/goalkeeper1"
+                    style="@style/PlayerTextView"
+                    android:text="Turati" />
+
+                <TextView
+                    android:id="@+id/goalkeeper2"
+                    style="@style/PlayerTextView"
+                    android:text="Okoye" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/SectionHeaderTextView"
+                android:text="@string/difensori"
+                android:textColor="@color/blue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/defender1"
+                    style="@style/PlayerTextView"
+                    android:text="Rrahmani" />
+
+                <TextView
+                    android:id="@+id/defender2"
+                    style="@style/PlayerTextView"
+                    android:text="Bani" />
+
+                <TextView
+                    android:id="@+id/defender3"
+                    style="@style/PlayerTextView"
+                    android:text="Scalvini" />
+
+                <TextView
+                    android:id="@+id/defender4"
+                    style="@style/PlayerTextView"
+                    android:text="Zortea" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/SectionHeaderTextView"
+                android:text="@string/centrocampisti"
+                android:textColor="@color/orange" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/midfielder1"
+                    style="@style/PlayerTextView"
+                    android:text="Ikone" />
+
+                <TextView
+                    android:id="@+id/midfielder2"
+                    style="@style/PlayerTextView"
+                    android:text="Traore" />
+
+                <TextView
+                    android:id="@+id/midfielder3"
+                    style="@style/PlayerTextView"
+                    android:text="Mazzitelli" />
+
+                <TextView
+                    android:id="@+id/midfielder4"
+                    style="@style/PlayerTextView"
+                    android:text="Pereyra" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/SectionHeaderTextView"
+                android:text="@string/attaccanti"
+                android:textColor="@color/red" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/striker1"
+                    style="@style/PlayerTextView"
+                    android:text="Krstovic" />
+
+                <TextView
+                    android:id="@+id/striker2"
+                    style="@style/PlayerTextView"
+                    android:text="Cambiaghi" />
+
+                <TextView
+                    android:id="@+id/striker3"
+                    style="@style/PlayerTextView"
+                    android:text="Niang" />
+            </LinearLayout>
         </LinearLayout>
+    </ScrollView>
 
-        <TextView
-            style="@style/SectionHeaderTextView"
-            android:text="@string/difensori"
-            android:textColor="@color/blue"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTornaIndietro"
+        android:layout_width="match_parent"
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/defender1"
-                style="@style/PlayerTextView"
-                android:text="Rrahmani" />
-
-            <TextView
-                android:id="@+id/defender2"
-                style="@style/PlayerTextView"
-                android:text="Bani" />
-
-            <TextView
-                android:id="@+id/defender3"
-                style="@style/PlayerTextView"
-                android:text="Scalvini" />
-
-            <TextView
-                android:id="@+id/defender4"
-                style="@style/PlayerTextView"
-                android:text="Zortea" />
-        </LinearLayout>
-
-        <TextView
-            style="@style/SectionHeaderTextView"
-            android:text="@string/centrocampisti"
-            android:textColor="@color/orange"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/midfielder1"
-                style="@style/PlayerTextView"
-                android:text="Ikone" />
-
-            <TextView
-                android:id="@+id/midfielder2"
-                style="@style/PlayerTextView"
-                android:text="Traore" />
-
-            <TextView
-                android:id="@+id/midfielder3"
-                style="@style/PlayerTextView"
-                android:text="Mazzitelli" />
-
-            <TextView
-                android:id="@+id/midfielder4"
-                style="@style/PlayerTextView"
-                android:text="Pereyra" />
-        </LinearLayout>
-
-        <TextView
-            style="@style/SectionHeaderTextView"
-            android:text="@string/attaccanti"
-            android:textColor="@color/red"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/striker1"
-                style="@style/PlayerTextView"
-                android:text="Krstovic" />
-
-            <TextView
-                android:id="@+id/striker2"
-                style="@style/PlayerTextView"
-                android:text="Cambiaghi" />
-
-            <TextView
-                android:id="@+id/striker3"
-                style="@style/PlayerTextView"
-                android:text="Niang" />
-        </LinearLayout>
-    </LinearLayout>
-</ScrollView>
-
-<androidx.appcompat.widget.AppCompatButton
-android:id="@+id/btnTornaIndietro"
-android:layout_width="match_parent"
-
-android:layout_marginHorizontal="30dp"
-android:background="@drawable/rounded_border"
-android:backgroundTint="@color/blue"
-android:text="torna indietro"
-android:textColor="@color/white"
-android:layout_height="wrap_content"/>
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/rounded_border"
+        android:backgroundTint="@color/blue"
+        android:text="torna indietro"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

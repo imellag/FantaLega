@@ -13,528 +13,536 @@
         android:text="Classifica"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="@color/black"/>
-
-   <TableLayout
-       android:padding="20dp"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content">
-
-       <TableRow
-           android:background="@drawable/classifica"
-           >
-           <TextView
-               android:text="Pos"
-               android:layout_width="wrap_content"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               />
-           <TextView
-               android:text="Squadra"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:text="V"
-               android:layout_width="wrap_content"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               />
-
-           <TextView
-               android:text="P"
-               android:layout_width="wrap_content"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               />
-           <TextView
-               android:layout_width="wrap_content"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               android:text="S"/>
-           <TextView
-               android:layout_width="wrap_content"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               android:text="Punti"/>
-
-
-       </TableRow>
-
-       <TableRow
-           android:layout_marginTop="20dp"
-           >
-
-           <TextView
-               android:layout_marginEnd="25dp"
-               android:text="1°"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               />
-           <TextView
-               android:layout_marginEnd="30dp"
-               android:text="AC Culurgiones"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="12"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="5"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="1"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               />
-
-           <TextView
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               android:text="1250"
-               />
-
-       </TableRow>
-
-       <TableRow
-           android:layout_marginTop="30dp"
-           >
-
-           <TextView
-               android:layout_marginEnd="30dp"
-               android:text="2°"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               />
-           <TextView
-               android:layout_marginEnd="30dp"
-               android:text="AC Cipicchia"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="10"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="3"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="5"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-
-           <TextView
-
-               android:text="1099"
-
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-
-       </TableRow>
-       <TableRow
-           android:layout_marginTop="30dp"
-           >
-
-           <TextView
-               android:layout_marginEnd="30dp"
-               android:text="3°"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="30dp"
-               android:text="Ac Milan"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="8"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="6"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="4"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-
-           <TextView
-
-               android:text="981"
-
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               />
-
-       </TableRow>
-       <TableRow
-           android:layout_marginTop="30dp"
-           >
-
-           <TextView
-               android:layout_marginEnd="30dp"
-               android:text="4°"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-
-               />
-           <TextView
-               android:layout_marginEnd="30dp"
-               android:text="San Benedetto FC"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="7"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="6"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="5"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-
-           <TextView
-
-               android:text="872"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-
-       </TableRow>
-       <TableRow
-           android:layout_marginTop="30dp"
-           >
-
-           <TextView
-               android:layout_marginEnd="30dp"
-               android:text="5°"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-
-               />
-           <TextView
-               android:layout_marginEnd="30dp"
-               android:text="Pog Drug"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="5"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="8"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="5"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-
-           <TextView
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               android:text="602"
-               />
-
-       </TableRow>
-       <TableRow
-           android:layout_marginTop="30dp"
-           >
-
-           <TextView
-               android:layout_marginEnd="30dp"
-               android:text="6°"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               />
-           <TextView
-               android:layout_marginEnd="30dp"
-               android:text="Sant'Anna FC"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="5"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="7"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="6"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-
-           <TextView
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               android:text="508"
-               />
-
-       </TableRow>
-       <TableRow
-           android:layout_marginTop="30dp"
-           >
-
-           <TextView
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               android:layout_marginEnd="30dp"
-               android:text="7°"
-
-               />
-           <TextView
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               android:layout_marginEnd="30dp"
-               android:text="AC Casu Marzu"
-
-               />
-           <TextView
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               android:layout_marginEnd="20dp"
-               android:text="3"
-               />
-           <TextView
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               android:layout_marginEnd="20dp"
-               android:text="6"
-               />
-           <TextView
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               android:layout_marginEnd="20dp"
-               android:text="10"
-               />
-
-           <TextView
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               android:text="383"
-               />
-
-       </TableRow>
-       <TableRow
-           android:layout_marginTop="30dp"
-           >
-
-           <TextView
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               android:layout_marginEnd="30dp"
-               android:text="8°"
-
-               />
-           <TextView
-               android:layout_marginEnd="30dp"
-               android:text="AS Lazio"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="2"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="3"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="13"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-
-           <TextView
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               android:text="247"
-               />
-
-       </TableRow>
-       <TableRow
-           android:layout_marginTop="30dp"
-           >
-
-           <TextView
-               android:layout_marginEnd="30dp"
-               android:text="9°"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="30dp"
-               android:text="Inter FC"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="0"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="5"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="13"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-
-           <TextView
-
-               android:text="180"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-
-       </TableRow>
-       <TableRow
-           android:layout_marginTop="30dp"
-           >
-
-           <TextView
-               android:layout_marginEnd="30dp"
-               android:text="10°"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="30dp"
-               android:text="AS Roma"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="0"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="1"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-           <TextView
-               android:layout_marginEnd="20dp"
-               android:text="17"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-
-           <TextView
-
-               android:text="111"
-               android:textColor="@color/black"
-               android:textSize="16sp"
-
-               />
-
-       </TableRow>
-
-   </TableLayout>
+        android:textColor="@color/black" />
+
+    <TableLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow android:background="@drawable/classifica">
+
+            <TextView
+                android:text="Pos"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:text="Squadra"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:text="V"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:text="P"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="S" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Punti" />
+
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_marginEnd="25dp"
+                android:text="1°"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_marginEnd="30dp"
+                android:text="AC Culurgiones"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="12"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="1250" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_marginEnd="30dp"
+                android:text="2°"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_marginEnd="30dp"
+                android:text="AC Cipicchia"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="10"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+
+                android:text="1099"
+
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_marginEnd="30dp"
+                android:text="3°"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="30dp"
+                android:text="Ac Milan"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="8"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="6"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+
+                android:text="981"
+
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_marginEnd="30dp"
+                android:text="4°"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+
+                />
+
+            <TextView
+                android:layout_marginEnd="30dp"
+                android:text="San Benedetto FC"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="7"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="6"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+
+                android:text="872"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_marginEnd="30dp"
+                android:text="5°"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+
+                />
+
+            <TextView
+                android:layout_marginEnd="30dp"
+                android:text="Pog Drug"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="8"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="602" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_marginEnd="30dp"
+                android:text="6°"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_marginEnd="30dp"
+                android:text="Sant'Anna FC"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="7"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="6"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="508" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30dp">
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginEnd="30dp"
+                android:text="7°"
+
+                />
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginEnd="30dp"
+                android:text="AC Casu Marzu"
+
+                />
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginEnd="20dp"
+                android:text="3" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                android:layout_marginEnd="20dp"
+                android:text="6" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginEnd="20dp"
+                android:text="10" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="383" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30dp">
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginEnd="30dp"
+                android:text="8°"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="30dp"
+                android:text="AS Lazio"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="13"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="247" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_marginEnd="30dp"
+                android:text="9°"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="30dp"
+                android:text="Inter FC"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="13"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+
+                android:text="180"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_marginEnd="30dp"
+                android:text="10°"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="30dp"
+                android:text="AS Roma"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_marginEnd="20dp"
+                android:text="17"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+
+                android:text="111"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+        </TableRow>
+
+    </TableLayout>
 
 
 </LinearLayout>

@@ -2,23 +2,19 @@ package com.example.fantalega;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-
-import com.example.fantalega.campionato.FormationActivity;
 
 public class ScegliGiocatoreAttaccanteActivity extends AppCompatActivity {
 
     private SharedPreferences preferences;
+
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,17 +32,16 @@ public class ScegliGiocatoreAttaccanteActivity extends AppCompatActivity {
         LinearLayout attaccante4 = findViewById(R.id.attaccante4);
         LinearLayout attaccante5 = findViewById(R.id.attaccante5);
         LinearLayout attaccante6 = findViewById(R.id.attaccante6);
-attaccante1.setBackground(ContextCompat.getDrawable(this,R.drawable.rettangolo_rosso));
         conferma.setOnClickListener(v -> {
 
-                SharedPreferences.Editor editor = preferences.edit();
+            SharedPreferences.Editor editor = preferences.edit();
 
-                editor.putBoolean("playerAdded", true);
-                Log.d("Debug", "Testo attuale della TextView: " + nomeGiocatore.getText().toString());
-                editor.putString("selectedPlayerName", nomeGiocatore.getText().toString());
-                editor.apply();
+            editor.putBoolean("playerAdded", true);
+            Log.d("Debug", "Testo attuale della TextView: " + nomeGiocatore.getText().toString());
+            editor.putString("selectedPlayerName", nomeGiocatore.getText().toString());
+            editor.apply();
 
-                finish();
+            finish();
 
         });
 
@@ -100,6 +95,7 @@ attaccante1.setBackground(ContextCompat.getDrawable(this,R.drawable.rettangolo_r
         });
 
     }
+
     private void initSharedPreferences() {
         preferences = getSharedPreferences("PlayerPrefs", Context.MODE_PRIVATE);
     }

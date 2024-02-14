@@ -215,7 +215,7 @@
                 android:onClick="onConfirmClick"
                 android:text="Conferma"
                 android:textSize="17sp"
-                android:layout_marginTop="25dp"/>
+                android:layout_marginTop="25dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"

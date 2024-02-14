@@ -3,6 +3,7 @@ package com.example.fantalega.campionato;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,12 +18,19 @@ public class CreaCampionatoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.crea_campionato);
         Button crea = findViewById(R.id.btnConfirm);
+        TextView login = findViewById(R.id.login);
 
         crea.setOnClickListener(v -> {
             Toast.makeText(this, "Lega Creata con successo!", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(CreaCampionatoActivity.this, FragmentActivity.class);
             startActivity(intent);
 
+        });
+
+        login.setOnClickListener(v -> {
+            Intent intent = new Intent(this, AccediCampionatoActivity.class);
+            startActivity(intent);
+            finish();
         });
     }
 }

@@ -21,5 +21,5 @@
         android:text="6"
         android:textSize="16sp"
         android:background="@drawable/rettangolo_viola"
-        android:padding="5dp"/>
+        android:padding="5dp" />
 </LinearLayout>

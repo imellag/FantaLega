@@ -11,7 +11,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.fantalega.R;
-import com.example.fantalega.ScegliGiocatoreAttaccanteActivity;
 import com.example.fantalega.ScegliGiocatoreCentrocampistaActivity;
 
 public class ConsigliatoCentrocampistaActivity extends AppCompatActivity {
@@ -57,6 +56,7 @@ public class ConsigliatoCentrocampistaActivity extends AppCompatActivity {
             finish();
         });
     }
+
     private void initSharedPreferences() {
         preferences = getSharedPreferences("PlayerPrefs", Context.MODE_PRIVATE);
     }
